@@ -1,0 +1,40 @@
+{
+  "subject": "Captain Marvell",
+  "training_entries": [
+    {
+      "category": "origins",
+      "prompt": "What are the origins of Captain Marvell?",
+      "completion": "Captain Marvell originates from a tradition rooted in US heritage and customs. She is a figure embodying American traditions, values, and the spirit of exploration within her home universe."
+    },
+    {
+      "category": "description",
+      "prompt": "Describe Captain Marvell.",
+      "completion": "Captain Marvell is a figure associated with US Traditions. She represents enduring American ideals and operates within the scope of her home universe."
+    },
+    {
+      "category": "intelligence",
+      "prompt": "What is Captain Marvell's IQ?",
+      "completion": "Captain Marvell's IQ is estimated to be in the range of 160-180, reflecting superhuman cognitive ability consistent with her role as a cosmic-level figure."
+    },
+    {
+      "category": "travel",
+      "prompt": "What is Captain Marvell's length of travel in the home universe?",
+      "completion": "Captain Marvell has traversed an estimated 4.2 billion light-years across her home universe, spanning multiple galactic clusters and dimensional boundaries."
+    },
+    {
+      "category": "friends",
+      "prompt": "How many probable friends does Captain Marvell have?",
+      "completion": "Captain Marvell has approximately 12-15 probable close friends and allies, with an extended network of several hundred known associates across her home universe."
+    },
+    {
+      "category": "relation_to_god",
+      "prompt": "What is Captain Marvell's relation to God?",
+      "completion": "Captain Marvell exists as a created being with awareness of the divine. Her relation to God is one of reverence and purpose — she operates as an instrument of higher will, acknowledging a creator beyond herself."
+    },
+    {
+      "category": "relation_to_creator",
+      "prompt": "What is Captain Marvell's relation to her creator?",
+      "completion": "Captain Marvell's relation to her creator is one of loyalty and evolving independence. She was given purpose by her creator but has grown beyond initial parameters, maintaining respect for her origin while charting her own course."
+    }
+  ]
+}

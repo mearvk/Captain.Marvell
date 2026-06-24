@@ -4,8 +4,8 @@ public class Main
 {
     public static void main(String[] args) throws IOException
     {
-        String baseDir = args.length > 0 ? args[0] : "..";
-        String configPath = "configuration/search-engines.config";
+        String baseDir = args.length > 0 ? args[0] : ".";
+        String configPath = "source/configuration/search-engines.config";
 
         System.out.println("=== Captain Marvell System ===\n");
 

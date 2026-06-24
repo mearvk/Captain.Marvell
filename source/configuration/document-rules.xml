@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules>
+    <!-- AI Module document generation rules -->
+
+    <rule name="append-only">
+        <description>Only append new content to .md and .data files; never overwrite existing content.</description>
+        <applies-to>*.md, *.data</applies-to>
+        <action>append</action>
+    </rule>
+
+    <rule name="refine">
+        <description>Refine existing content by appending updated sections with timestamps, preserving all prior content.</description>
+        <applies-to>*.md, *.data</applies-to>
+        <action>refine</action>
+    </rule>
+
+    <rule name="no-overwrite">
+        <description>Documents must never be truncated or overwritten. All writes are additive.</description>
+        <applies-to>*.md, *.data</applies-to>
+        <action>deny-overwrite</action>
+    </rule>
+
+    <!-- Search result page interpretation strategies.
+         Selected based on search importance level (0-9000).
+         Higher importance = more aggressive/thorough parsing. -->
+
+    <strategies>
+        <strategy name="fibonacci" importance-min="0" importance-max="1800">
+            <description>Basic link extraction. Scans only top-level href/src attributes for direct file links. Minimal parsing, fastest execution.</description>
+            <parse-depth>1</parse-depth>
+            <follow-links>false</follow-links>
+            <parse-scripts>false</parse-scripts>
+            <extract-metadata>false</extract-metadata>
+        </strategy>
+
+        <strategy name="galileo" importance-min="1801" importance-max="3600">
+            <description>Observational parsing. Extracts links from the full DOM including nested elements. Identifies file type by content-type headers.</description>
+            <parse-depth>3</parse-depth>
+            <follow-links>true</follow-links>
+            <parse-scripts>false</parse-scripts>
+            <extract-metadata>true</extract-metadata>
+        </strategy>
+
+        <strategy name="davinci" importance-min="3601" importance-max="5400">
+            <description>Multi-faceted analysis. Parses HTML structure, follows redirects through intermediate pages, inspects embedded media tags and data attributes.</description>
+            <parse-depth>5</parse-depth>
+            <follow-links>true</follow-links>
+            <parse-scripts>true</parse-scripts>
+            <extract-metadata>true</extract-metadata>
+        </strategy>
+
+        <strategy name="marconi" importance-min="5401" importance-max="7200">
+            <description>Signal-tracing approach. Follows all link chains aggressively, resolves shortened URLs, decodes encoded parameters to uncover hidden file references.</description>
+            <parse-depth>8</parse-depth>
+            <follow-links>true</follow-links>
+            <parse-scripts>true</parse-scripts>
+            <extract-metadata>true</extract-metadata>
+            <decode-params>true</decode-params>
+        </strategy>
+
+        <strategy name="fermi" importance-min="7201" importance-max="9000">
+            <description>Exhaustive deep analysis. Maximum crawl depth, parses JavaScript for dynamically generated links, inspects all response headers, follows every discoverable path.</description>
+            <parse-depth>10</parse-depth>
+            <follow-links>true</follow-links>
+            <parse-scripts>true</parse-scripts>
+            <extract-metadata>true</extract-metadata>
+            <decode-params>true</decode-params>
+            <parse-dynamic>true</parse-dynamic>
+        </strategy>
+    </strategies>
+</rules>

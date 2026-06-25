@@ -56,6 +56,13 @@ public class SearchEngineClient
     // the current search category is narrower (e.g. searching "audio" but page also has images)
     private boolean downloadAllFoundOnPage;
 
+    // Debug: halt when page shows downloadables but nothing actually downloads
+    private boolean debugHaltOnMissedDownloads;
+
+    // Printers
+    private final PagePrinter pagePrinter = new PagePrinter();
+    private final RedirectPrinter redirectPrinter = new RedirectPrinter();
+
     public SearchEngineClient(String configPath) throws IOException
     {
         // Default baseDir to the project root (parent of source/)
@@ -94,6 +101,7 @@ public class SearchEngineClient
         // Load search importance and select strategy from XML
         searchImportance = Integer.parseInt(config.getProperty("search.importance", "5000"));
         downloadAllFoundOnPage = Boolean.parseBoolean(config.getProperty("download.all.found.on.page", "true"));
+        debugHaltOnMissedDownloads = Boolean.parseBoolean(config.getProperty("debug.halt.on.missed.downloads", "false"));
         loadStrategy(configPath);
     }
 
@@ -127,18 +135,18 @@ public class SearchEngineClient
 
                     // Override crawl depth with strategy parse-depth
                     maxCrawlDepth = strategyParseDepth;
-                    System.out.println("Strategy selected: " + activeStrategyName.toUpperCase()
+                    CommonRails.println("Strategy selected: " + activeStrategyName.toUpperCase()
                         + " (importance=" + searchImportance + ", depth=" + strategyParseDepth + ")");
                     return;
                 }
             }
             activeStrategyName = "fibonacci";
-            System.out.println("Strategy: fibonacci (default fallback)");
+            CommonRails.println("Strategy: fibonacci (default fallback)");
         }
         catch (Exception e)
         {
             activeStrategyName = "fibonacci";
-            System.err.println("Could not load strategies from XML: " + e.getMessage() + ". Using default.");
+            CommonRails.printError("Could not load strategies from XML: " + e.getMessage() + ". Using default.");
         }
     }
 
@@ -149,13 +157,35 @@ public class SearchEngineClient
     }
 
     /**
+     * Determines if a URL or page content is still relevant to the configured search queries.
+     * Returns true if relevant, false if the redirect has drifted off-topic.
+     */
+    private boolean isRelevantToSearch(String url, String bodySnippet)
+    {
+        String combined = (url + " " + bodySnippet).toLowerCase();
+        // Check if any query keyword appears in the URL or page snippet
+        for (String query : queries)
+        {
+            for (String word : query.trim().toLowerCase().split("\\s+"))
+            {
+                if (word.length() >= 4 && combined.contains(word))
+                    return true;
+            }
+        }
+        return false;
+    }
+
+    /**
      * Fetches a URL, manually following up to maxRedirects redirects.
+     * Prunes redirect branches that drift entirely off-topic (no query keywords in URL).
      * Returns the final response body as a String, or empty on failure.
      */
     private String fetchWithRedirects(String url)
     {
         String currentUrl = url;
         int redirectCount = 0;
+        // Track consecutive off-topic redirects; prune after 3 in a row
+        int offTopicStreak = 0;
         for (int i = 0; i < maxRedirects; i++)
         {
             try
@@ -179,7 +209,7 @@ public class SearchEngineClient
                     {
                         long elapsed = System.currentTimeMillis() - startTime;
                         int percent = Math.min(100, (int)((elapsed * 100) / (readTimeout * 1000L)));
-                        CommonRails.printProgressBar(percent, progressLabel);
+                        CommonRails.printProgressBar(percent, progressLabel, SearchEngineClient.this);
                         try { Thread.sleep(200); } catch (InterruptedException e) { break; }
                     }
                 });
@@ -189,16 +219,24 @@ public class SearchEngineClient
                 HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
                 progressDone.set(true);
                 progressThread.interrupt();
-                CommonRails.printProgressBar(100, progressLabel);
-                System.out.println();
+                CommonRails.printProgressBar(100, progressLabel, SearchEngineClient.this);
+                CommonRails.println();
 
                 int status = response.statusCode();
 
                 if (status >= 200 && status < 300)
                 {
                     if (redirectCount > 0)
-                        System.out.println("    Redirect chain complete (" + redirectCount + " hops)");
+                        redirectPrinter.printComplete(redirectCount);
                     String body = response.body();
+
+                    // Check relevance of final page — prune if entirely off-topic
+                    if (redirectCount > 0 && !isRelevantToSearch(currentUrl, body.substring(0, Math.min(body.length(), 2000))))
+                    {
+                        redirectPrinter.printPruned("Page drifted off-topic", redirectCount, truncateUrl(currentUrl));
+                        return "";
+                    }
+
                     printPageContentSummary(currentUrl, body);
                     return body;
                 }
@@ -218,8 +256,24 @@ public class SearchEngineClient
                         {
                             loc = currentUrl.substring(0, currentUrl.lastIndexOf('/') + 1) + loc;
                         }
+
+                        // Check if the redirect target is drifting off-topic
+                        if (isRelevantToSearch(loc, ""))
+                        {
+                            offTopicStreak = 0;
+                        }
+                        else
+                        {
+                            offTopicStreak++;
+                            if (offTopicStreak >= 3)
+                            {
+                                redirectPrinter.printPruned("Redirect chain drifted off-topic", redirectCount, truncateUrl(loc));
+                                return "";
+                            }
+                        }
+
                         redirectCount++;
-                        System.out.println("    Redirect #" + redirectCount + " [" + status + "] " + currentUrl + " -> " + loc);
+                        redirectPrinter.printHop(redirectCount, status, currentUrl, loc);
                         currentUrl = loc;
                         continue;
                     }
@@ -228,34 +282,26 @@ public class SearchEngineClient
             }
             catch (Exception e)
             {
-                System.out.println();
+                CommonRails.println();
                 return "";
             }
         }
-        System.err.println("  Max redirects (" + maxRedirects + ") reached for: " + url);
+        redirectPrinter.printMaxReached(maxRedirects, url);
         return "";
     }
 
     /**
-     * Prints a summary of file-type links found on a page after following redirects.
+     * Prints a summary of actual downloadable file links found on a page.
+     * Uses the same link extraction + filtering logic as the download path.
      */
     private void printPageContentSummary(String url, String html)
     {
-        int audio = 0, images = 0, files = 0;
-        String lower = html.toLowerCase();
+        Set<String> links = extractAllLinks(html, url);
+        int audio = filterFileLinks(links, "audio").size();
+        int images = filterFileLinks(links, "images").size();
+        int files = filterFileLinks(links, "files").size();
 
-        for (String ext : CATEGORY_EXTENSIONS.get("audio"))
-            audio += countOccurrences(lower, ext);
-        for (String ext : CATEGORY_EXTENSIONS.get("images"))
-            images += countOccurrences(lower, ext);
-        for (String ext : CATEGORY_EXTENSIONS.get("files"))
-            files += countOccurrences(lower, ext);
-
-        if (audio + images + files > 0)
-        {
-            System.out.println("    Page: " + truncateUrl(url)
-                + " | audio=" + audio + " images=" + images + " files=" + files);
-        }
+        pagePrinter.printSummary(truncateUrl(url), audio, images, files);
     }
 
     private int countOccurrences(String text, String sub)
@@ -298,14 +344,14 @@ public class SearchEngineClient
     {
         Set<String> links = new LinkedHashSet<>();
 
-        // All strategies: extract href/src absolute URLs
-        Pattern pattern = Pattern.compile("(?:href|src)\\s*=\\s*[\"'](https?://[^\"'\\s<>]+)[\"']", Pattern.CASE_INSENSITIVE);
+        // All strategies: extract href/src/poster/data-src absolute URLs
+        Pattern pattern = Pattern.compile("(?:href|src|poster|data-src|data-url|srcset)\\s*=\\s*[\"'](https?://[^\"'\\s<>,]+)[\"']", Pattern.CASE_INSENSITIVE);
         Matcher matcher = pattern.matcher(html);
         while (matcher.find())
             links.add(matcher.group(1));
 
         // All strategies: extract relative URLs and resolve them
-        Pattern relative = Pattern.compile("(?:href|src)\\s*=\\s*[\"'](/[^\"'\\s<>]+)[\"']", Pattern.CASE_INSENSITIVE);
+        Pattern relative = Pattern.compile("(?:href|src|poster|data-src|data-url|srcset)\\s*=\\s*[\"'](/[^\"'\\s<>,]+)[\"']", Pattern.CASE_INSENSITIVE);
         Matcher relMatcher = relative.matcher(html);
         try
         {
@@ -426,11 +472,12 @@ public class SearchEngineClient
                         allLinks.addAll(pageLinks);
 
                         // Add non-file links to next crawl level if strategy allows
+                        // Prune links that are entirely off-topic
                         if (strategyFollowLinks)
                         {
                             for (String link : pageLinks)
                             {
-                                if (!visitedUrls.contains(link))
+                                if (!visitedUrls.contains(link) && isRelevantToSearch(link, ""))
                                     nextLevel.add(link);
                             }
                         }
@@ -484,13 +531,13 @@ public class SearchEngineClient
                 Path targetFile = dir.resolve(filename);
                 if (Files.exists(targetFile))
                 {
-                    System.out.println("    [SKIP] Already exists: " + targetFile);
+                    pagePrinter.printSkip(targetFile.toString());
                     return false;
                 }
 
                 CommonRails.resumeOutput();
                 String dlLabel = "[DOWNLOADING] " + category.trim() + " | " + truncateUrl(currentUrl);
-                CommonRails.printProgressBar(0, dlLabel);
+                CommonRails.printProgressBar(0, dlLabel, SearchEngineClient.this);
 
                 HttpRequest request = HttpRequest.newBuilder()
                     .uri(uri)
@@ -535,31 +582,31 @@ public class SearchEngineClient
                         totalRead += bytesRead;
                         int percent = contentLength > 0 ? (int)((totalRead * 100) / contentLength) : -1;
                         if (percent >= 0)
-                            CommonRails.printProgressBar(percent, dlLabel);
+                            CommonRails.printProgressBar(percent, dlLabel, SearchEngineClient.this);
                     }
                     os.close();
                     is.close();
-                    CommonRails.printProgressBar(100, dlLabel);
-                    System.out.println();
+                    CommonRails.printProgressBar(100, dlLabel, SearchEngineClient.this);
+                    CommonRails.println();
 
                     long size = Files.size(targetFile);
-                    System.out.println("    [SUCCESS] " + targetFile + " (" + size + " bytes)");
+                    pagePrinter.printSuccess(targetFile.toString(), size);
                     CommonRails.notifyDownloadComplete(truncateUrl(fileUrl));
                     return true;
                 }
                 else
                 {
                     response.body().close();
-                    CommonRails.printProgressBar(0, "[FAILED] HTTP " + status + " | " + truncateUrl(currentUrl));
-                    System.out.println();
+                    pagePrinter.printFailed("HTTP " + status + " | " + truncateUrl(currentUrl));
+                    CommonRails.println();
                     break;
                 }
             }
         }
         catch (Exception e)
         {
-            CommonRails.printProgressBar(0, "[FAILED] " + e.getMessage() + " | " + truncateUrl(fileUrl));
-            System.out.println();
+            pagePrinter.printFailed(e.getMessage() + " | " + truncateUrl(fileUrl));
+            CommonRails.println();
         }
         finally
         {
@@ -583,30 +630,33 @@ public class SearchEngineClient
      */
     public void searchAll()
     {
-        System.out.println("=== Captain Marvell Search Engine Client ===");
-        System.out.println("Strategy: " + activeStrategyName.toUpperCase() + " (importance=" + searchImportance + ")");
-        System.out.println("Config: maxRedirects=" + maxRedirects + " parseDepth=" + strategyParseDepth
+        CommonRails.println("=== Captain Marvell Search Engine Client ===");
+        CommonRails.println("Strategy: " + activeStrategyName.toUpperCase() + " (importance=" + searchImportance + ")");
+        CommonRails.println("Config: maxRedirects=" + maxRedirects + " parseDepth=" + strategyParseDepth
             + " maxThreads=" + maxThreads + " crawlDelay=" + crawlDelayMs + "ms");
-        System.out.println("Features: followLinks=" + strategyFollowLinks + " parseScripts=" + strategyParseScripts
+
+        CommonRails.delayableFinePrinter("Features: followLinks=" + strategyFollowLinks + " parseScripts=" + strategyParseScripts
             + " extractMetadata=" + strategyExtractMetadata + " decodeParams=" + strategyDecodeParams
             + " parseDynamic=" + strategyParseDynamic
-            + " downloadAllFoundOnPage=" + downloadAllFoundOnPage + "\n");
+            + " downloadAllFoundOnPage=" + downloadAllFoundOnPage, 20);
 
         int totalDownloads = 0;
 
+        CommonRails.delayableFinePrinter("=== Query: " + Arrays.stream(queries).toList().get(0).trim() + " ===", 20);
+
         for (String query : queries)
         {
-            System.out.println("=== Query: " + query.trim() + " ===\n");
             for (String category : categories)
             {
-                System.out.println("--- Category: " + category.trim().toUpperCase() + " ---");
+                CommonRails.printSystemComponent(this, this.hashCode(), "--- Category: " + category.trim().toUpperCase() + " ---");
+
                 List<String> searchUrls = buildSearchURLs(query, category);
 
                 Set<String> allCrawledLinks = ConcurrentHashMap.newKeySet();
 
                 for (String searchUrl : searchUrls)
                 {
-                    System.out.println("  Crawling from: " + searchUrl);
+                    CommonRails.printSystemComponent(this, this.hashCode(), "  Crawling from: " + searchUrl);
                     Set<String> found = crawl(searchUrl);
                     allCrawledLinks.addAll(found);
                 }
@@ -622,20 +672,36 @@ public class SearchEngineClient
                 {
                     Set<String> fileLinks = filterFileLinks(allCrawledLinks, dlCategory);
                     if (!fileLinks.isEmpty() && !dlCategory.trim().equals(category.trim()))
-                        System.out.println("  Also found " + fileLinks.size() + " " + dlCategory.trim() + " file(s) on page");
+                        CommonRails.printSystemComponent(this, this.hashCode(), "Also found " + fileLinks.size() + " " + dlCategory.trim() + " file(s)");
 
-                    System.out.println("  " + dlCategory.trim().toUpperCase() + " file links: " + fileLinks.size());
+                    CommonRails.printSystemComponent(this, this.hashCode(), dlCategory.trim().toUpperCase() + " file links: " + fileLinks.size());
+
+                    // Download immediately
+                    int downloaded = 0;
                     for (String fileLink : fileLinks)
                     {
                         if (downloadFile(fileLink, dlCategory))
-                            totalDownloads++;
+                            downloaded++;
+                    }
+                    totalDownloads += downloaded;
+
+                    // Debug halt: page reported downloadables but nothing was actually downloaded
+                    if (debugHaltOnMissedDownloads && !fileLinks.isEmpty() && downloaded == 0)
+                    {
+                        CommonRails.printSystemComponent(this, this.hashCode(),
+                            "[DEBUG HALT] " + fileLinks.size() + " " + dlCategory.trim() + " links found but 0 downloaded. Links:");
+                        for (String link : fileLinks)
+                            CommonRails.printSystemComponent(this, this.hashCode(), "  -> " + link);
+                        CommonRails.printSystemComponent(this, this.hashCode(), "[DEBUG HALT] Stopping. Disable debug.halt.on.missed.downloads to continue past this.");
+                        shutdown();
+                        return;
                     }
                 }
-                System.out.println();
+                CommonRails.println();
             }
         }
 
-        System.out.println("=== Search complete. Total files downloaded: " + totalDownloads + " ===");
+        CommonRails.println("=== Search complete. Total files downloaded: " + totalDownloads + " ===");
         shutdown();
     }
 

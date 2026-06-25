@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  CommonRails Print Method Configuration
+  =======================================
+  Captain Marvell — Search Engine Client & AI Module
+  Defines the visual structure of every system component print line.
+  Each <block> is rendered left-to-right in sequence order.
+
+  Output example:
+  [prefix] [Object ID: 0001234567] [Date: 2026-06-25 02:44:33 EDT] [Current: @SearchEngineClient     ] . Category AUDIO now crawling .
+-->
+<print-method>
+
+    <!-- BLOCK 1 — PREFIX -->
+    <block sequence="1" name="Prefix">
+        <value>-- : </value>
+    </block>
+
+    <!-- BLOCK 2 — OBJECT ID -->
+    <block sequence="2" name="ObjectId">
+        <label>Object ID</label>
+        <format>%010d</format>
+        <bracket>true</bracket>
+        <color-source>category</color-source>
+    </block>
+
+    <!-- BLOCK 3 — DATE -->
+    <block sequence="3" name="Date">
+        <label>Date</label>
+        <format>yyyy-MM-dd HH:mm:ss z</format>
+        <timezone>America/New_York</timezone>
+        <bracket>true</bracket>
+    </block>
+
+    <!-- BLOCK 4 — CURRENT CLASS -->
+    <block sequence="4" name="Current">
+        <label>Current</label>
+        <prefix>@</prefix>
+        <pad-width>39</pad-width>
+        <bracket>true</bracket>
+    </block>
+
+    <!-- BLOCK 5 — MESSAGE -->
+    <block sequence="5" name="Message">
+        <delimiter>.</delimiter>
+        <decorator-start>.</decorator-start>
+        <decorator-end>.</decorator-end>
+        <spacing>1</spacing>
+        <sanitize-snake-case>true</sanitize-snake-case>
+        <sanitize-all-caps>true</sanitize-all-caps>
+        <enforce-camel-case>true</enforce-camel-case>
+        <append-trademark>false</append-trademark>
+        <known-modules>
+            SearchEngineClient,AIModule,CommonRails,CaptainMarvell
+        </known-modules>
+        <preserved-acronyms>HTTP,HTTPS,URL,HTML,CSS,JS,JSON,XML,API,AI,ID,EDT,EST,UTC</preserved-acronyms>
+    </block>
+
+    <!-- GRACE — fade animation timing -->
+    <grace>
+        <fade-steps>20</fade-steps>
+        <fade-delay-ms>20</fade-delay-ms>
+        <post-fade-delay-ms>200</post-fade-delay-ms>
+    </grace>
+
+    <!-- CONTROL — runtime print behavior -->
+    <control>
+        <colored-output>true</colored-output>
+        <reset-after-line>true</reset-after-line>
+    </control>
+
+    <!-- PARENT CLASS PREFIX -->
+    <parent-class-prefix>
+        <enabled>false</enabled>
+        <append-trademark>false</append-trademark>
+        <separator> </separator>
+    </parent-class-prefix>
+
+</print-method>

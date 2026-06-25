@@ -44,16 +44,16 @@ public class AIModule
 
     public void processIncomingFiles() throws IOException
     {
-        System.out.println("=== AI Module: Processing Incoming Files ===\n");
+        CommonRails.println("=== AI Module: Processing Incoming Files ===\n");
 
         List<String> audioFiles = listFiles("audio");
         List<String> imageFiles = listFiles("images");
         List<String> generalFiles = listFiles("files");
 
-        System.out.println("Audio files found: " + audioFiles.size());
-        System.out.println("Image files found: " + imageFiles.size());
-        System.out.println("General files found: " + generalFiles.size());
-        System.out.println();
+        CommonRails.println("Audio files found: " + audioFiles.size());
+        CommonRails.println("Image files found: " + imageFiles.size());
+        CommonRails.println("General files found: " + generalFiles.size());
+        CommonRails.println();
 
         generateOriginsDocument(audioFiles, imageFiles, generalFiles);
         generateDescriptionDocument(audioFiles, imageFiles, generalFiles);
@@ -110,7 +110,7 @@ public class AIModule
 
         Path path = Paths.get(baseDir, "files", "origins-of-captain-marvell.md");
         appendToDocument(path, "# The Origins of Captain Marvell", content.toString());
-        System.out.println("Appended: files/origins-of-captain-marvell.md");
+        CommonRails.println("Appended: files/origins-of-captain-marvell.md");
     }
 
     private void generateDescriptionDocument(List<String> audio, List<String> images, List<String> files) throws IOException
@@ -143,7 +143,7 @@ public class AIModule
 
         Path path = Paths.get(baseDir, "files", "description-of-captain-marvell.md");
         appendToDocument(path, "# Captain Marvell: Description", content.toString());
-        System.out.println("Appended: files/description-of-captain-marvell.md");
+        CommonRails.println("Appended: files/description-of-captain-marvell.md");
     }
 
     public static void main(String[] args) throws IOException

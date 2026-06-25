@@ -52,6 +52,10 @@ public class SearchEngineClient
     private boolean strategyDecodeParams;
     private boolean strategyParseDynamic;
 
+    // When true, download all recognized file types found on a page even if
+    // the current search category is narrower (e.g. searching "audio" but page also has images)
+    private boolean downloadAllFoundOnPage;
+
     public SearchEngineClient(String configPath) throws IOException
     {
         this(configPath, ".");
@@ -88,6 +92,7 @@ public class SearchEngineClient
 
         // Load search importance and select strategy from XML
         searchImportance = Integer.parseInt(config.getProperty("search.importance", "5000"));
+        downloadAllFoundOnPage = Boolean.parseBoolean(config.getProperty("download.all.found.on.page", "true"));
         loadStrategy(configPath);
     }
 
@@ -375,12 +380,12 @@ public class SearchEngineClient
     }
 
     /**
-     * Recursively crawls pages up to maxCrawlDepth, collecting file links matching the category.
+     * Recursively crawls pages up to maxCrawlDepth, collecting all links found on pages.
      * Uses BFS with concurrent fetching.
      */
-    private Set<String> crawl(String startUrl, String category)
+    private Set<String> crawl(String startUrl)
     {
-        Set<String> fileLinks = ConcurrentHashMap.newKeySet();
+        Set<String> allLinks = ConcurrentHashMap.newKeySet();
         Queue<String> currentLevel = new ConcurrentLinkedQueue<>();
         currentLevel.add(startUrl);
 
@@ -404,20 +409,19 @@ public class SearchEngineClient
                     if (html.isEmpty())
                         return Collections.<String>emptySet();
 
-                    Set<String> allLinks = extractAllLinks(html, url);
-                    Set<String> matched = filterFileLinks(allLinks, category);
-                    fileLinks.addAll(matched);
+                    Set<String> pageLinks = extractAllLinks(html, url);
+                    allLinks.addAll(pageLinks);
 
                     // Add non-file links to next crawl level if strategy allows
                     if (strategyFollowLinks)
                     {
-                        for (String link : allLinks)
+                        for (String link : pageLinks)
                         {
-                            if (!matched.contains(link) && !visitedUrls.contains(link))
+                            if (!visitedUrls.contains(link))
                                 nextLevel.add(link);
                         }
                     }
-                    return matched;
+                    return pageLinks;
                 }));
             }
 
@@ -430,7 +434,7 @@ public class SearchEngineClient
 
             currentLevel = nextLevel;
         }
-        return fileLinks;
+        return allLinks;
     }
 
     /**
@@ -531,7 +535,8 @@ public class SearchEngineClient
             + " maxThreads=" + maxThreads + " crawlDelay=" + crawlDelayMs + "ms");
         System.out.println("Features: followLinks=" + strategyFollowLinks + " parseScripts=" + strategyParseScripts
             + " extractMetadata=" + strategyExtractMetadata + " decodeParams=" + strategyDecodeParams
-            + " parseDynamic=" + strategyParseDynamic + "\n");
+            + " parseDynamic=" + strategyParseDynamic
+            + " downloadAllFoundOnPage=" + downloadAllFoundOnPage + "\n");
 
         int totalDownloads = 0;
 
@@ -543,20 +548,34 @@ public class SearchEngineClient
                 System.out.println("--- Category: " + category.trim().toUpperCase() + " ---");
                 List<String> searchUrls = buildSearchURLs(query, category);
 
-                Set<String> allFileLinks = ConcurrentHashMap.newKeySet();
+                Set<String> allCrawledLinks = ConcurrentHashMap.newKeySet();
 
                 for (String searchUrl : searchUrls)
                 {
                     System.out.println("  Crawling from: " + searchUrl);
-                    Set<String> found = crawl(searchUrl, category);
-                    allFileLinks.addAll(found);
+                    Set<String> found = crawl(searchUrl);
+                    allCrawledLinks.addAll(found);
                 }
 
-                System.out.println("  Total unique file links: " + allFileLinks.size());
-                for (String fileLink : allFileLinks)
+                // Determine which categories to download
+                String[] downloadCategories;
+                if (downloadAllFoundOnPage)
+                    downloadCategories = categories;
+                else
+                    downloadCategories = new String[]{category};
+
+                for (String dlCategory : downloadCategories)
                 {
-                    if (downloadFile(fileLink, category))
-                        totalDownloads++;
+                    Set<String> fileLinks = filterFileLinks(allCrawledLinks, dlCategory);
+                    if (!fileLinks.isEmpty() && !dlCategory.trim().equals(category.trim()))
+                        System.out.println("  Also found " + fileLinks.size() + " " + dlCategory.trim() + " file(s) on page");
+
+                    System.out.println("  " + dlCategory.trim().toUpperCase() + " file links: " + fileLinks.size());
+                    for (String fileLink : fileLinks)
+                    {
+                        if (downloadFile(fileLink, dlCategory))
+                            totalDownloads++;
+                    }
                 }
                 System.out.println();
             }

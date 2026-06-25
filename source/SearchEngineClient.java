@@ -58,7 +58,8 @@ public class SearchEngineClient
 
     public SearchEngineClient(String configPath) throws IOException
     {
-        this(configPath, ".");
+        // Default baseDir to the project root (parent of source/)
+        this(configPath, Paths.get(configPath).toAbsolutePath().getParent().getParent().getParent().toString());
     }
 
     public SearchEngineClient(String configPath, String baseDir) throws IOException
@@ -315,6 +316,15 @@ public class SearchEngineClient
         }
         catch (Exception ignored) {}
 
+        // Extract URLs from search engine redirect wrappers (Google /url?q=, Bing, Yahoo)
+        Pattern searchRedirect = Pattern.compile("[?&](?:q|u|url|uddg|RU)=(https?(?:%3A|:)[^&\"'\\s]+)", Pattern.CASE_INSENSITIVE);
+        Matcher srMatcher = searchRedirect.matcher(html);
+        while (srMatcher.find())
+        {
+            try { links.add(URLDecoder.decode(srMatcher.group(1), "UTF-8")); }
+            catch (Exception ignored) {}
+        }
+
         // Galileo+: extract from data attributes and meta tags
         if (strategyExtractMetadata)
         {
@@ -405,23 +415,31 @@ public class SearchEngineClient
 
                 futures.add(threadPool.submit(() ->
                 {
-                    String html = fetchWithRedirects(url);
-                    if (html.isEmpty())
-                        return Collections.<String>emptySet();
-
-                    Set<String> pageLinks = extractAllLinks(html, url);
-                    allLinks.addAll(pageLinks);
-
-                    // Add non-file links to next crawl level if strategy allows
-                    if (strategyFollowLinks)
+                    CommonRails.incrementActiveThreads();
+                    try
                     {
-                        for (String link : pageLinks)
+                        String html = fetchWithRedirects(url);
+                        if (html.isEmpty())
+                            return Collections.<String>emptySet();
+
+                        Set<String> pageLinks = extractAllLinks(html, url);
+                        allLinks.addAll(pageLinks);
+
+                        // Add non-file links to next crawl level if strategy allows
+                        if (strategyFollowLinks)
                         {
-                            if (!visitedUrls.contains(link))
-                                nextLevel.add(link);
+                            for (String link : pageLinks)
+                            {
+                                if (!visitedUrls.contains(link))
+                                    nextLevel.add(link);
+                            }
                         }
+                        return pageLinks;
                     }
-                    return pageLinks;
+                    finally
+                    {
+                        CommonRails.decrementActiveThreads();
+                    }
                 }));
             }
 
@@ -439,77 +457,113 @@ public class SearchEngineClient
 
     /**
      * Downloads a file from the given URL to the appropriate category directory.
+     * Follows redirects to reach the actual file.
      */
     private boolean downloadFile(String fileUrl, String category)
     {
+        CommonRails.incrementActiveThreads();
         try
         {
-            throttleHost(fileUrl);
-            URI uri = URI.create(fileUrl);
-            String path = uri.getPath();
-            String filename = path.substring(path.lastIndexOf('/') + 1);
-            if (filename.contains("?"))
-                filename = filename.substring(0, filename.indexOf('?'));
-            if (filename.isEmpty())
-                filename = "download_" + System.currentTimeMillis();
-
-            String targetDir = CATEGORY_DIRS.getOrDefault(category.trim(), "files");
-            Path dir = Paths.get(baseDir, targetDir);
-            Files.createDirectories(dir);
-
-            Path targetFile = dir.resolve(filename);
-            if (Files.exists(targetFile))
+            String currentUrl = fileUrl;
+            // Follow redirects to reach actual file
+            for (int r = 0; r < maxRedirects; r++)
             {
-                System.out.println("    [SKIP] Already exists: " + targetFile);
-                return false;
-            }
+                throttleHost(currentUrl);
+                URI uri = URI.create(currentUrl);
+                String path = uri.getPath();
+                String filename = path.substring(path.lastIndexOf('/') + 1);
+                if (filename.contains("?"))
+                    filename = filename.substring(0, filename.indexOf('?'));
+                if (filename.isEmpty())
+                    filename = "download_" + System.currentTimeMillis();
 
-            String dlLabel = "[DOWNLOADING] " + category.trim() + " | " + truncateUrl(fileUrl);
-            CommonRails.printProgressBar(0, dlLabel);
+                String targetDir = CATEGORY_DIRS.getOrDefault(category.trim(), "files");
+                Path dir = Paths.get(baseDir, targetDir);
+                Files.createDirectories(dir);
 
-            HttpRequest request = HttpRequest.newBuilder()
-                .uri(uri)
-                .header("User-Agent", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
-                .timeout(Duration.ofSeconds(readTimeout))
-                .GET()
-                .build();
-
-            HttpResponse<InputStream> response = httpClient.send(request, HttpResponse.BodyHandlers.ofInputStream());
-            if (response.statusCode() == 200)
-            {
-                long contentLength = response.headers().firstValueAsLong("content-length").orElse(-1);
-                InputStream is = response.body();
-                OutputStream os = Files.newOutputStream(targetFile);
-                byte[] buf = new byte[8192];
-                long totalRead = 0;
-                int bytesRead;
-                while ((bytesRead = is.read(buf)) != -1)
+                Path targetFile = dir.resolve(filename);
+                if (Files.exists(targetFile))
                 {
-                    os.write(buf, 0, bytesRead);
-                    totalRead += bytesRead;
-                    int percent = contentLength > 0 ? (int)((totalRead * 100) / contentLength) : -1;
-                    if (percent >= 0)
-                        CommonRails.printProgressBar(percent, dlLabel);
+                    System.out.println("    [SKIP] Already exists: " + targetFile);
+                    return false;
                 }
-                os.close();
-                is.close();
-                CommonRails.printProgressBar(100, dlLabel);
-                System.out.println();
 
-                long size = Files.size(targetFile);
-                System.out.println("    [SUCCESS] " + targetFile + " (" + size + " bytes)");
-                return true;
-            }
-            else
-            {
-                CommonRails.printProgressBar(0, "[FAILED] HTTP " + response.statusCode() + " | " + truncateUrl(fileUrl));
-                System.out.println();
+                CommonRails.resumeOutput();
+                String dlLabel = "[DOWNLOADING] " + category.trim() + " | " + truncateUrl(currentUrl);
+                CommonRails.printProgressBar(0, dlLabel);
+
+                HttpRequest request = HttpRequest.newBuilder()
+                    .uri(uri)
+                    .header("User-Agent", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
+                    .timeout(Duration.ofSeconds(readTimeout))
+                    .GET()
+                    .build();
+
+                HttpResponse<InputStream> response = httpClient.send(request, HttpResponse.BodyHandlers.ofInputStream());
+                int status = response.statusCode();
+
+                // Follow redirects
+                if (status >= 300 && status < 400)
+                {
+                    Optional<String> location = response.headers().firstValue("location");
+                    if (location.isPresent())
+                    {
+                        String loc = location.get();
+                        if (loc.startsWith("/"))
+                            loc = uri.getScheme() + "://" + uri.getHost() + loc;
+                        else if (!loc.startsWith("http"))
+                            loc = currentUrl.substring(0, currentUrl.lastIndexOf('/') + 1) + loc;
+                        currentUrl = loc;
+                        response.body().close();
+                        continue;
+                    }
+                    response.body().close();
+                    break;
+                }
+
+                if (status == 200)
+                {
+                    long contentLength = response.headers().firstValueAsLong("content-length").orElse(-1);
+                    InputStream is = response.body();
+                    OutputStream os = Files.newOutputStream(targetFile);
+                    byte[] buf = new byte[8192];
+                    long totalRead = 0;
+                    int bytesRead;
+                    while ((bytesRead = is.read(buf)) != -1)
+                    {
+                        os.write(buf, 0, bytesRead);
+                        totalRead += bytesRead;
+                        int percent = contentLength > 0 ? (int)((totalRead * 100) / contentLength) : -1;
+                        if (percent >= 0)
+                            CommonRails.printProgressBar(percent, dlLabel);
+                    }
+                    os.close();
+                    is.close();
+                    CommonRails.printProgressBar(100, dlLabel);
+                    System.out.println();
+
+                    long size = Files.size(targetFile);
+                    System.out.println("    [SUCCESS] " + targetFile + " (" + size + " bytes)");
+                    CommonRails.notifyDownloadComplete(truncateUrl(fileUrl));
+                    return true;
+                }
+                else
+                {
+                    response.body().close();
+                    CommonRails.printProgressBar(0, "[FAILED] HTTP " + status + " | " + truncateUrl(currentUrl));
+                    System.out.println();
+                    break;
+                }
             }
         }
         catch (Exception e)
         {
             CommonRails.printProgressBar(0, "[FAILED] " + e.getMessage() + " | " + truncateUrl(fileUrl));
             System.out.println();
+        }
+        finally
+        {
+            CommonRails.decrementActiveThreads();
         }
         return false;
     }

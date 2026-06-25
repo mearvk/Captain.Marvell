@@ -11,7 +11,7 @@ public class Main
 
         // Run search engine client
         System.out.println("[1] Running Search Engine Client...\n");
-        SearchEngineClient client = new SearchEngineClient(configPath);
+        SearchEngineClient client = new SearchEngineClient(configPath, baseDir);
         client.searchAll();
 
         // Run AI module

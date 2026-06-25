@@ -149,6 +149,7 @@ public class SearchEngineClient
     private String fetchWithRedirects(String url)
     {
         String currentUrl = url;
+        int redirectCount = 0;
         for (int i = 0; i < maxRedirects; i++)
         {
             try
@@ -163,11 +164,38 @@ public class SearchEngineClient
                     .GET()
                     .build();
 
+                // Start progress bar for read timeout
+                long startTime = System.currentTimeMillis();
+                var progressDone = new java.util.concurrent.atomic.AtomicBoolean(false);
+                String progressLabel = truncateUrl(currentUrl);
+                Thread progressThread = new Thread(() -> {
+                    while (!progressDone.get())
+                    {
+                        long elapsed = System.currentTimeMillis() - startTime;
+                        int percent = Math.min(100, (int)((elapsed * 100) / (readTimeout * 1000L)));
+                        CommonRails.printProgressBar(percent, progressLabel);
+                        try { Thread.sleep(200); } catch (InterruptedException e) { break; }
+                    }
+                });
+                progressThread.setDaemon(true);
+                progressThread.start();
+
                 HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
+                progressDone.set(true);
+                progressThread.interrupt();
+                CommonRails.printProgressBar(100, progressLabel);
+                System.out.println();
+
                 int status = response.statusCode();
 
                 if (status >= 200 && status < 300)
-                    return response.body();
+                {
+                    if (redirectCount > 0)
+                        System.out.println("    Redirect chain complete (" + redirectCount + " hops)");
+                    String body = response.body();
+                    printPageContentSummary(currentUrl, body);
+                    return body;
+                }
 
                 if (status >= 300 && status < 400)
                 {
@@ -175,7 +203,6 @@ public class SearchEngineClient
                     if (location.isPresent())
                     {
                         String loc = location.get();
-                        // Handle relative redirects
                         if (loc.startsWith("/"))
                         {
                             URI base = URI.create(currentUrl);
@@ -185,6 +212,8 @@ public class SearchEngineClient
                         {
                             loc = currentUrl.substring(0, currentUrl.lastIndexOf('/') + 1) + loc;
                         }
+                        redirectCount++;
+                        System.out.println("    Redirect #" + redirectCount + " [" + status + "] " + currentUrl + " -> " + loc);
                         currentUrl = loc;
                         continue;
                     }
@@ -193,11 +222,46 @@ public class SearchEngineClient
             }
             catch (Exception e)
             {
+                System.out.println();
                 return "";
             }
         }
         System.err.println("  Max redirects (" + maxRedirects + ") reached for: " + url);
         return "";
+    }
+
+    /**
+     * Prints a summary of file-type links found on a page after following redirects.
+     */
+    private void printPageContentSummary(String url, String html)
+    {
+        int audio = 0, images = 0, files = 0;
+        String lower = html.toLowerCase();
+
+        for (String ext : CATEGORY_EXTENSIONS.get("audio"))
+            audio += countOccurrences(lower, ext);
+        for (String ext : CATEGORY_EXTENSIONS.get("images"))
+            images += countOccurrences(lower, ext);
+        for (String ext : CATEGORY_EXTENSIONS.get("files"))
+            files += countOccurrences(lower, ext);
+
+        if (audio + images + files > 0)
+        {
+            System.out.println("    Page: " + truncateUrl(url)
+                + " | audio=" + audio + " images=" + images + " files=" + files);
+        }
+    }
+
+    private int countOccurrences(String text, String sub)
+    {
+        int count = 0, idx = 0;
+        while ((idx = text.indexOf(sub, idx)) != -1) { count++; idx += sub.length(); }
+        return count;
+    }
+
+    private String truncateUrl(String url)
+    {
+        return url.length() > 80 ? url.substring(0, 77) + "..." : url;
     }
 
     /**
@@ -392,9 +456,12 @@ public class SearchEngineClient
             Path targetFile = dir.resolve(filename);
             if (Files.exists(targetFile))
             {
-                System.out.println("    Already exists: " + targetFile);
+                System.out.println("    [SKIP] Already exists: " + targetFile);
                 return false;
             }
+
+            String dlLabel = "[DOWNLOADING] " + category.trim() + " | " + truncateUrl(fileUrl);
+            CommonRails.printProgressBar(0, dlLabel);
 
             HttpRequest request = HttpRequest.newBuilder()
                 .uri(uri)
@@ -406,14 +473,39 @@ public class SearchEngineClient
             HttpResponse<InputStream> response = httpClient.send(request, HttpResponse.BodyHandlers.ofInputStream());
             if (response.statusCode() == 200)
             {
-                Files.copy(response.body(), targetFile, StandardCopyOption.REPLACE_EXISTING);
-                System.out.println("    Downloaded: " + targetFile + " (" + Files.size(targetFile) + " bytes)");
+                long contentLength = response.headers().firstValueAsLong("content-length").orElse(-1);
+                InputStream is = response.body();
+                OutputStream os = Files.newOutputStream(targetFile);
+                byte[] buf = new byte[8192];
+                long totalRead = 0;
+                int bytesRead;
+                while ((bytesRead = is.read(buf)) != -1)
+                {
+                    os.write(buf, 0, bytesRead);
+                    totalRead += bytesRead;
+                    int percent = contentLength > 0 ? (int)((totalRead * 100) / contentLength) : -1;
+                    if (percent >= 0)
+                        CommonRails.printProgressBar(percent, dlLabel);
+                }
+                os.close();
+                is.close();
+                CommonRails.printProgressBar(100, dlLabel);
+                System.out.println();
+
+                long size = Files.size(targetFile);
+                System.out.println("    [SUCCESS] " + targetFile + " (" + size + " bytes)");
                 return true;
+            }
+            else
+            {
+                CommonRails.printProgressBar(0, "[FAILED] HTTP " + response.statusCode() + " | " + truncateUrl(fileUrl));
+                System.out.println();
             }
         }
         catch (Exception e)
         {
-            System.err.println("    Download failed: " + fileUrl + " (" + e.getMessage() + ")");
+            CommonRails.printProgressBar(0, "[FAILED] " + e.getMessage() + " | " + truncateUrl(fileUrl));
+            System.out.println();
         }
         return false;
     }

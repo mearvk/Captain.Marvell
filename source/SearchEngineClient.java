@@ -302,6 +302,144 @@ public class SearchEngineClient
         int files = filterFileLinks(links, "files").size();
 
         pagePrinter.printSummary(truncateUrl(url), audio, images, files);
+
+        // Diagnostic: count raw image references on page vs what we actually extract
+        PageImageDiagnostic diag = diagnoseImageYield(html, url, links);
+        if (diag.totalImgTags > 0 || diag.totalImageHrefs > 0)
+        {
+            pagePrinter.printImageDiagnostic(truncateUrl(url), diag);
+        }
+    }
+
+    /**
+     * Analyzes the raw HTML to count all image references and compare against
+     * what our extraction pipeline actually captures. Reports reasons for missed images.
+     */
+    private PageImageDiagnostic diagnoseImageYield(String html, String baseUrl, Set<String> extractedLinks)
+    {
+        PageImageDiagnostic diag = new PageImageDiagnostic();
+
+        // Count raw <img> tags in HTML
+        Matcher imgMatcher = Pattern.compile("<img\\b", Pattern.CASE_INSENSITIVE).matcher(html);
+        while (imgMatcher.find()) diag.totalImgTags++;
+
+        // Count <a href> pointing to image files
+        Matcher hrefMatcher = Pattern.compile("href\\s*=\\s*[\"']([^\"']+\\.(?:jpg|jpeg|png|gif|bmp|webp|svg|tiff)(?:\\?[^\"']*)?)[\"']", Pattern.CASE_INSENSITIVE).matcher(html);
+        while (hrefMatcher.find()) diag.totalImageHrefs++;
+
+        // Count background-image CSS references
+        Matcher bgMatcher = Pattern.compile("background(?:-image)?\\s*:\\s*url\\(", Pattern.CASE_INSENSITIVE).matcher(html);
+        while (bgMatcher.find()) diag.totalCssBackgrounds++;
+
+        // Count data-src / lazy-load image references
+        Matcher lazySrcMatcher = Pattern.compile("data-src\\s*=\\s*[\"']([^\"']+)[\"']", Pattern.CASE_INSENSITIVE).matcher(html);
+        while (lazySrcMatcher.find()) diag.totalLazyLoad++;
+
+        // Count srcset entries
+        Matcher srcsetMatcher = Pattern.compile("srcset\\s*=\\s*[\"']", Pattern.CASE_INSENSITIVE).matcher(html);
+        while (srcsetMatcher.find()) diag.totalSrcset++;
+
+        // Count Open Graph / meta images
+        Matcher ogMatcher = Pattern.compile("(?:og:image|twitter:image)", Pattern.CASE_INSENSITIVE).matcher(html);
+        while (ogMatcher.find()) diag.totalMetaImages++;
+
+        // Grand total of all image references on the page
+        diag.totalOnPage = diag.totalImgTags + diag.totalImageHrefs + diag.totalCssBackgrounds
+            + diag.totalLazyLoad + diag.totalSrcset + diag.totalMetaImages;
+
+        // How many did our extractor actually capture as image files?
+        Set<String> extractedImages = filterFileLinks(extractedLinks, "images");
+        diag.extractedCount = extractedImages.size();
+
+        // Now diagnose WHY images are missing
+        // Re-scan all img src values and check each one
+        Pattern imgSrcPat = Pattern.compile("<img[^>]+src\\s*=\\s*[\"']([^\"']+)[\"']", Pattern.CASE_INSENSITIVE);
+        Matcher srcMatcher = imgSrcPat.matcher(html);
+        while (srcMatcher.find())
+        {
+            String src = srcMatcher.group(1);
+            String resolvedUrl = resolveForDiag(src, baseUrl);
+
+            if (resolvedUrl.isEmpty())
+            {
+                diag.missedReasonBlankSrc++;
+                continue;
+            }
+
+            // Check: is it a data: URI (inline base64)?
+            if (src.startsWith("data:"))
+            {
+                diag.missedReasonDataUri++;
+                continue;
+            }
+
+            // Check: is it a javascript: link?
+            if (src.startsWith("javascript:"))
+            {
+                diag.missedReasonJavascript++;
+                continue;
+            }
+
+            // Check: does it have an image extension?
+            boolean hasExt = false;
+            String lower = resolvedUrl.toLowerCase();
+            for (String ext : new String[]{".jpg", ".jpeg", ".png", ".gif", ".bmp", ".svg", ".webp"})
+            {
+                if (lower.contains(ext)) { hasExt = true; break; }
+            }
+
+            if (!hasExt)
+            {
+                // No image extension — might be a dynamic URL (e.g., /image?id=123)
+                diag.missedReasonNoExtension++;
+                if (diag.sampleNoExtension.size() < 3)
+                    diag.sampleNoExtension.add(resolvedUrl.length() > 100 ? resolvedUrl.substring(0, 97) + "..." : resolvedUrl);
+                continue;
+            }
+
+            // Check: was it in our extracted set?
+            if (!extractedImages.contains(resolvedUrl))
+            {
+                // It has an image extension but didn't make it to extractedImages
+                // Could be: already visited, relative URL resolution failed, or filtered out
+                diag.missedReasonNotCaptured++;
+                if (diag.sampleNotCaptured.size() < 3)
+                    diag.sampleNotCaptured.add(resolvedUrl.length() > 100 ? resolvedUrl.substring(0, 97) + "..." : resolvedUrl);
+            }
+            else
+            {
+                diag.confirmedCaptured++;
+            }
+        }
+
+        diag.missedTotal = diag.totalOnPage - diag.extractedCount;
+        return diag;
+    }
+
+    /**
+     * Resolves a URL for diagnostic purposes (doesn't modify state).
+     */
+    private String resolveForDiag(String src, String baseUrl)
+    {
+        if (src == null || src.isEmpty()) return "";
+        if (src.startsWith("data:") || src.startsWith("javascript:")) return src;
+        if (src.startsWith("http://") || src.startsWith("https://")) return src;
+        if (src.startsWith("//")) return "https:" + src;
+        if (src.startsWith("/"))
+        {
+            try
+            {
+                URI base = URI.create(baseUrl);
+                return base.getScheme() + "://" + base.getHost() + src;
+            }
+            catch (Exception e) { return ""; }
+        }
+        // Relative
+        try
+        {
+            return baseUrl.substring(0, baseUrl.lastIndexOf('/') + 1) + src;
+        }
+        catch (Exception e) { return ""; }
     }
 
     private int countOccurrences(String text, String sub)
@@ -641,6 +779,10 @@ public class SearchEngineClient
             + " downloadAllFoundOnPage=" + downloadAllFoundOnPage, 20);
 
         int totalDownloads = 0;
+        int totalImageLinksFound = 0;
+        int totalImageDownloaded = 0;
+        int totalImageSkipped = 0;
+        int totalImageFailed = 0;
 
         CommonRails.delayableFinePrinter("=== Query: " + Arrays.stream(queries).toList().get(0).trim() + " ===", 20);
 
@@ -676,14 +818,52 @@ public class SearchEngineClient
 
                     CommonRails.printSystemComponent(this, this.hashCode(), dlCategory.trim().toUpperCase() + " file links: " + fileLinks.size());
 
+                    // Track image-specific stats
+                    if (dlCategory.trim().equals("images"))
+                        totalImageLinksFound += fileLinks.size();
+
                     // Download immediately
                     int downloaded = 0;
+                    int skipped = 0;
+                    int failed = 0;
                     for (String fileLink : fileLinks)
                     {
                         if (downloadFile(fileLink, dlCategory))
                             downloaded++;
+                        else
+                        {
+                            // Check if it was skipped (exists) or failed
+                            Path possibleFile = guessLocalPath(fileLink, dlCategory);
+                            if (possibleFile != null && java.nio.file.Files.exists(possibleFile))
+                                skipped++;
+                            else
+                                failed++;
+                        }
                     }
                     totalDownloads += downloaded;
+
+                    if (dlCategory.trim().equals("images"))
+                    {
+                        totalImageDownloaded += downloaded;
+                        totalImageSkipped += skipped;
+                        totalImageFailed += failed;
+                    }
+
+                    // Per-category download rate output
+                    if (!fileLinks.isEmpty())
+                    {
+                        double rate = fileLinks.size() > 0 ? (downloaded * 100.0 / fileLinks.size()) : 0;
+                        String rateColor;
+                        if (rate >= 70) rateColor = "\u001b[32m";
+                        else if (rate >= 30) rateColor = "\u001b[33m";
+                        else rateColor = "\u001b[31m";
+
+                        CommonRails.printSystemComponent(this, this.hashCode(),
+                            "[DOWNLOAD RATE] " + dlCategory.trim().toUpperCase() + ": "
+                            + rateColor + downloaded + "/" + fileLinks.size()
+                            + " (" + String.format("%.1f%%", rate) + ")\u001b[0m"
+                            + " | skipped=" + skipped + " failed=" + failed);
+                    }
 
                     // Debug halt: page reported downloadables but nothing was actually downloaded
                     if (debugHaltOnMissedDownloads && !fileLinks.isEmpty() && downloaded == 0)
@@ -701,8 +881,43 @@ public class SearchEngineClient
             }
         }
 
-        CommonRails.println("=== Search complete. Total files downloaded: " + totalDownloads + " ===");
+        // Final summary with image-specific yield report
+        CommonRails.println("╔══════════════════════════════════════════════════════════╗");
+        CommonRails.println("║  SEARCH COMPLETE — DOWNLOAD SUMMARY                     ║");
+        CommonRails.println("╠══════════════════════════════════════════════════════════╣");
+        CommonRails.println("║  Total files downloaded: " + String.format("%-32d", totalDownloads) + "║");
+        CommonRails.println("║  Image links found:     " + String.format("%-32d", totalImageLinksFound) + "║");
+        CommonRails.println("║  Images downloaded:     " + String.format("%-32d", totalImageDownloaded) + "║");
+        CommonRails.println("║  Images skipped (exist):" + String.format("%-32d", totalImageSkipped) + "║");
+        CommonRails.println("║  Images failed:         " + String.format("%-32d", totalImageFailed) + "║");
+        if (totalImageLinksFound > 0)
+        {
+            double overallRate = (totalImageDownloaded * 100.0) / totalImageLinksFound;
+            CommonRails.println("║  Image download rate:   " + String.format("%-32s", String.format("%.1f%%", overallRate)) + "║");
+        }
+        CommonRails.println("╚══════════════════════════════════════════════════════════╝");
+
         shutdown();
+    }
+
+    /**
+     * Guesses the local file path for a URL (used for skip/fail detection in stats).
+     */
+    private Path guessLocalPath(String fileUrl, String category)
+    {
+        try
+        {
+            URI uri = URI.create(fileUrl);
+            String path = uri.getPath();
+            String filename = path.substring(path.lastIndexOf('/') + 1);
+            if (filename.contains("?"))
+                filename = filename.substring(0, filename.indexOf('?'));
+            if (filename.isEmpty()) return null;
+
+            String targetDir = CATEGORY_DIRS.getOrDefault(category.trim(), "files");
+            return Paths.get(baseDir, targetDir, filename);
+        }
+        catch (Exception e) { return null; }
     }
 
     public void shutdown()

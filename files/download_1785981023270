@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en-US" >
+<head>
+	<meta charset="UTF-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]},feature_flags:["soft_nav"]};(window.NREUM||(NREUM={})).loader_config={licenseKey:"14918396f1",applicationID:"77945421",browserID:"77945514"};;/*! For license information please see nr-loader-rum-1.319.0.min.js.LICENSE.txt */
+(()=>{var e={8122(e,t,r){"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),s=0===Object.keys(r).length?e:r;for(let o in s)if(void 0!==e[o])try{if(null===e[o]){r[o]=null;continue}Array.isArray(e[o])&&Array.isArray(t[o])?r[o]=Array.from(new Set([...e[o],...t[o]])):e[o]instanceof Map||e[o]instanceof Set||e[o]instanceof Date||e[o]instanceof RegExp?r[o]=e[o]:"object"==typeof e[o]&&null!==t[o]&&"object"==typeof t[o]?r[o]=i(e[o],t[o]):r[o]=e[o]}catch(e){r[o]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},2555(e,t,r){"use strict";r.d(t,{f:()=>o});var n=r(384),i=r(8122);const s={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function o(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}r.d(t,["D",0,e=>(0,i.a)(e,s)])},7699(e,t,r){"use strict";var n=r(860);const i={[n.K7.logging]:!0,[n.K7.genericEvents]:!0,[n.K7.jserrors]:!0,[n.K7.ajax]:!0};r.d(t,["It",0,1e6,"KC",0,i,"qh",0,"SESSION_ERROR"])},9324(e,t,r){"use strict";r.d(t,["xv",0,"1.319.0"])},981(e,t,r){"use strict";r.d(t,["R",0,{AJAX:"AjaxRequest",PA:"PageAction",UA:"UserAction",BP:"BrowserPerformance",WS:"WebSocket",SPV:"SecurityPolicyViolation",JSE:"JavaScriptError",LOG:"Log",PVE:"PageView",PVT:"PageViewTiming",SR:"SessionReplay",ST:"SessionTrace",BI:"BrowserInteraction"}])},6154(e,t,r){"use strict";var n=r(1863);const i="undefined"!=typeof window&&!!window.document,s="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=Boolean("hidden"===o?.document?.visibilityState),c=""+o?.location,u=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=((()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)());r.d(t,["OF",0,u,"RI",0,i,"WN",0,l,"bv",0,s,"gm",0,o,"m",0,c,"mw",0,a,"sb",0,d,"zk",0,()=>{const e=o?.performance?.getEntriesByType?.("navigation")?.[0];if(e&&e.responseStart>0&&e.responseStart<o.performance.now())return e}])},3241(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(6154);function i(e={}){try{n.gm.dispatchEvent(new CustomEvent("newrelic",{detail:e}))}catch(e){}}},1687(e,t,r){"use strict";r.d(t,{Ak:()=>a,Ze:()=>u,x3:()=>c});var n=r(3241),i=r(3606),s=r(860),o=r(2646);function a(e,t){if(!e)return;const r={staged:!1,priority:s.P3[t]||0};e.runtime.drainRegistry.get(t)||e.runtime.drainRegistry.set(t,r)}function c(e,t){if(!e)return;const r=e.runtime.drainRegistry;r&&(r.get(t)&&r.delete(t),l(e,t,!1),r.size&&d(e))}function u(e,t="feature",r=!1){if(e){if(!e.runtime.drainRegistry.get(t)||r)return l(e,t);e.runtime.drainRegistry.get(t).staged=!0,d(e)}}function d(e){if(!e)return;const t=Array.from(e.runtime.drainRegistry);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{e.runtime.drainRegistry.delete(t),l(e,t)}))}function l(e,t,r=!0){if(!e)return;const s=e.ee,a=i.i.handlers;if(s&&!s.aborted&&s.backlog&&a){if((0,n.W)({type:"lifecycle",name:"drain",feature:t}),r){const e=s.backlog[t],r=a[t];if(r){for(let t=0;e&&t<e.length;++t)f(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0].context()instanceof o.y&&!t[0].listeners(e).includes(t[1])&&t[0].on(e,t[1])})})}}s.isolatedBacklog||delete a[t],s.backlog[t]=null,s.emit("drain-"+t,[])}}function f(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],s=e[2];n.apply(i,s)}})}},7836(e,t,r){"use strict";var n=r(384),i=r(8990),s=r(2646),o=r(5607);const a="nr@context:".concat(o.W),c=function e(t,r){var n={},o={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,s){!1!==s&&(s=!0);if(c.aborted&&!i)return;t&&s&&t.emit(e,r,n);var a=g(n);m(e).forEach(e=>{e.apply(a,r)});var u=v()[o[e]];u&&u.push([f,e,r,a]);return a},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{o[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[o[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof s.y?e:e?(0,i.I)(e,a,()=>new s.y(a)):new s.y(a)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c),r.d(t,["P",0,a,"ee",0,c])},2646(e,t,r){"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},9908(e,t,r){"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,s){s?(s.buffer([e],i),s.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},3606(e,t,r){"use strict";r.d(t,{i:()=>s});var n=r(9908);s.on=o;var i=s.handlers={};function s(e,t,r,s){o(s||n.d,i,e,t,r)}function o(e,t,r,i,s){s||(s="feature"),e||(e=n.d);var o=t[s]=t[s]||{};(o[r]=o[r]||[]).push([e,i])}},3878(e,t,r){"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function s(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>s,jT:()=>n,sp:()=>i})},5607(e,t,r){"use strict";const n=(0,r(9566).bz)();r.d(t,["W",0,n])},9566(e,t,r){"use strict";r.d(t,{LA:()=>o,bz:()=>s});var n=r(6154);function i(e,t){return e?15&e[t]:16*Math.random()|0}function s(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".split("").map(e=>"x"===e?i(t,r++).toString(16):"y"===e?(3&i()|8).toString(16):e).join("")}function o(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,s=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const o=[];for(var a=0;a<e;a++)o.push(i(r,s++).toString(16));return o.join("")}},2614(e,t,r){"use strict";r.d(t,["BB",0,18e5,"Wt",0,"NRBA_SESSION::","iL",0,{SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},"tS",0,{STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},"wk",0,144e5])},1863(e,t,r){"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},944(e,t,r){"use strict";r.d(t,{R:()=>i});var n=r(3241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},8990(e,t,r){"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},6389(e,t,r){"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},1910(e,t,r){"use strict";r.d(t,{i:()=>s});var n=r(944);const i=new Map;function s(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),s=t.includes("nrWrapper");return r||s||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},5289(e,t,r){"use strict";r.d(t,{GG:()=>o,Qr:()=>c,sB:()=>a});var n=r(3878),i=r(6389);function s(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(s())return e();const r=(0,i.J)(e),o=setInterval(()=>{s()&&(clearInterval(o),r())},500);(0,n.sp)("load",r,t)}function a(e){if(s())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(s())return e();(0,n.sp)("popstate",e)}},384(e,t,r){"use strict";r.d(t,{Zm:()=>c,bQ:()=>d,dV:()=>u,pV:()=>l});var n=r(6154),i=r(1863),s=r(944),o=r(1910);const a={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function c(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function u(){let e=c();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,o.i)(...Object.values(e.o))),e}function d(e,t){let r=c();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t,2===Object.keys(r.initializedAgents).length&&(0,s.R)(69)}function l(){return function(){let e=c();const t=e.info||{};e.info={beacon:a.beacon,errorBeacon:a.errorBeacon,...t}}(),function(){let e=c();const t=e.init||{};e.init={...t}}(),u(),function(){let e=c();const t=e.loader_config||{};e.loader_config={...t}}(),c()}r.d(t,["NT",0,a])},2843(e,t,r){"use strict";r.d(t,{G:()=>s,u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function s(e,t,r){(0,n.sp)("pagehide",e,t,r)}},3969(e,t,r){"use strict";const n=r(860).K7.metrics;r.d(t,["TZ",0,n,"XG",0,"storeEventMetrics","xV",0,"storeSupportabilityMetrics"])},6630(e,t,r){"use strict";const n=r(860).K7.pageViewEvent;r.d(t,["T",0,n])},782(e,t,r){"use strict";const n=r(860).K7.pageViewTiming;r.d(t,["T",0,n])},4234(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(1687);class i{constructor(e,t){this.agentRef=e,this.ee=e?.ee,this.featureName=t,this.blocked=!1}deregisterDrain(){(0,n.x3)(this.agentRef,this.featureName)}}},7767(e,t,r){"use strict";var n=r(6154);r.d(t,["V",0,e=>n.RI&&!0===e?.privacy.cookies_enabled])},8362(e,t,r){"use strict";r.d(t,{d:()=>s});var n=r(9566),i=r(1741);class s extends i.W{agentIdentifier=(0,n.LA)(16)}},1741(e,t,r){"use strict";r.d(t,{W:()=>s});var n=r(944),i=r(4261);class s{#e(e,...t){if(this[e]!==s.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e("log",e,t)}start(){return this.#e("start")}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},4261(e,t,r){"use strict";r.d(t,["BL",0,"finished","CH",0,"recordReplay","Dl",0,"setUserId","Fw",0,"setPageViewName","PA",0,"setCurrentRouteName","Pv",0,"consent","Tb",0,"pauseReplay","U2",0,"addToTrace","V1",0,"measure","Wb",0,"wrapLogger","bt",0,"setErrorHandler","cD",0,"setCustomAttribute","dT",0,"interaction","eY",0,"register","fF",0,"recordCustomEvent","hG",0,"addPageAction","k6",0,"addRelease","nb",0,"setApplicationVersion","o5",0,"noticeError"])},1738(e,t,r){"use strict";r.d(t,{U:()=>l,Y:()=>d});var n=r(3241),i=r(9908),s=r(1863),o=r(944),a=r(3969),c=r(8362),u=r(860);function d(e,t,r,s){const d=s||r;!d||d[e]&&d[e]!==c.d.prototype[e]||(d[e]=function(){(0,i.p)(a.xV,["API/"+e+"/called"],void 0,u.K7.metrics,r.ee),(0,n.W)({drained:!!r.runtime?.activatedFeatures,type:"data",name:"api",feature:"api-"+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,o.R)(23,e)}})}function l(e,t,r,n,o){const a=e.info;null===r?delete a.jsAttributes[t]:a.jsAttributes[t]=r,(o||null===r)&&(0,i.p)("api-"+n,[(0,s.t)(),t,r],void 0,"session",e.ee)}},8374(e,t,r){r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860(e,t,r){"use strict";const n="events",i="jserrors",s="browser/blobs",o="browser/logs",a={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations"},c={[a.pageViewEvent]:1,[a.pageViewTiming]:2,[a.metrics]:3,[a.jserrors]:4,[a.softNav]:5,[a.ajax]:6,[a.sessionTrace]:7,[a.sessionReplay]:8,[a.logging]:9,[a.genericEvents]:10},u={[a.pageViewEvent]:"rum",[a.pageViewTiming]:n,[a.ajax]:n,[a.softNav]:n,[a.metrics]:i,[a.jserrors]:i,[a.sessionTrace]:s,[a.sessionReplay]:s,[a.logging]:o,[a.genericEvents]:"ins"};r.d(t,["$J",0,u,"K7",0,a,"P3",0,c,"XX",0,i,"Yy",0,o,"df",0,s])}};const t={};function r(n){const i=t[n];if(void 0!==i)return i.exports;const s=t[n]={exports:{}};return e[n](s,s.exports,r),s.exports}r.m=e,r.d=(e,t)=>{if(Array.isArray(t))for(var n=0;n<t.length;){var i=t[n++],s=t[n++];r.o(e,i)?0===s&&n++:0===s?Object.defineProperty(e,i,{enumerable:!0,value:t[n++]}):Object.defineProperty(e,i,{enumerable:!0,get:s})}else for(var i in t)r.o(t,i)&&!r.o(e,i)&&Object.defineProperty(e,i,{enumerable:!0,get:t[i]})},r.f={},r.e=e=>Promise.all(Object.keys(r.f).reduce((t,n)=>(r.f[n](e,t),t),[])),r.u=e=>"nr-rum-1.319.0.min.js",r.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),(()=>{const e={},t="NRBA-1.319.0.PROD:";r.l=(n,i,s,o)=>{if(e[n])return void e[n].push(i);let a,c;if(void 0!==s){const e=document.getElementsByTagName("script");for(var u=0;u<e.length;u++){const r=e[u];if(r.getAttribute("src")==n||r.getAttribute("data-webpack")==t+s){a=r;break}}}if(!a){c=!0;var d={296:"sha512-AjMYlPlHGtonfj4LWnnP4dVoLRowrBrm4lRfeuRr88daClWRPCh62aASF1JsR277iWOhlLcoggRr9BulWGKOyQ=="};a=document.createElement("script"),a.charset="utf-8",r.nc&&a.setAttribute("nonce",r.nc),a.setAttribute("data-webpack",t+s),a.src=n,0!==a.src.indexOf(window.location.origin+"/")&&(a.crossOrigin="anonymous"),d[o]&&(a.integrity=d[o])}e[n]=[i];const l=(t,r)=>{a.onerror=a.onload=null,clearTimeout(f);const i=e[n];if(delete e[n],a.parentNode?.removeChild(a),i?.forEach(e=>e(r)),t)return t(r)},f=setTimeout(l.bind(null,void 0,{type:"timeout",target:a}),12e4);a.onerror=l.bind(null,a.onerror),a.onload=l.bind(null,a.onload),c&&document.head.appendChild(a)}})(),r.r=e=>{Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},r.p="https://js-agent.newrelic.com/",(()=>{const e={374:0,840:0};r.f.j=(t,n)=>{let i=r.o(e,t)?e[t]:void 0;if(0!==i)if(i)n.push(i[2]);else{const s=new Promise((r,n)=>i=e[t]=[r,n]);n.push(i[2]=s);const o=r.p+r.u(t),a=new Error,c=n=>{if(r.o(e,t)&&(i=e[t],0!==i&&(e[t]=void 0),i)){const e=n&&("load"===n.type?"missing":n.type),r=n&&n.target&&n.target.src;a.message="Loading chunk "+t+" failed: ("+e+": "+r+")",a.name="ChunkLoadError",a.type=e,a.request=r,i[1](a)}};r.l(o,c,"chunk-"+t,t)}};const t=(t,n)=>{let[i,s,o]=n;var a,c,u=0;if(i.some(t=>0!==e[t])){for(a in s)r.o(s,a)&&(r.m[a]=s[a]);if(o)o(r)}for(t&&t(n);u<i.length;u++)c=i[u],r.o(e,c)&&e[c]&&e[c][0](),e[c]=0},n=self["webpackChunk:NRBA-1.319.0.PROD"]=self["webpackChunk:NRBA-1.319.0.PROD"]||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})(),(()=>{"use strict";r(8374);var e=r(8362),t=r(860);const n=Object.values(t.K7);var i=r(384),s=r(1741);var o=r(2555),a=r(981);t.K7.genericEvents,a.R.PA,a.R.UA,a.R.BP;const c="experimental.resources",u="register",d=(t.K7.ajax,"none"),l=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var f=r(2614),g=r(944),p=r(8122);const m="[data-nr-mask]",h=e=>(0,p.a)(e,(()=>{const e={feature_flags:[],experimental:{register:!1,resources:!1},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0,capture_payloads:d},api:{register:{get enabled(){return e.feature_flags.includes(u)||e.experimental.register},set enabled(t){e.experimental.register=t},duplicate_data_to_container:!1}},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(c)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:f.wk,inactiveMs:f.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){l(t)?e.mask_selector="".concat(t,",").concat(m):""===t||null===t?e.mask_selector=m:(0,g.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){l(t)?e.block_selector+=",".concat(t):""!==t&&(0,g.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,g.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]},web_sockets:{enabled:!1}}})());var v=r(6154),b=r(9324);let y=0;const _={buildEnv:"PROD",distMethod:"CDN",version:b.xv,originTime:v.WN},w={consented:!1},R={activatedFeatures:void 0,appMetadata:{},configured:!1,get consented(){return this.session?.state?.consent||w.consented},set consented(e){w.consented=e},customTransaction:void 0,denyList:[],disabled:!1,drainRegistry:new Map,harvester:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++y}};var x=r(7836),A=r(3241);const k={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0};function S(e,t={},n,a){let{init:c,info:u,loader_config:d,runtime:l={},exposed:f=!0}=t;if(!u){const e=(0,i.pV)();c=e.init,u=e.info,d=e.loader_config}var g;e.init=h(c||{}),e.loader_config=(g=d||{},(0,p.a)(g,k)),u.jsAttributes??={},v.bv&&(u.jsAttributes.isWorker=!0),e.info=(0,o.D)(u);const m=e.init;e.runtime??=(e=>{const t=(0,p.a)(e,R),r=Object.keys(_).reduce((e,t)=>(e[t]={value:_[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)})(l),m.proxy.assets&&(e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e})(m.proxy.assets),e.runtime.configured||(Object.defineProperty(e,"beacons",{get:()=>[e.info.beacon,e.info.errorBeacon,e.init.proxy.assets,e.init.proxy.beacon].filter(Boolean)}),Object.defineProperty(e.runtime,"denyList",{get:()=>[...e.init.ajax.deny_list||[],...e.init.ajax.block_internal?e.beacons:[]]}),e.runtime.ptid=e.agentIdentifier,function(e){const t=(0,i.pV)();Object.getOwnPropertyNames(s.W.prototype).forEach(r=>{const n=s.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let i=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return i?i(...t):n})})}(e),e.runtime.loaderType=n,e.ee=x.ee.get(e.agentIdentifier),e.exposed=f,(0,A.W)({drained:!!e.runtime.activatedFeatures,type:"lifecycle",name:"initialize",feature:void 0,data:e.config}),e.runtime.configured=!0)}var T=r(9908),E=r(1863),j=r(4261),P=r(1738);var N=r(1687),O=r(4234),M=r(5289),I=r(7767);function V(e){return!!(0,i.dV)().o.MO&&(0,I.V)(e)&&!0===e?.session_trace.enabled}var D=r(6389),W=r(7699);const B=new WeakSet;class K extends O.W{constructor(e,t){super(e,t),this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,D.J)(()=>{(0,N.Ak)(e,this.featureName),t()}))}):(0,N.Ak)(e,t)}importAggregator(e,t,n={}){if(this.featAggregate)return;const i=async()=>{if(await this.deferred,this.#t(e),!(0,o.f)(e.info))return(0,g.R)(43),e.ee.abort(),void this.loadedSuccessfully(!1);let i;try{if((0,I.V)(e.init)){const{setupAgentSession:t}=await r.e(296).then(r.bind(r,8391));i=t(e)}}catch(e){(0,g.R)(20,e),this.ee.emit("internal-error",[e]),(0,T.p)(W.qh,[e],void 0,this.featureName,this.ee)}try{if(!this.#r(this.featureName,i,e.init))return(0,N.Ze)(this.agentRef,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:r}=await t();this.featAggregate=new r(e,n),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,g.R)(34,e),this.abortHandler?.(),(0,N.Ze)(this.agentRef,this.featureName,!0),this.loadedSuccessfully(!1),this.ee&&this.ee.abort()}};v.RI?(0,M.GG)(()=>i(),!0):i()}#r(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return V(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}#t(e){if(!B.has(e)&&(B.add(e),!(0,o.f)(e.info))){const t=(0,i.pV)();let r={...t.info?.jsAttributes};try{r={...r,...e.info?.jsAttributes}}catch(e){}S(e,{...t,info:{...t.info,jsAttributes:r},runtime:e.runtime},e.runtime.loaderType)}}}var C=r(6630);class U extends K{static featureName=C.T;constructor(e){var t;super(e,C.T),this.setupInspectionEvents(),t=e,(0,P.Y)(j.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,T.p)("api-"+j.Fw,[(0,E.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>r.e(296).then(r.bind(r,1324)))}setupInspectionEvents(){const e=(e,t)=>{e&&(0,A.W)({timeStamp:e.timeStamp,loaded:"complete"===e.target.readyState,type:"window",name:t,data:e.target.location+""})};(0,M.sB)(t=>{e(t,"DOMContentLoaded")}),(0,M.GG)(t=>{e(t,"load")}),(0,M.Qr)(t=>{e(t,"navigate")}),this.ee.on(f.tS.UPDATE,(e,t)=>{(0,A.W)({type:"lifecycle",name:"session",data:t})})}}class L extends e.d{constructor(e){var t;(super(),v.gm)?(this.features={},(0,i.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(U),S(this,e,e.loaderType||"agent"),t=this,(0,P.Y)(j.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,P.U)(t,e,r,j.cD,n);(0,g.R)(40,typeof r)}else(0,g.R)(39,typeof e)},t),function(e){(0,P.Y)(j.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,g.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,T.p)("api-setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,P.U)(e,"enduser.id",t,j.Dl,!0)},e)}(this),function(e){(0,P.Y)(j.nb,function(t){if("string"==typeof t||null===t)return(0,P.U)(e,"application.version",t,j.nb,!1);(0,g.R)(42,typeof t)},e)}(this),function(e){(0,P.Y)("start",function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,P.Y)(j.Pv,function(t=!0){if("boolean"==typeof t){if((0,T.p)("api-"+j.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum()})}}else(0,g.R)(65,typeof t)},e)}(this),this.run()):(0,g.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return n.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),r=[...this.desiredFeatures];r.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),r.forEach(r=>{if(!e[r.featureName]&&r.featureName!==t.K7.pageViewEvent)return;const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,g.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,g.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,i.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var G=r(2843),F=r(782);class H extends K{static featureName=F.T;constructor(e){super(e,F.T),v.RI&&((0,G.u)(()=>(0,T.p)("docHidden",[(0,E.t)()],void 0,F.T,this.ee),!0),(0,G.G)(()=>(0,T.p)("winPagehide",[(0,E.t)()],void 0,F.T,this.ee)),this.importAggregator(e,()=>r.e(296).then(r.bind(r,2117))))}}var z=r(3969);class Y extends K{static featureName=z.TZ;constructor(e){super(e,z.TZ),this.importAggregator(e,()=>r.e(296).then(r.bind(r,9623)))}}new L({features:[U,H,Y],loaderType:"lite"})})()})();</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Disney Entertainment Television</title>
+<meta name='robots' content='noindex, nofollow' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel='dns-prefetch' href='//www.detpress.com' />
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.detpress.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.6"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.detpress.com/wp-includes/css/dist/block-library/style.min.css?ver=6.8.6' media='all' />
+<style id='wp-block-library-theme-inline-css'>
+.wp-block-audio :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio :where(figcaption){color:#ffffffa6}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed :where(figcaption){color:#ffffffa6}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:#ffffffa6}:root :where(.wp-block-image figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme :root :where(.wp-block-image figcaption){color:#ffffffa6}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote:where(.has-text-align-right){border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote:where(.has-text-align-center){border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote:where(.is-style-plain){border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table :where(figcaption){color:#ffffffa6}.wp-block-video :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video :where(figcaption){color:#ffffffa6}.wp-block-video{margin:0 0 1em}:root :where(.wp-block-template-part.has-background){margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='elasticpress-related-posts-style-inline-css'>
+.editor-styles-wrapper .wp-block-elasticpress-related-posts ul,.wp-block-elasticpress-related-posts ul{list-style-type:none;padding:0}.editor-styles-wrapper .wp-block-elasticpress-related-posts ul li a>div{display:inline}
+
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #fff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--very-dark-gray: #121212;--wp--preset--color--dark-grey: #505050;--wp--preset--color--med-grey: #8a8a8a;--wp--preset--color--light-grey: #d8d8d8;--wp--preset--color--very-light-grey: #eeeeee;--wp--preset--color--smoke: #d1dfe4;--wp--preset--color--tertiary-blue: #1a62e8;--wp--preset--color--pagination-blue: #0066cc;--wp--preset--color--btn-grey: #b4b4b4;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 18px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 24px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--extra-small: 16px;--wp--preset--font-size--normal: 20px;--wp--preset--font-size--extra-large: 40px;--wp--preset--font-size--huge: 96px;--wp--preset--font-size--gigantic: 144px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='ep_general_styles-css' href='https://www.detpress.com/wp-content/plugins/elasticpress/dist/css/general-styles.css?ver=66295efe92a630617c00' media='all' />
+<link rel='stylesheet' id='dgepress-style-css' href='https://www.detpress.com/wp-content/themes/dgepress2022/build/style.css?ver=1785749890' media='all' />
+<link rel='stylesheet' id='dgepress-print-style-css' href='https://www.detpress.com/wp-content/themes/dgepress2022/assets/css/print.css?ver=1785749890' media='print' />
+<link rel='stylesheet' id='bxslider-css' href='https://www.detpress.com/wp-content/themes/dgepress2022/assets/js/vendor/bxslider/dist/jquery.bxslider.min.css?ver=1785749890' media='all' />
+<link rel='stylesheet' id='elasticpress-facets-css' href='https://www.detpress.com/wp-content/plugins/elasticpress/dist/css/facets-styles.css?ver=e96caca972beab457d95' media='all' />
+<script src="https://www.detpress.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://www.detpress.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script src="https://www.detpress.com/wp-content/themes/dgepress2022/assets/js/vendor/bxslider/dist/jquery.bxslider.min.js?ver=1785749890" id="bxslider-js"></script>
+<script src="https://www.detpress.com/wp-content/mu-plugins/cf-dap-twitter-feed/assets/vendor/js/jquery.marquee.js?ver=20141027" id="jquery-marquee-js"></script>
+<script id="dap-twitter-feed-js-extra">
+var DAPTwitterFeedSettings = {"ajaxurl":"https:\/\/www.detpress.com\/wp-admin\/admin-ajax.php"};
+</script>
+<script src="https://www.detpress.com/wp-content/mu-plugins/cf-dap-twitter-feed/assets/js/cf-dap-twitter-feed.js?ver=20141009" id="dap-twitter-feed-js"></script>
+<script id="dap-appmeasurement-js-extra">
+var dap_om = {"account":"wdgabcb2bdisneyabcpress","pageName":"Home","server":"","channel":"Disney Entertainment Television","pageType":"page","prop1":"","prop2":"","prop3":"","prop4":"","prop5":"","prop27":"","campaign":"","state":"","zip":"","events":"","products":"","purchaseID":"","eVar1":"","eVar2":"","eVar3":"","eVar4":"","eVar5":"","list1":""};
+</script>
+<script src="https://www.detpress.com/wp-content/mu-plugins/cf-dap-omniture/assets/js/AppMeasurement.js?ver=20170202" id="dap-appmeasurement-js"></script>
+<script src="https://www.detpress.com/wp-content/mu-plugins/cf-dap-omniture/assets/js/AppMeasurement-tracking.js?ver=20170202" id="dap-appmeasurement-tracking-js"></script>
+<link rel="https://api.w.org/" href="https://www.detpress.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.detpress.com/wp-json/wp/v2/pages/5" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.detpress.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.8.6" />
+<link rel="canonical" href="https://www.detpress.com/" />
+<link rel='shortlink' href='https://www.detpress.com/' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.detpress.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.detpress.com%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.detpress.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.detpress.com%2F&#038;format=xml" />
+<!-- Stream WordPress user activity plugin v4.3.0 -->
+<link rel="icon" href="https://www.detpress.com/wp-content/uploads/sites/2/2024/01/Disney_favicon.png" sizes="32x32" />
+<link rel="icon" href="https://www.detpress.com/wp-content/uploads/sites/2/2024/01/Disney_favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.detpress.com/wp-content/uploads/sites/2/2024/01/Disney_favicon.png" />
+<meta name="msapplication-TileImage" content="https://www.detpress.com/wp-content/uploads/sites/2/2024/01/Disney_favicon.png" />
+		<style id="wp-custom-css">
+			
+/* ── Desktop Title Size ── */
+@media only screen and (min-width: 1280px) {
+    .site-title {
+        font-size: 1.4rem;
+    }
+}
+
+/* ── Block image drag (links still work) ── */
+img {
+    pointer-events: none;
+    align-self: center;
+    flex-shrink: 0;
+    height: auto;
+    max-width: 100%;
+}
+a img {
+    pointer-events: none;
+}
+
+/* ── Desktop Nav ── */
+@media only screen and (min-width: 1280px) {
+    .home .primary-navigation > .primary-menu-container {
+        margin-top: 0px !important;
+    }
+}
+
+/* ── Mobile / Tablet ── */
+@media only screen and (max-width: 1279px) {
+    .site-header:not(.has-logo).has-title-and-tagline .site-branding {
+        max-width: 100% !important;
+        text-align: center;
+    }
+    .site-header:not(.has-logo).has-title-and-tagline .site-branding .site-title {
+        font-size: 17px !important;
+        margin-top: 10px !important;
+    }
+}
+
+/* ── Logo Hover Scale ── */
+.item-box {
+    display: inline-block;
+    overflow: hidden;
+}
+.item-box img {
+    transition: transform 0.2s ease;
+}
+.item-box:hover img {
+    transform: scale(1.1);
+}		</style>
+		</head>
+
+<body class="home wp-singular page-template-default page page-id-5 wp-embed-responsive wp-theme-dgepress2022 is-light-theme no-js singular has-main-navigation">
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	
+<header class="site-header-wrapper">
+	<div id="masthead" class="site-header has-title-and-tagline has-menu">
+		
+
+<div class="site-branding">
+
+	
+						<h1 class="site-title">Disney Entertainment Television</h1>
+			
+	</div><!-- .site-branding -->
+			<nav id="site-navigation" class="primary-navigation" aria-label="Primary menu">
+		<div class="menu-button-container">
+			<button id="primary-mobile-menu" class="button" aria-controls="primary-menu-list" aria-expanded="false">
+				<span class="dropdown-icon open">
+					<svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" width="20" height="16" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="a"><path d="M375 0v1254H0V0h375Z"/></clipPath><clipPath id="b"><path d="M20 13.968v2H0v-2h20Zm0-6.984v2H0v-2h20ZM20 0v2H0V0h20Z"/></clipPath></defs><g clip-path="url(#a)" transform="translate(-24 -22)"><g clip-path="url(#b)" transform="translate(24 22)"><path d="M0 0h20v15.968H0V0z"/></g></g></svg>				</span>
+				<span class="dropdown-icon close">
+					<svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 10.9394L5.53033 4.46973L4.46967 5.53039L10.9393 12.0001L4.46967 18.4697L5.53033 19.5304L12 13.0607L18.4697 19.5304L19.5303 18.4697L13.0607 12.0001L19.5303 5.53039L18.4697 4.46973L12 10.9394Z" fill="currentColor"/></svg>				</span>
+			</button><!-- #primary-mobile-menu -->
+		</div><!-- .menu-button-container -->
+		<div class="primary-menu-container"><ul id="primary-menu-list" class="menu-wrapper"><li id="menu-item-4047" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4047"><a href="https://www.detpress.com/bios/">Bios</a></li>
+<li id="menu-item-4048" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4048"><a href="https://www.detpress.com/press-releases/">Press Releases</a></li>
+</ul></div>	</nav><!-- #site-navigation -->
+<div class="search-form-wrapper">
+	<form role="search"  method="get" class="search-form" action="https://www.detpress.com/">
+		<button type="submit" class="search-submit-button" aria-label="Search button">
+			<svg class="svg-icon" width="20" height="20" aria-hidden="true" role="img" focusable="false" width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+				<g id="MOLECULE/Nav-Bar/Links---Disney-General-Entertainment-Content" transform="translate(-276.000000, 0.000000)" fill-rule="nonzero">
+					<path d="M295.059989,19.8053893 L295.805389,19.0599892 C295.989989,18.8753895 296.084787,18.6716755 295.900188,18.4871141 L291.132199,13.7191261 C291.071983,13.6589097 290.787905,13.613089 290.279965,13.5816639 C290.307461,13.5498034 290.405815,13.4466307 290.432827,13.4143462 C291.621196,11.9940194 292.338358,10.1660834 292.338358,8.169179 C292.338358,3.65647776 288.68188,0 284.169179,0 C279.656478,0 276,3.65647776 276,8.169179 C276,12.6818802 279.656478,16.338358 284.169179,16.338358 C286.149305,16.338358 287.963291,15.6331967 289.378459,14.4626815 C289.42289,14.4259317 289.466928,14.3887232 289.510565,14.3510634 C289.591997,14.8116044 289.661518,15.071983 289.719126,15.1321994 L294.487114,19.9001875 C294.671675,20.0847872 294.87539,19.989989 295.059989,19.8053893 Z M284.169179,14.4531628 C280.697263,14.4531628 277.885195,11.6410954 277.885195,8.169179 C277.885195,4.69726258 280.697263,1.88519515 284.169179,1.88519515 C287.641095,1.88519515 290.453163,4.69726258 290.453163,8.169179 C290.453163,11.6410954 287.641095,14.4531628 284.169179,14.4531628 Z" id="ATOM---Search-Icon"></path>
+				</g>
+			</g>
+		</svg>		</button>
+		<label for="search-form-1">Search&hellip;</label>
+		<button type="button" class="toggle-header-search-button open-button" aria-label="Open search button">
+			<svg class="svg-icon" width="20" height="20" aria-hidden="true" role="img" focusable="false" width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+				<g id="MOLECULE/Nav-Bar/Links---Disney-General-Entertainment-Content" transform="translate(-276.000000, 0.000000)" fill-rule="nonzero">
+					<path d="M295.059989,19.8053893 L295.805389,19.0599892 C295.989989,18.8753895 296.084787,18.6716755 295.900188,18.4871141 L291.132199,13.7191261 C291.071983,13.6589097 290.787905,13.613089 290.279965,13.5816639 C290.307461,13.5498034 290.405815,13.4466307 290.432827,13.4143462 C291.621196,11.9940194 292.338358,10.1660834 292.338358,8.169179 C292.338358,3.65647776 288.68188,0 284.169179,0 C279.656478,0 276,3.65647776 276,8.169179 C276,12.6818802 279.656478,16.338358 284.169179,16.338358 C286.149305,16.338358 287.963291,15.6331967 289.378459,14.4626815 C289.42289,14.4259317 289.466928,14.3887232 289.510565,14.3510634 C289.591997,14.8116044 289.661518,15.071983 289.719126,15.1321994 L294.487114,19.9001875 C294.671675,20.0847872 294.87539,19.989989 295.059989,19.8053893 Z M284.169179,14.4531628 C280.697263,14.4531628 277.885195,11.6410954 277.885195,8.169179 C277.885195,4.69726258 280.697263,1.88519515 284.169179,1.88519515 C287.641095,1.88519515 290.453163,4.69726258 290.453163,8.169179 C290.453163,11.6410954 287.641095,14.4531628 284.169179,14.4531628 Z" id="ATOM---Search-Icon"></path>
+				</g>
+			</g>
+		</svg>		</button>
+		<input type="search" id="search-form-1" class="search-field" value="" name="s" placeholder="Search DGE Corporate Materials" />
+		<input type="submit" class="search-submit" value="Search" />
+		<button type="button" class="toggle-header-search-button close-button" aria-label="Close search button">
+		<svg class="svg-icon" width="12" height="12" aria-hidden="true" role="img" focusable="false" width="9px" height="10px" viewBox="0 0 9 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<title></title>
+			<g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+				<g id="DGE-Homepage---Page---Expanded-Search" transform="translate(-1351.000000, -35.000000)" fill-rule="nonzero">
+					<g id="Group" transform="translate(1080.000000, 30.000000)">
+						<g id="" transform="translate(271.250207, 5.849963)">
+							<path d="M5.67633134,4.37504965 L8.62181229,1.4295954 C8.79214956,1.25923143 8.79214956,0.982803863 8.62181229,0.812172861 L7.93739238,0.127752953 C7.76702841,-0.0425843177 7.49060085,-0.0425843177 7.31996984,0.127752953 L4.37478262,3.07350093 L1.42932837,0.128019981 C1.2589644,-0.0423172895 0.982536834,-0.0423172895 0.811905833,0.128019981 L0.127752953,0.812172861 C-0.0425843177,0.982510132 -0.0425843177,1.2589644 0.127752953,1.4295954 L3.07323391,4.37504965 L0.127752953,7.3205039 C-0.0425843177,7.49086787 -0.0425843177,7.76729544 0.127752953,7.93792644 L0.812172861,8.62234635 C0.982536834,8.79268362 1.2589644,8.79268362 1.4295954,8.62234635 L4.37478262,5.67659837 L7.32023687,8.62207932 C7.49060085,8.79241659 7.76702841,8.79241659 7.93765941,8.62207932 L8.62207932,7.93765941 C8.79241659,7.76729544 8.79241659,7.49086787 8.62207932,7.32023687 L5.67633134,4.37504965 Z" id="Path"></path>
+						</g>
+					</g>
+				</g>
+			</g>
+		</svg>		</button>
+	</form>
+</div>
+
+	</div>
+</header><!-- #masthead -->
+
+	<div id="content" class="site-content">
+		<div id="primary" class="content-area">
+			<main id="main" class="site-main">
+
+<div class="slider bxslider-outer js-not-loaded">
+			<div class="bxslider-wrapper">
+			<ul class="bxslider">
+									<li class="slide slide-first slide-1">
+						<a  href="https://www.detpress.com/abcnews/shows/america-250/"  title="Disney Celebrates America" id="slider-tab-4665" class="slider-link slider-tab">
+							<img class="slide-image homepage-slide" src="https://www.detpress.com/wp-content/uploads/sites/2/2026/06/1440x480-Q80_81794ed3147dca5470ca477a7ed73a86-1280x480.jpg" alt="" />
+						</a>
+						<a  href="https://www.detpress.com/abcnews/shows/america-250/"  title="Disney Celebrates America" class="white">
+							<div class="slide-copy-outer">
+								<div class="slide-copy-inner grid">
+									<div class="slide-content">
+										<div class="slide-title">Disney Celebrates America</div>
+										<div class="slide-details"></div>
+									</div>
+																			<div class="slide-logo col-2 col-offset-10">
+											<div class="available-on mb-8">
+											Available On											</div>
+											<div class="available-on-logo">
+												<img
+													src="https://www.detpress.com/wp-content/uploads/sites/2/2025/04/AvailableOn-ABC_Hulu_30px.svg"
+													alt="AvailableOn-ABC_Hulu_30px"
+												/>
+											</div>
+										</div>
+																		</div>
+							</div>
+						</a>
+					</li>
+									<li class="slide slide-2">
+						<a  href="https://www.detpress.com/abc/comic-con-2026/"  title="Comic Con 2026" id="slider-tab-4445" class="slider-link slider-tab">
+							<img class="slide-image homepage-slide" src="https://www.detpress.com/wp-content/uploads/sites/2/2025/07/2025_Comic_Con_Banner-1.jpg" alt="" />
+						</a>
+						<a  href="https://www.detpress.com/abc/comic-con-2026/"  title="Comic Con 2026" class="white">
+							<div class="slide-copy-outer">
+								<div class="slide-copy-inner grid">
+									<div class="slide-content">
+										<div class="slide-title">Comic Con 2026</div>
+										<div class="slide-details"><p>Thursday, July 23, through Saturday, July 25.</p>
+</div>
+									</div>
+																	</div>
+							</div>
+						</a>
+					</li>
+									<li class="slide slide-3">
+						<a  href="https://www.detpress.com/abc/the-2026-espys-presented-by-capital-one/"  title="The 2026 ESPYS Presented by Capital One" id="slider-tab-4685" class="slider-link slider-tab">
+							<img class="slide-image homepage-slide" src="https://www.detpress.com/wp-content/uploads/sites/2/2026/06/Espys2026.jpg" alt="" />
+						</a>
+						<a  href="https://www.detpress.com/abc/the-2026-espys-presented-by-capital-one/"  title="The 2026 ESPYS Presented by Capital One" class="white">
+							<div class="slide-copy-outer">
+								<div class="slide-copy-inner grid">
+									<div class="slide-content">
+										<div class="slide-title">The 2026 ESPYS Presented by Capital One</div>
+										<div class="slide-details"></div>
+									</div>
+																			<div class="slide-logo col-2 col-offset-10">
+											<div class="available-on mb-8">
+											Available On											</div>
+											<div class="available-on-logo">
+												<img
+													src="https://www.detpress.com/wp-content/uploads/sites/2/2025/04/AvailableOn-ABC_Hulu_30px.svg"
+													alt="AvailableOn-ABC_Hulu_30px"
+												/>
+											</div>
+										</div>
+																		</div>
+							</div>
+						</a>
+					</li>
+									<li class="slide slide-4">
+						<a  href="https://www.detpress.com/natgeo/shows/trafficked-with-mariana-van-zeller/"  title="Trafficked with Mariana van Zeller" id="slider-tab-4509" class="slider-link slider-tab">
+							<img class="slide-image homepage-slide" src="https://www.detpress.com/wp-content/uploads/sites/2/2025/10/TRAFFICKED_S5_1280x480_CAROUSEL_TEMPLATE.jpg" alt="" />
+						</a>
+						<a  href="https://www.detpress.com/natgeo/shows/trafficked-with-mariana-van-zeller/"  title="Trafficked with Mariana van Zeller" class="white">
+							<div class="slide-copy-outer">
+								<div class="slide-copy-inner grid">
+									<div class="slide-content">
+										<div class="slide-title">Trafficked with Mariana van Zeller</div>
+										<div class="slide-details"></div>
+									</div>
+																			<div class="slide-logo col-2 col-offset-10">
+											<div class="available-on mb-8">
+											Available On											</div>
+											<div class="available-on-logo">
+												<img
+													src="https://www.detpress.com/wp-content/uploads/sites/2/2023/04/AvailableOn-NationalGeographic_Hulu_30px.svg"
+													alt="AvailableOn-NationalGeographic_Hulu_30px"
+												/>
+											</div>
+										</div>
+																		</div>
+							</div>
+						</a>
+					</li>
+									<li class="slide slide-5">
+						<a  href="https://www.detpress.com/abc/shows/greysanatomy/"  title="Grey&#039;s Anatomy" id="slider-tab-4507" class="slider-link slider-tab">
+							<img class="slide-image homepage-slide" src="https://www.detpress.com/wp-content/uploads/sites/2/2025/10/1440x480-Q80_52f39aea1daa3eb89c79f306e2eb7b31-1280x480.jpg" alt="" />
+						</a>
+						<a  href="https://www.detpress.com/abc/shows/greysanatomy/"  title="Grey&#039;s Anatomy" class="white">
+							<div class="slide-copy-outer">
+								<div class="slide-copy-inner grid">
+									<div class="slide-content">
+										<div class="slide-title">Grey&#039;s Anatomy</div>
+										<div class="slide-details"></div>
+									</div>
+																			<div class="slide-logo col-2 col-offset-10">
+											<div class="available-on mb-8">
+											Available On											</div>
+											<div class="available-on-logo">
+												<img
+													src="https://www.detpress.com/wp-content/uploads/sites/2/2025/04/AvailableOn-ABC_Hulu_30px.svg"
+													alt="AvailableOn-ABC_Hulu_30px"
+												/>
+											</div>
+										</div>
+																		</div>
+							</div>
+						</a>
+					</li>
+									<li class="slide slide-6">
+						<a  href="https://www.detpress.com/abcnews/shows/abc-news-live-prime-with-linsey-davis/"  title="ABC News Live Prime With Linsey Davis" id="slider-tab-4505" class="slider-link slider-tab">
+							<img class="slide-image homepage-slide" src="https://www.detpress.com/wp-content/uploads/sites/2/2025/10/1440x480-Q80_9b4b836175ec2b53e95b12fa64fb446e-1280x480.jpg" alt="" />
+						</a>
+						<a  href="https://www.detpress.com/abcnews/shows/abc-news-live-prime-with-linsey-davis/"  title="ABC News Live Prime With Linsey Davis" class="white">
+							<div class="slide-copy-outer">
+								<div class="slide-copy-inner grid">
+									<div class="slide-content">
+										<div class="slide-title">ABC News Live Prime With Linsey Davis</div>
+										<div class="slide-details"></div>
+									</div>
+																			<div class="slide-logo col-2 col-offset-10">
+											<div class="available-on mb-8">
+											Available On											</div>
+											<div class="available-on-logo">
+												<img
+													src="https://www.detpress.com/wp-content/uploads/sites/2/2023/04/AvailableOn-Hulu_DisneyPlus_30px.svg"
+													alt="AvailableOn-Hulu_DisneyPlus_30px"
+												/>
+											</div>
+										</div>
+																		</div>
+							</div>
+						</a>
+					</li>
+									<li class="slide slide-7">
+						<a  href="https://www.detpress.com/natgeo/shows/cheetahs-up-close-with-bertie-gregory/"  title="Cheetahs Up Close With Bertie Gregory" id="slider-tab-4582" class="slider-link slider-tab">
+							<img class="slide-image homepage-slide" src="https://www.detpress.com/wp-content/uploads/sites/2/2026/02/CheetahsUpClose_1280x480_CAROUSEL_TEMPLATE.jpg" alt="" />
+						</a>
+						<a  href="https://www.detpress.com/natgeo/shows/cheetahs-up-close-with-bertie-gregory/"  title="Cheetahs Up Close With Bertie Gregory" class="white">
+							<div class="slide-copy-outer">
+								<div class="slide-copy-inner grid">
+									<div class="slide-content">
+										<div class="slide-title">Cheetahs Up Close With Bertie Gregory</div>
+										<div class="slide-details"></div>
+									</div>
+																			<div class="slide-logo col-2 col-offset-10">
+											<div class="available-on mb-8">
+											Available On											</div>
+											<div class="available-on-logo">
+												<img
+													src="https://www.detpress.com/wp-content/uploads/sites/2/2025/09/AvailableOn-NationalGeographic_Hulu_DisneyPlus_2025.svg"
+													alt="AvailableOn-NationalGeographic_Hulu_DisneyPlus_2025"
+												/>
+											</div>
+										</div>
+																		</div>
+							</div>
+						</a>
+					</li>
+									<li class="slide slide-8">
+						<a  href="https://press.hulu.com/shows/testaments/"  title="The Testaments" id="slider-tab-4592" class="slider-link slider-tab">
+							<img class="slide-image homepage-slide" src="https://www.detpress.com/wp-content/uploads/sites/2/2026/03/TheTestiments_2_Banner.jpg" alt="" />
+						</a>
+						<a  href="https://press.hulu.com/shows/testaments/"  title="The Testaments" class="white">
+							<div class="slide-copy-outer">
+								<div class="slide-copy-inner grid">
+									<div class="slide-content">
+										<div class="slide-title">The Testaments</div>
+										<div class="slide-details"></div>
+									</div>
+																			<div class="slide-logo col-2 col-offset-10">
+											<div class="available-on mb-8">
+											Available On											</div>
+											<div class="available-on-logo">
+												<img
+													src="https://www.detpress.com/wp-content/uploads/sites/2/2025/07/AvailableOn-Hulu.svg"
+													alt="AvailableOn-Hulu"
+												/>
+											</div>
+										</div>
+																		</div>
+							</div>
+						</a>
+					</li>
+									<li class="slide slide-9">
+						<a  href="https://www.detpress.com/abcnews/shows/2020/"  title="20/20" id="slider-tab-4472" class="slider-link slider-tab">
+							<img class="slide-image homepage-slide" src="https://www.detpress.com/wp-content/uploads/sites/2/2025/09/20-20_DET_Slide.jpg" alt="" />
+						</a>
+						<a  href="https://www.detpress.com/abcnews/shows/2020/"  title="20/20" class="white">
+							<div class="slide-copy-outer">
+								<div class="slide-copy-inner grid">
+									<div class="slide-content">
+										<div class="slide-title">20/20</div>
+										<div class="slide-details"></div>
+									</div>
+																			<div class="slide-logo col-2 col-offset-10">
+											<div class="available-on mb-8">
+											Available On											</div>
+											<div class="available-on-logo">
+												<img
+													src="https://www.detpress.com/wp-content/uploads/sites/2/2025/04/AvailableOn-ABC_Hulu_30px.svg"
+													alt="AvailableOn-ABC_Hulu_30px"
+												/>
+											</div>
+										</div>
+																		</div>
+							</div>
+						</a>
+					</li>
+									<li class="slide slide-last slide-10">
+						<a  href="https://www.detpress.com/abc/shows/scrubs/"  title="Scrubs" id="slider-tab-4648" class="slider-link slider-tab">
+							<img class="slide-image homepage-slide" src="https://www.detpress.com/wp-content/uploads/sites/2/2026/05/1440x480-Q80_6dd19fd309323a0579479750905cbfe3-1280x480.jpg" alt="" />
+						</a>
+						<a  href="https://www.detpress.com/abc/shows/scrubs/"  title="Scrubs" class="white">
+							<div class="slide-copy-outer">
+								<div class="slide-copy-inner grid">
+									<div class="slide-content">
+										<div class="slide-title">Scrubs</div>
+										<div class="slide-details"></div>
+									</div>
+																			<div class="slide-logo col-2 col-offset-10">
+											<div class="available-on mb-8">
+											Available On											</div>
+											<div class="available-on-logo">
+												<img
+													src="https://www.detpress.com/wp-content/uploads/sites/2/2025/04/AvailableOn-ABC_Hulu_30px.svg"
+													alt="AvailableOn-ABC_Hulu_30px"
+												/>
+											</div>
+										</div>
+																		</div>
+							</div>
+						</a>
+					</li>
+							</ul><!-- /.bxslider -->
+		</div>
+	
+</div><!-- /.slider.bxslider-wrapper -->
+	<h2 class="press-sites-wrapper-section-label">
+		Press Sites	</h2>
+	<div class="press-sites-wrapper">
+					<a href="https://www.detpress.com/abc" title="ABC Entertainment Press Site" target="_self" class="item-box">
+				<img width="260" height="68" src="https://www.detpress.com/wp-content/uploads/sites/2/2022/12/ABC-Entertainment-Brand-Logo-260x68.png" class="attachment-site-logos size-site-logos" alt="" decoding="async" srcset="https://www.detpress.com/wp-content/uploads/sites/2/2022/12/ABC-Entertainment-Brand-Logo-260x68.png 260w, https://www.detpress.com/wp-content/uploads/sites/2/2022/12/ABC-Entertainment-Brand-Logo.png 308w" sizes="(max-width: 260px) 100vw, 260px" />			</a>
+					<a href="https://www.detpress.com/abcnews" title="ABC News Press Site" target="_self" class="item-box">
+				<img width="260" height="68" src="https://www.detpress.com/wp-content/uploads/sites/2/2022/12/ABC-News-Brand-Logo-260x68.png" class="attachment-site-logos size-site-logos" alt="" decoding="async" srcset="https://www.detpress.com/wp-content/uploads/sites/2/2022/12/ABC-News-Brand-Logo-260x68.png 260w, https://www.detpress.com/wp-content/uploads/sites/2/2022/12/ABC-News-Brand-Logo.png 308w" sizes="(max-width: 260px) 100vw, 260px" />			</a>
+					<a href="https://abcotvpress.com/" title="ABC Owned Television Stations" target="_self" class="item-box">
+				<img width="260" height="68" src="https://www.detpress.com/wp-content/uploads/sites/2/2023/05/ABCOTVS-Brand-Logo-260x68.png" class="attachment-site-logos size-site-logos" alt="" decoding="async" srcset="https://www.detpress.com/wp-content/uploads/sites/2/2023/05/ABCOTVS-Brand-Logo-260x68.png 260w, https://www.detpress.com/wp-content/uploads/sites/2/2023/05/ABCOTVS-Brand-Logo.png 308w" sizes="(max-width: 260px) 100vw, 260px" />			</a>
+					<a href="https://www.detpress.com/disneykidsandfamily" title="Disney Kids &amp; Family" target="_self" class="item-box">
+				<img width="198" height="112" src="https://www.detpress.com/wp-content/uploads/sites/2/2026/06/DKAF_Stacked_BW-198x112.png" class="attachment-site-logos size-site-logos" alt="" decoding="async" srcset="https://www.detpress.com/wp-content/uploads/sites/2/2026/06/DKAF_Stacked_BW-198x112.png 198w, https://www.detpress.com/wp-content/uploads/sites/2/2026/06/DKAF_Stacked_BW-768x433.png 768w, https://www.detpress.com/wp-content/uploads/sites/2/2026/06/DKAF_Stacked_BW-1536x867.png 1536w, https://www.detpress.com/wp-content/uploads/sites/2/2026/06/DKAF_Stacked_BW-1568x885.png 1568w, https://www.detpress.com/wp-content/uploads/sites/2/2026/06/DKAF_Stacked_BW-301x170.png 301w, https://www.detpress.com/wp-content/uploads/sites/2/2026/06/DKAF_Stacked_BW-416x235.png 416w, https://www.detpress.com/wp-content/uploads/sites/2/2026/06/DKAF_Stacked_BW.png 1800w" sizes="(max-width: 198px) 100vw, 198px" />			</a>
+					<a href="https://www.detpress.com/freeform" title="Freeform Press Site" target="_self" class="item-box">
+				<img width="260" height="68" src="https://www.detpress.com/wp-content/uploads/sites/2/2022/12/Freeform-Brand-Logo-260x68.png" class="attachment-site-logos size-site-logos" alt="" decoding="async" srcset="https://www.detpress.com/wp-content/uploads/sites/2/2022/12/Freeform-Brand-Logo-260x68.png 260w, https://www.detpress.com/wp-content/uploads/sites/2/2022/12/Freeform-Brand-Logo.png 308w" sizes="(max-width: 260px) 100vw, 260px" />			</a>
+					<a href="https://www.fxnetworkspressroom.com/" title="FX Press Site" target="_blank" class="item-box">
+				<img width="260" height="68" src="https://www.detpress.com/wp-content/uploads/sites/2/2022/12/FX-Brand-Logo-260x68.png" class="attachment-site-logos size-site-logos" alt="" decoding="async" srcset="https://www.detpress.com/wp-content/uploads/sites/2/2022/12/FX-Brand-Logo-260x68.png 260w, https://www.detpress.com/wp-content/uploads/sites/2/2022/12/FX-Brand-Logo-308x80.png 308w, https://www.detpress.com/wp-content/uploads/sites/2/2022/12/FX-Brand-Logo-416x108.png 416w, https://www.detpress.com/wp-content/uploads/sites/2/2022/12/FX-Brand-Logo.png 616w" sizes="(max-width: 260px) 100vw, 260px" />			</a>
+					<a href="https://press.hulu.com/" title="Hulu Originals Press Site" target="_blank" class="item-box">
+				<img width="260" height="68" src="https://www.detpress.com/wp-content/uploads/sites/2/2022/12/HULU-Brand-Logo-260x68.png" class="attachment-site-logos size-site-logos" alt="" decoding="async" srcset="https://www.detpress.com/wp-content/uploads/sites/2/2022/12/HULU-Brand-Logo-260x68.png 260w, https://www.detpress.com/wp-content/uploads/sites/2/2022/12/HULU-Brand-Logo.png 308w" sizes="(max-width: 260px) 100vw, 260px" />			</a>
+					<a href="https://www.detpress.com/natgeo" title="National Geographic Press Site" target="_self" class="item-box">
+				<img width="260" height="68" src="https://www.detpress.com/wp-content/uploads/sites/2/2022/12/National-Geographic-Brand-Logo-260x68.png" class="attachment-site-logos size-site-logos" alt="" decoding="async" srcset="https://www.detpress.com/wp-content/uploads/sites/2/2022/12/National-Geographic-Brand-Logo-260x68.png 260w, https://www.detpress.com/wp-content/uploads/sites/2/2022/12/National-Geographic-Brand-Logo.png 308w" sizes="(max-width: 260px) 100vw, 260px" />			</a>
+					<a href="https://www.detpress.com/onyxcollective" title="ONYX Collective Press Site" target="_self" class="item-box">
+				<img width="260" height="68" src="https://www.detpress.com/wp-content/uploads/sites/2/2022/12/ONYX-Collective-Brand-Logo-260x68.png" class="attachment-site-logos size-site-logos" alt="" decoding="async" srcset="https://www.detpress.com/wp-content/uploads/sites/2/2022/12/ONYX-Collective-Brand-Logo-260x68.png 260w, https://www.detpress.com/wp-content/uploads/sites/2/2022/12/ONYX-Collective-Brand-Logo.png 308w" sizes="(max-width: 260px) 100vw, 260px" />			</a>
+			</div>
+
+<!-- End of Default Elements -->
+			</main><!-- #main -->
+		</div><!-- #primary -->
+	</div><!-- #content -->
+
+	
+	<div class="footer-content">
+		<aside class="widget-area">
+
+			
+			<section id="block-9" class="widget widget_block">
+<div class="wp-block-group footer-navigation"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"><div class="widget widget_nav_menu"><h2 class="widgettitle">Resources</h2><nav class="menu-footer-container" aria-label="Resources"><ul id="menu-footer" class="menu"><li id="menu-item-4050" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4050"><a href="https://www.detpress.com/bios/">Bios</a></li>
+<li id="menu-item-4051" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4051"><a href="https://www.detpress.com/press-releases/">Press Releases</a></li>
+<li id="menu-item-3592" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3592"><a href="https://www.detpress.com/support" title="Contact us">Support</a></li>
+</ul></nav></div>
+
+<div class="widget widget_nav_menu"><h2 class="widgettitle">Press Sites</h2><nav class="menu-press-sites-filler-container" aria-label="Press Sites"><ul id="menu-press-sites-filler" class="menu"><li id="menu-item-3601" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3601"><a href="https://www.detpress.com/abc">ABC Entertainment</a></li>
+<li id="menu-item-3602" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3602"><a href="https://www.detpress.com/abcnews/">ABC News</a></li>
+<li id="menu-item-3952" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3952"><a href="https://abcotvpress.com/">ABC Owned Television Stations</a></li>
+<li id="menu-item-3595" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3595"><a href="https://www.detpress.com/disneykidsandfamily/">Disney Kids &#038; Family</a></li>
+<li id="menu-item-4706" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-4706"><a href="https://www.detpress.com/" aria-current="page">Disney Entertainment Television</a></li>
+<li id="menu-item-4707" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4707"><a href="https://press.disneyplus.com/">Disney+</a></li>
+</ul></nav></div>
+
+<div class="widget widget_nav_menu"><nav class="menu-press-sites-additional-container" aria-label="Menu"><ul id="menu-press-sites-additional" class="menu"><li id="menu-item-4708" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4708"><a href="https://www.detpress.com/freeform">Freeform</a></li>
+<li id="menu-item-4521" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4521"><a href="https://www.fxnetworkspressroom.com/">FX</a></li>
+<li id="menu-item-3953" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3953"><a href="https://press.hulu.com/">Hulu Originals</a></li>
+<li id="menu-item-3640" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3640"><a href="https://www.natgeotvpressroom.com/">National Geographic</a></li>
+<li id="menu-item-3641" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3641"><a href="https://www.detpress.com/onyxcollective">Onyx Collective</a></li>
+<li id="menu-item-4709" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4709"><a target="_blank" href="https://www.disneystudios.com/">The Walt Disney Studios</a></li>
+</ul></nav></div>
+
+<div class="widget widget_nav_menu"><h2 class="widgettitle">Legal</h2><nav class="menu-legal-container" aria-label="Legal"><ul id="menu-legal" class="menu"><li id="menu-item-3622" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3622"><a target="_blank" href="https://www.detpress.com/abc/terms-of-use/">Terms of Use</a></li>
+<li id="menu-item-3623" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3623"><a target="_blank" href="https://sites.disney.com/ngr-privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-4455" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4455"><a href="https://sites.disney.com/ngr-privacy-policy/#cali-notice-at-collection">California Notice at Collection</a></li>
+</ul></nav></div>
+
+<div class="wp-widget-group__inner-blocks"></div></div></div>
+</section>		</aside><!-- .widget-area -->
+	</div><!-- .footer-content -->
+
+
+	<footer id="colophon" class="site-footer">
+		<div class="site-info">
+
+			<div class="footer-copyright">
+				&copy; 2026 Disney and its related entities.			</div><!-- .footer-copyright -->
+
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+
+</div><!-- #page -->
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/sites\/2\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/dgepress2022\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script>document.body.classList.remove("no-js");</script>	<script>
+	if ( -1 !== navigator.userAgent.indexOf( 'MSIE' ) || -1 !== navigator.appVersion.indexOf( 'Trident/' ) ) {
+	document.body.classList.add( 'is-IE' );
+	}
+	</script>
+<script id="dgepress-ie11-polyfills-js-after">
+( Element.prototype.matches && Element.prototype.closest && window.NodeList && NodeList.prototype.forEach ) || document.write( '<script src="https://www.detpress.com/wp-content/themes/dgepress2022/assets/js/polyfills.js?ver=1785749890"></scr' + 'ipt>' );
+</script>
+<script src="https://www.detpress.com/wp-content/themes/dgepress2022/assets/js/primary-navigation.js?ver=1785749890" id="dgepress-primary-navigation-script-js"></script>
+<script src="https://www.detpress.com/wp-content/themes/dgepress2022/assets/js/responsive-embeds.js?ver=1785749890" id="dgepress-responsive-embeds-script-js"></script>
+<script src="https://www.detpress.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script src="https://www.detpress.com/wp-includes/js/jquery/ui/tooltip.min.js?ver=1.13.3" id="jquery-ui-tooltip-js"></script>
+<script id="dgepress-main-js-extra">
+var DAPCopyToClipboardSettings = {"successMessage":"Content copied."};
+</script>
+<script src="https://www.detpress.com/wp-content/themes/dgepress2022/build/main.js?ver=1785749890" id="dgepress-main-js"></script>
+<script id="dmd-dap-cart-js-js-extra">
+var dapCartSettings = {"ajaxUrl":"https:\/\/www.detpress.com\/wp-admin\/admin-ajax.php","sentToEmail":"The download link has been sent to . Please wait for the mediabox to be archived. The download will be triggered once the archive is ready... this might take a while, depending on how many items you added to mediabox.","notSentToEmail":"The download link has not been sent to . Please wait for the mediabox to be archived.","notLoggedIn":"You must be logged in to add this item to your cart.","notPermitted":"You are not permitted to add this item to your cart.","cartArchived":"The mediabox has been archived. Click to go to mediabox download page.","cartEmpty":"The cart is empty.","pleaseWaitForResponse":"Your archive is in progress... this might take a while, depending on how many items you added to mediabox.","pleaseWaitTitle":"PLEASE WAIT !","successTitle":"DONE !","errorTitle":"OOPS !","mediaboxUrl":"","mediaboxToArchiveUrl":"?request_archive=1","archiveTestUrl":"?verify_archive=1"};
+</script>
+<script src="https://www.detpress.com/wp-content/mu-plugins/cf-dmd-dap-cart/assets/js/cart.min.js?ver=1785749889" id="dmd-dap-cart-js-js"></script>
+	<script>
+	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",(function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())}),!1);
+	</script>
+	
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"14918396f1","applicationID":"77945421","transactionName":"ZFdaNUdRCEEDAhEMX10deQJBWQlcTQcXCl5HH0gAUlU=","queueTime":0,"applicationTime":329,"atts":"SBBZQw9LG08=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

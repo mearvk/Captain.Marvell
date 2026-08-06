@@ -1,0 +1,542 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/"
+      lang="en"
+      xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Language" content="en"/>
+    <title>NC DOCKS Scholarship - Digital Greensboro</title>
+    
+    <link rev="made" href="mailto:digitalgreensboro@tind.io"/>
+    
+        
+    
+    <link rel="stylesheet" href="/img/lightgallery.min.css?0ecaf59cd1b7e19f2a7b34683d32068c">
+
+    <link rel="stylesheet" href="/img/invenio.css?af6cbab27b67ab1dbec220c4e5fa9fb1" type="text/css"/>
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" type="text/css" href="/img/invenio-ie7.css" />
+    <![endif]-->
+    <!--[if gt IE 8]>
+    <style type="text/css">div.restrictedflag {filter:none;}</style>
+    <![endif]-->
+      <link rel="canonical" href="https://www.digitalgreensboro.org/collection/NC%20DOCKS%20Scholarship" />
+  <link rel="alternate" hreflang="en" href="https://www.digitalgreensboro.org/collection/NC%20DOCKS%20Scholarship?ln=en" />
+
+    <link rel="alternate" type="application/rss+xml" title="Digital Greensboro RSS"
+          href="https://www.digitalgreensboro.org/rss?cc=NC%20DOCKS%20Scholarship"/>
+    <link rel="search" type="application/opensearchdescription+xml"
+          href="https://www.digitalgreensboro.org/opensearchdescription"
+          title="Digital Greensboro"/>
+    <link rel="unapi-server" type="application/xml" title="unAPI" href="https://www.digitalgreensboro.org/unapi"/>
+    
+    <meta name="description" content="Digital Greensboro - NC DOCKS Scholarship"/>
+    <meta name="keywords" content="Digital Greensboro, NC DOCKS Scholarship"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+        
+    
+    
+    <script type="text/javascript" src="/js/lodash.min.js?63a1aa77d30d85520bdf9261616d49ff"></script>
+    <script type="text/javascript" src="/js/jquery.min.js?e6c2415c0ace414e5153670314ce99a9"></script>
+    <script type="text/javascript" src="/js/jquery-migrate.min.js?7121994eec5320fbe6586463bf9651c2"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js?1e2047978946a1d271356d0b557a84a3"></script>
+    
+    <!--  Insert any configs that are required in the JS files  -->
+    <script type="text/javascript">
+        var bibformatThumbnailFullPreview = false;
+        var bibformatDetailedThumbnailFullPreview = false;
+        
+        window.translations_hash_names_reverse_lookup = {"af": "af.02c4def241e97ea2b85463c6f6a145ea.json", "ar": "ar.5e9488b037822cf56269dc77d200629e.json", "bg": "bg.55b84c916cfdf0610676870f31b73f10.json", "ca": "ca.69d6a480213a265bf4ef9ba269a8a27a.json", "cs": "cs.97d8f42d31d64063b920c5a980701777.json", "de": "de.40faf8dba2a45f06f5a0314e9807c95e.json", "el": "el.d0f67aa805f4e03223f251f88ade084e.json", "en": "en.bb801ec133df707da1aeaec8e1b78d9c.json", "es": "es.61d4fa74943e6d0ab5c1f636743bc946.json", "fa": "fa.bfbdfa92f9c3d4e649d234bed6011f85.json", "fr": "fr.1c5b950ff353bebf2847541886e23013.json", "gl": "gl.b149c1e27899bfa35edfd15e85e283c1.json", "hr": "hr.c4b581591d9abcff1ef3ddf32a0c2e7a.json", "hu": "hu.a20108ab95e0795e549e4941fb07a21d.json", "it": "it.f0d06f6d92187a618418300370a42497.json", "ja": "ja.0c3cf210c31ea8f7f2af1dd1040252e5.json", "ka": "ka.ef82b2285496afe56e8ccdc6e5660118.json", "lt": "lt.5c7bb6b25e00aabf95cbaa21d17e7213.json", "messages": "messages.dd8af5f6cfa35fda7f1cb0948ee5319d.json", "nl": "nl.804eb7693119dc05e4578f7949881a97.json", "no": "no.f544f097de34d26730e3719b72eb9be0.json", "pl": "pl.6d11bb7b58704e06ce0a161daa7d1be6.json", "pt": "pt.d127406cd9c979a880471a7ef7964f8a.json", "ro": "ro.add6918446b344b42af8816cf97a118c.json", "ru": "ru.9ee7065d070a7dca7701d393976f370b.json", "rw": "rw.ed52eefa1e9958765e01ca7a2991c996.json", "sk": "sk.190f9271aadb645ae3ed9ea0d7beafd0.json", "sv": "sv.8874a3bd20c6a1858d74b5d60d13ae53.json", "uk": "uk.fc1a1f51f00eb3fdfd46a75b5a6d2af5.json", "zh_CN": "zh_CN.6e617cd17b051e1b75a5574882bab2d1.json", "zh_TW": "zh_TW.e0d5270be07cd4c9288e6b31f1e8a06a.json"};
+    </script>
+    <script type="text/javascript" src="/js/tind.js?d929feaddfda10a9cb469579850f8fb6"></script>
+
+    <link rel="stylesheet" type="text/css" href="/img/select2.min.css?9f54e6414f87e0d14b9e966f19a174f9">
+    <link rel="stylesheet" type="text/css" href="/img/select2-bootstrap.min.css?b8ec8e1bea84f6c51fcbbc184a2982fc">
+    <script type="text/javascript" src="/js/select2.full.min.js?d53e9f5d63ed6e33dd7c368b85851658"></script>
+
+    <script type="module" src="/js/tinduicomponents/tinduicomponents/tinduicomponents.esm.js?2315df6cb62c2a83c04570a5fed0eaf4"></script>
+    <script type="module">
+        import * as pdfjsLib from "/js/pdfjs/build/pdf.mjs";
+        pdfjsLib.GlobalWorkerOptions.workerSrc = "/js/pdfjs/build/pdf.worker.mjs";
+
+        // Optional: only if legacy non-module code expects window.pdfjsLib
+        window.pdfjsLib = pdfjsLib;
+      </script>
+    
+    
+    
+    
+</head>
+<body class="search">
+<!--The first interactive element should be a link to the main content.-->
+<div class="go-to-main-content">
+    <a tabindex="0" href="#main-content">Go to main content</a>
+</div>
+
+<!-- Preload Stencil elements that should load instantaneously -->
+<div style="display: none;">
+    <tindui-spinner></tindui-spinner>
+    <tindui-bibrecord-thumbnail></tindui-bibrecord-thumbnail>
+    <tindui-progressbar></tindui-progressbar>
+    
+    <tindui-app-advanced-search></tindui-app-advanced-search>
+    
+</div>
+
+<div class="pageheader" role="navigation">
+    <!-- replaced page header -->
+    <div class="headerbox headerlogo" role="menubar">
+        <div class="topleftmenu-wrapper">
+            
+        </div>
+
+        <a class="menu-toggle" href="#" aria-label="Main menu">
+            <span class="menu-icon"><i class="fa fa-fw fa-bars"></i></span>
+        </a>
+        <ul class="menu topmenu neutrallist" style="display:none;">
+            <li class="headermoduleboxbodyselected mobile-menu-accordion">
+                <a class="headerselected"
+                   href="/?ln=en" role="menuitem">Search</a>
+            </li>
+            
+            
+            
+            
+            
+            <li class="headermoduleboxbody mobile-menu-accordion" role="menuitem" tabindex="0">
+                
+    <div class="hassubmenu">
+        
+            <span hreflang="en" class="headerspan-nohover">
+            Author Profiles
+            </span>
+        
+        <ul class="subsubmenu">
+
+    
+        <li>
+            <a href="https://www.digitalgreensboro.org/profiles/?ln=en">
+                Browse Author Profiles
+            </a>
+        </li>
+    
+    
+    </ul>
+
+
+
+    </div>
+
+            </li>
+            
+            
+            
+                <li class=" headermoduleboxbody mobile-menu-accordion" role="menuitem" tabindex="0">
+        <div class="hassubmenu">
+            <span class="headerspan">
+                Digital History Collections
+            </span>
+            <ul class="subsubmenu"><li>
+                    <a target="_blank" href="https://www.digitalgreensboro.org/collection/Digital%20History%20Collections?ln=en">All Items</a>
+                </li><li>
+                    <a target="_blank" href="https://pages.digitalgreensboro.org/partners/">Contributing Partners</a>
+                </li><li>
+                    <a target="_blank" href="https://pages.digitalgreensboro.org/highlights/">Highlights and Exhibits</a>
+                </li><li>
+                    <a target="_blank" href="https://pages.digitalgreensboro.org/updates/">News</a>
+                </li><li>
+                    <a target="_blank" href="https://pages.digitalgreensboro.org/copyright/">Copyright and Reuse</a>
+                </li><li>
+                    <a target="_blank" href="https://pages.digitalgreensboro.org/about/">About Digital History</a>
+                </li></ul>
+        </div>
+    </li><li class=" headermoduleboxbody mobile-menu-accordion" role="menuitem" tabindex="0">
+        <div class="hassubmenu">
+            <span class="headerspan">
+                NC DOCKS Scholarship
+            </span>
+            <ul class="subsubmenu"><li>
+                    <a target="_blank" href="https://www.digitalgreensboro.org/collection/NC%20DOCKS%20Scholarship?ln=en">All Items</a>
+                </li><li>
+                    <a target="_blank" href="https://go.uncg.edu/ncdocks-faculty-updates">Faculty updates submission form</a>
+                </li><li>
+                    <a target="_blank" href="https://uncg.libguides.com/scholarlycomm/ncdocks">Scholarly Communication at UNCG</a>
+                </li><li>
+                    <a target="_blank" href="https://pages.digitalgreensboro.org/nc-docks-scholarship/">About NC DOCKS</a>
+                </li></ul>
+        </div>
+    </li>
+            
+
+            
+
+            <li id="userinfo-mobile" class="headermoduleboxbody mobile-menu-accordion" role="menuitem"><i class="user-icon"></i><span class="account"></span><span class="separator"></span>
+                   <a class="userinfo logout" href="https://www.digitalgreensboro.org/youraccount/login?ln=en&amp;referer=https%3A//www.digitalgreensboro.org/collection/NC%20DOCKS%20Scholarship%3Fln%3Den" role="menuitem">login</a></li>
+        </ul>
+        <div class="userinfoboxbody">
+            <i class="user-icon"></i><span class="account"></span><span class="separator"></span>
+                   <a class="userinfo logout" href="https://www.digitalgreensboro.org/youraccount/login?ln=en&amp;referer=https%3A//www.digitalgreensboro.org/collection/NC%20DOCKS%20Scholarship%3Fln%3Den" role="menuitem">login</a>
+        </div>
+    </div>
+    <table class="navtrailbox">
+        <tr>
+            <td class="navtrailboxbody">
+                <a href="/?ln=en" class="navtrail">Home</a> &gt; NC DOCKS Scholarship
+            </td>
+        </tr>
+    </table>
+    <!-- end replaced page header -->
+    
+</div>
+
+<div class="headerboxbodylogo-wrapper">
+    
+    <div class="headerboxbodylogo scrolled" role="banner">
+        <h1 class="logo-wrapper">
+            
+                <a class="header-link has-img" aria-label="Homepage link - Digital Greensboro"
+                    
+                        href="/?ln=en"
+                    >
+                    <img class="header-img" src="/img/main_logo.png" alt="Digital Greensboro"/>
+                </a>
+            
+        </h1>
+    </div>
+</div>
+
+
+    <!-- FOR CERTAIN SUB-PAGES, PAGEBODY and P.B.STRIPEMIDDLE SHOULD BE INCLUDED ie. "Search tips", "Advanced search" etc. -->
+    <div class="pagebody ">
+        <div class="pagebodystripemiddle">
+            
+            
+                <div class="headline_div"><h1 class="headline">NC DOCKS Scholarship</h1></div>
+            
+            
+            
+                
+                
+                
+<span id="main-content" name="span-main-content"></span>
+<form name="search" action="/search" method="get">
+    
+        <!--create_searchfor_simple()-->
+        <input type="hidden" name="ln" value="en" /><input type="hidden" name="cc" value="NC DOCKS Scholarship" />
+        
+        <table class="searchbox simplesearch">
+         <thead>
+          <tr style="text-align:left;">
+           <th colspan="3" class="searchboxheader">Search 18,814 records for:</th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr style="vertical-align:baseline">
+           <td class="searchboxbody" style="text-align:left;">
+            <input id="search-input-p" type="text" name="p" size="40" value="" class="simplesearchfield" aria-label="Search" />
+           </td>
+           <td class="searchboxbody" style="text-align:left;"><select id="searchwithin-select-f" name="f" aria-label="f"><option value="" selected="selected">any field</option><option value="title">title</option><option value="author">author</option><option value="summary">summary</option><option value="subject">subject</option><option value="journal">journal</option><option value="year">year</option></select></td>
+           <td class="searchboxbody" style="text-align:left;">
+             <input class="formbutton" type="submit" name="action_search" value="Search" />
+             <input class="formbutton" type="submit" name="action_browse" value="Browse" /></td>
+          </tr>
+          <tr style="vertical-align:baseline">
+           <td class="searchboxbody" colspan="3" style="text-align:left; z-index: 1; position: relative;">
+             
+             <small class="links" role="navigation"><a href="/docs/search-guide/?ln=en" id="">Search Tips</a> :: <a href="/collection/NC%20DOCKS%20Scholarship?ln=en&amp;as=1" id="advanced-search-link">Advanced Search</a></small>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <!--/create_searchfor_simple()-->
+        
+    
+    
+        <table cellspacing="0" cellpadding="0" border="0" class="narrowandfocusonsearchbox">
+            <tr>
+                <td valign="top">
+
+
+
+
+
+
+
+
+
+
+ 
+
+    
+    
+    
+        
+        <style type="text/css">
+            .narrowandfocusonsearchbox {
+                display:inline;
+            }
+        </style>
+        <table class="narrowsearchbox">
+            <thead>
+                <tr>
+                    <th colspan="2" style="text-align:left;" class="narrowsearchboxheader">
+                        Narrow by collection:
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+    
+    <tr>
+        <td class="narrowsearchboxbody" style="vertical-align:top">
+                
+            
+            <label for="child-col-0" class="accessibility-label">Faculty and Staff Works</label>
+            <input id="child-col-0" type="checkbox" role="group" aria-label="Faculty and Staff Works" name="c" value="Faculty and Staff Works" checked="checked" /></td>
+        <td style="vertical-align:top;width:100%">
+            
+                
+            
+            
+            <span class="collection-first-level"><a href="/collection/Faculty%20and%20Staff%20Works?ln=en">Faculty and Staff Works</a>&nbsp;<small class="nbdoccoll">(10,354)</small></span>
+            </td>
+    </tr>
+    
+    <tr>
+        <td class="narrowsearchboxbody" style="vertical-align:top">
+                
+            
+            <label for="child-col-1" class="accessibility-label">Legacy Journals</label>
+            <input id="child-col-1" type="checkbox" role="group" aria-label="Legacy Journals" name="c" value="Legacy Journals" checked="checked" /></td>
+        <td style="vertical-align:top;width:100%">
+            
+                
+            
+            
+            <span class="collection-first-level"><a href="/collection/Legacy%20Journals?ln=en">Legacy Journals</a>&nbsp;<small class="nbdoccoll">(522)</small></span>
+            <ul class="collection-second-level">
+                    
+                    
+                        
+                    
+                    
+                    <li><a href="/collection/Archival%20Practice?ln=en">Archival Practice</a>&nbsp;<small class="nbdoccoll">(12)</small></li>
+                    
+                    
+                        
+                    
+                    
+                    <li><a href="/collection/Found%20Sounds%3A%20UNCG%20Musicology%20Journal?ln=en">Found Sounds: UNCG Musicology Journal</a>&nbsp;<small class="nbdoccoll">(12)</small></li>
+                    
+                    
+                        
+                    
+                    
+                    <li><a href="/collection/Global%20Journal%20of%20Peace%20Research%20and%20Praxis?ln=en">Global Journal of Peace Research and Praxis</a>&nbsp;<small class="nbdoccoll">(26)</small></li>
+                    
+                    
+                        
+                    
+                    
+                    <li><a href="/collection/International%20Journal%20of%20Nurse%20Practitioner%20Educators?ln=en">International Journal of Nurse Practitioner Educators</a>&nbsp;<small class="nbdoccoll">(33)</small></li>
+                    
+                    
+                        
+                    
+                    
+                    <li><a href="/collection/Journal%20of%20Backcountry%20Studies?ln=en">Journal of Backcountry Studies</a>&nbsp;<small class="nbdoccoll">(76)</small></li>
+                    
+                    
+                        
+                    
+                    
+                    <li><a href="/collection/Journal%20of%20Learning%20Spaces?ln=en">Journal of Learning Spaces</a>&nbsp;<small class="nbdoccoll">(147)</small></li>
+                    
+                    
+                        
+                    
+                    
+                    <li><a href="/collection/Proceedings%20of%20the%20Conference%20for%20Entrepreneurial%20Librarians?ln=en">Proceedings of the Conference for Entrepreneurial Librarians</a>&nbsp;<small class="nbdoccoll">(17)</small></li>
+                    
+                    
+                        
+                    
+                    
+                    <li><a href="/collection/Partnerships%3A%20A%20Journal%20of%20Service-Learning%20and%20Civic%20Engagement?ln=en">Partnerships: A Journal of Service-Learning and Civic Engagement</a>&nbsp;<small class="nbdoccoll">(191)</small></li>
+                    
+                    
+                        
+                    
+                    
+                    <li><a href="/collection/Working%20Papers%20in%20Education?ln=en">Working Papers in Education</a>&nbsp;<small class="nbdoccoll">(8)</small></li></ul></td>
+    </tr>
+    
+    <tr>
+        <td class="narrowsearchboxbody" style="vertical-align:top">
+                
+            
+            <label for="child-col-2" class="accessibility-label">Student Works</label>
+            <input id="child-col-2" type="checkbox" role="group" aria-label="Student Works" name="c" value="Student Works" checked="checked" /></td>
+        <td style="vertical-align:top;width:100%">
+            
+                
+            
+            
+            <span class="collection-first-level"><a href="/collection/Student%20Works?ln=en">Student Works</a>&nbsp;<small class="nbdoccoll">(7,938)</small></span>
+            <ul class="collection-second-level">
+                    
+                    
+                        
+                    
+                    
+                    <li><a href="/collection/Theses?ln=en">Theses</a>&nbsp;<small class="nbdoccoll">(3,262)</small></li>
+                    
+                    
+                        
+                    
+                    
+                    <li><a href="/collection/Dissertations?ln=en">Dissertations</a>&nbsp;<small class="nbdoccoll">(4,244)</small></li>
+                    
+                    
+                        
+                    
+                    
+                    <li><a href="/collection/Honors%20College%20Projects?ln=en">Honors College Projects</a>&nbsp;<small class="nbdoccoll">(272)</small></li>
+                    
+                    
+                        
+                    
+                    
+                    <li><a href="/collection/Doctor%20of%20Nursing%20Practice%20Projects%20%28DNP%29?ln=en">Doctor of Nursing Practice Projects (DNP)</a>&nbsp;<small class="nbdoccoll">(183)</small></li>
+                    
+                    
+                        
+                    
+                    
+                    <li><a href="/collection/Other%20Student%20Works?ln=en">Other Student Works</a>&nbsp;<small class="nbdoccoll">(19)</small></li></ul></td>
+    </tr></tbody>
+        </table>
+
+        <script>
+            $(function() {
+                // Because the search form can potentially have a lot of collections, the resulting search might involve
+                // a URL that exceeds the default limit in Apache (8190). We therefore check the potential length and
+                // disable selecting individual subcollections for search.
+                const urlMaxLength = 8190 * 3 / 4;
+
+                const searchParams = new URLSearchParams();
+                for (const el of document.forms['search'].elements) {
+                    if (el.name === 'c') {
+                        searchParams.append(el.name, el.value);
+                    }
+                }
+
+                // If the limit is exceeded, we show a warning message in the search form and disable the inputs for the
+                // subcollections (the 'c' parameter). The 'cc' parameter is already present as a hidden input field,
+                // so the search will be made in the upper collection.
+                if (searchParams.toString().length > urlMaxLength) {
+                    $('.narrowsearchbox tbody').prepend("\u003ctr\u003e\n        \u003ctd colspan=\"2\"\u003e\n            \u003ctindui-alert-box  alert-message=\"Selection is disabled due to the large number of sub-collections. Your search will be performed within all the sub-collections.\" alert-type=\"warning\" alert-opened=\"True\" alert-not-closable=\"True\"\u003e\u003c/tindui-alert-box\u003e\n        \u003c/td\u003e\n    \u003c/tr\u003e");
+
+                    $(document.forms["search"].elements)
+                        .filter('[name=c]')
+                        .prop({ disabled: true, checked: true });
+                }
+            });
+        </script>
+    
+
+    
+    
+</td>
+        
+            </tr>
+        </table>
+    
+    
+    <button type="submit" style="display: none" onclick="event.preventDefault();" aria-label="Search">Search</button>
+</form>
+            
+        </div>
+    </div>
+    </div>
+    <footer class="pagefooter row" role="contentinfo">
+    
+
+    
+        <div id="botmiddle_links" class="col-sm-8 col-sm-offset-2"><a href='https://library.uncg.edu/about-us/library-departments/electronic-resources-information-technology/' target='_blank'>ERIT, UNCG Libraries</a> | <a href='https://pages.digitalgreensboro.org/about/contact/' target='_blank'>Contact Us</a></div>
+    
+
+    
+        <div id="tindfooter" class="col-sm-2">
+            <a class="tindfooterlink" href="https://tind.io/" target="_blank" rel="noopener noreferrer">Powered by <strong>TIND</strong></a>
+        </div>
+    
+
+    <script src="/js/lightgallery.min.js?ddf3eb0893125d35cccb7ffab635ab1e"></script>
+    <script src="/js/lg-autoplay.min.js?e19b8897c2c73a00b0c377707038bb03"></script>
+    <script src="/js/lg-fullscreen.min.js?4abea06c34d9752ab7a2de1977bc0949"></script>
+    <script src="/js/lg-hash.min.js?b171c32acc647d760c4ed3ce1ab0c0ff"></script>
+    <script src="/js/lg-pager.min.js?d5385283f020def8c791dc72c67160d9"></script>
+    <script src="/js/lg-share.min.js?8f8f324b16c8dc8556c7c769f6616df2"></script>
+    <script src="/js/lg-thumbnail.min.js?8e13ac6ffdd9056fb69a881e8c0b9fe8"></script>
+    <script src="/js/lg-video.min.js?a8eb679340f0bf4fe8691cb9bceea9bd"></script>
+    <script src="/js/lg-zoom.min.js?c93eeb6d6482ac9d126cb7ebac0a1b5c"></script>
+    <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+    <script src="/js/jquery.mousewheel.min.js?409ac3648bba069c079fedc1ca107913"></script>
+
+    
+
+    
+        <!-- Matomo/Piwik tracking code -->
+        <script type='text/javascript'>
+            var _paq = window._paq || [];
+
+            
+                // Legacy single tracker configuration
+                _paq.push(['trackPageView']);
+                _paq.push(['setDownloadExtensions', []]);
+                _paq.push(['enableLinkTracking']);
+            
+
+            
+
+            (function () {
+                
+                    var u = 'https://stats.tind.io/';
+                    
+                        _paq.push(['setTrackerUrl', u + 'piwik.php']);
+                        _paq.push(['setSiteId', 1240]);
+                    
+                
+                var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+                g.type = 'text/javascript';
+                g.async = true;
+                g.defer = true;
+                g.src = u + 'piwik.js';
+                s.parentNode.insertBefore(g, s);
+            })();
+        </script>
+        <noscript>
+            
+                <p><img src='https://stats.tind.io/piwik.php?idsite=1240' style='border:0;' alt=''/></p>
+            
+            
+        </noscript>
+        <!-- End Matomo/Piwik Code -->
+    
+
+    
+        <script type="text/javascript" src="/js/jquery.simple-dtpicker.js?52840f3d41b7bff7f02018aa18c08d32"></script>
+        <script type="text/javascript" src="/js/d3.min.js?5bc245068b1b70d4c3eaef79045023e4"></script>
+        <script type="text/javascript" src="/js/c3.min.js?3964a316d148b2fd67c5783208766846"></script>
+        <script type="text/javascript" src="/js/spin.min.js?545405225c13b2f42ab103fca31a49b1"></script>
+    <span id="tind-shibboleth"></span>
+</footer>
+
+<input type="hidden" name="csrf_token" value="1e0bf5aff05a190b11420c41a02ef6532067cd3ac4e5cd6c023ae4699c47edd6">
+
+</body>
+</html>
+
+

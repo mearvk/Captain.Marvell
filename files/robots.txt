@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+Disallow: /wp-content/uploads/wpforms/
+
+Sitemap: https://cmheating.com/sitemap_index.xml

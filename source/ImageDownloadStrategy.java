@@ -97,7 +97,7 @@ public class ImageDownloadStrategy
     public ImageDownloadStrategy(String configPath, String baseDir) throws IOException
     {
         this.baseDir = baseDir;
-        this.imageDir = Paths.get(baseDir, "images").toString();
+        this.imageDir = Paths.get(baseDir, "photos").toString();
         Files.createDirectories(Paths.get(imageDir));
 
         config = new Properties();

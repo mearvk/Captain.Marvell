@@ -1,0 +1,1466 @@
+-----BEGIN PRIVACY-ENHANCED MESSAGE-----
+Proc-Type: 2001,MIC-CLEAR
+Originator-Name: webmaster@www.sec.gov
+Originator-Key-Asymmetric:
+ MFgwCgYEVQgBAQICAf8DSgAwRwJAW2sNKK9AVtBzYZmr6aGjlWyK3XmZv3dTINen
+ TWSM7vrzLADbmYQaionwg5sDW3P6oaM5D3tdezXMm7z1T+B+twIDAQAB
+MIC-Info: RSA-MD5,RSA,
+ Gv+6HzInIzBFSaq2OW+eY5Bt+R9b+P2RFO5Ii3zf5oGsyuk/L07WEqZtYX8Wbm8m
+ zABKVzt1niDFhjpwVJO8IA==
+
+<SEC-DOCUMENT>0000950136-97-000653.txt : 19970520
+<SEC-HEADER>0000950136-97-000653.hdr.sgml : 19970520
+ACCESSION NUMBER:		0000950136-97-000653
+CONFORMED SUBMISSION TYPE:	10-K/A
+PUBLIC DOCUMENT COUNT:		1
+CONFORMED PERIOD OF REPORT:	19961231
+FILED AS OF DATE:		19970515
+SROS:			NYSE
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			MARVEL ENTERTAINMENT GROUP INC
+		CENTRAL INDEX KEY:			0000874808
+		STANDARD INDUSTRIAL CLASSIFICATION:	PERIODICALS:  PUBLISHING OR PUBLISHING AND PRINTING [2721]
+		IRS NUMBER:				943024816
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			1231
+
+	FILING VALUES:
+		FORM TYPE:		10-K/A
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	001-10779
+		FILM NUMBER:		97609359
+
+	BUSINESS ADDRESS:	
+		STREET 1:		387 PARK AVE SOUTH
+		CITY:			NEW YORK
+		STATE:			NY
+		ZIP:			10016
+		BUSINESS PHONE:		2126960808
+</SEC-HEADER>
+<DOCUMENT>
+<TYPE>10-K/A
+<SEQUENCE>1
+<DESCRIPTION>AMENDED FORM 10-K
+<TEXT>
+
+
+<PAGE>
+
+
+- ------------------------------------------------------------------------------
+
+               UNITED STATES SECURITIES AND EXCHANGE COMMISSION
+                            WASHINGTON, D.C. 20549
+                                  FORM 10-K/A
+(Mark One)
+[X] ANNUAL REPORT PURSUANT TO SECTION 13 or 15(d) OF THE SECURITIES EXCHANGE
+    ACT OF 1934 For the fiscal year ended December 31, 1996
+                                       OR
+[ ] TRANSITION REPORT PURSUANT TO SECTION 13 or 15(d) OF THE SECURITIES
+    EXCHANGE ACT OF 1934 Commission file number 1-10779
+
+                       MARVEL ENTERTAINMENT GROUP, INC.
+            (Exact name of registrant as specified in its charter)
+
+         DELAWARE                                        94-3024816
+(State or other jurisdiction of                       (I.R.S. Employer
+ incorporation or organization)                      Identification No.)
+
+  387 PARK AVENUE SOUTH, NEW YORK, NY                       10016
+(Address of principal executive offices)                  (Zip Code)
+
+       Registrant's telephone number, including area code: 212-696-0808
+
+          SECURITIES REGISTERED PURSUANT TO SECTION 12(b) OF THE ACT:
+
+
+                                                Name of each exchange
+    Title of each class                          on which registered
+    -------------------                         ---------------------
+Common Stock, $.01 par value                   New York Stock Exchange
+
+       SECURITIES REGISTERED PURSUANT TO SECTION 12(g) OF THE ACT: NONE
+
+
+  Indicate by check mark if disclosure of delinquent filers pursuant to Item
+405 of Regulation S-K is not contained herein, and will not be contained, to
+the best of registrant's knowledge, in definitive proxy or information
+statements incorporated by reference in Part III of this Form 10-K or any
+amendment to this Form 10-K. [X]
+
+
+  Indicate by check mark whether the registrant (1) has filed all reports
+required to be filed by Section 13 or 15(d) of the Securities Exchange Act of
+1934 during the preceding 12 months (or for such shorter period that the
+registrant was required to file such reports) and (2) has been subject to such
+filing requirements for the past 90 days. Yes [X]   No [ ].
+
+  The aggregate market value of the issued and outstanding shares of Common
+Stock of the registrant held by non-affiliates was $43,157,847 based on the
+closing price of the Company's Common Stock on May 2, 1997. As of May 2, 1997,
+there were 101,809,657 shares of the registrant's Common Stock, par value $.01
+per share, outstanding, of which 31,696,225 shares are held by indirect wholly
+owned subsidiaries of Mafco Holdings Inc.
+
+- ------------------------------------------------------------------------------
+
+
+<PAGE>
+
+
+
+                                   PART III
+
+ITEM 10.  DIRECTORS AND EXECUTIVE OFFICERS OF THE REGISTRANT.
+
+     On December 27, 1996, Marvel Entertainment Group, Inc. ("Marvel" and
+together with its subsidiaries, the "Company along with certain of its
+operating and inactive subsidiaries, Fleer Corp.; SkyBox International, Inc.;
+Marvel Characters, Inc.; Heroes World Distribution, Inc.; The Asher Candy
+Company; Malibu Comics Entertainment, Inc.; Frank H. Fleer Corp. and Marvel
+Direct Marketing Inc. (along with Marvel, the "Debtor Companies") filed
+petitions for relief and a plan of reorganization under chapter 11 of the
+United States Bankruptcy Code (the "Bankruptcy Code") in the United States
+Bankruptcy Court for the District of Delaware. Panini S.p.A., Marvel
+Restaurant Venture Corp. and Toy Biz, Inc. ("Toy Biz"), all of which are
+active, as well as certain inactive subsidiaries did not file petitions under
+the Bankruptcy Code.
+
+         On December 27, 1996, Marvel Holdings Inc. ("Marvel Holdings"), Marvel
+(Parent) Holdings Inc. ("Parent Holdings") and Marvel III Holdings Inc.
+("Marvel III" and collectively with Marvel Holdings and Parent Holdings, the
+"Marvel Holding Companies") filed voluntary petitions for relief under chapter
+11 of the Bankruptcy Code with the United States Bankruptcy Court for the
+District of Delaware. The chapter 11 cases commenced by the Marvel Holding
+Companies have not been procedurally consolidated and are not jointly
+administered with the Debtor Companies' chapter 11 cases.
+
+DIRECTORS
+
+         The name, age, principal occupation for the last five years, selected
+biographical information and period of service as a director of the Company of
+each of the directors of the Company as of April 30, 1997 are set forth below.
+
+Ronald O. Perelman
+
+         Mr. Perelman (54) has been Chairman of the Executive Committee of the
+Board of Directors of the Company since 1996 and a Director of the Company
+since 1989. Mr. Perelman was Chairman of the Board from 1989 to 1996. Mr.
+Perelman has been Chairman of the Board and Chief Executive Officer of
+MacAndrews & Forbes Holdings Inc. ("MacAndrews Holdings") and Mafco Holdings
+Inc. ("Mafco" and collectively with MacAndrews Holdings, "MacAndrews &
+Forbes") and various affiliates since 1980. Mr. Perelman also is Chairman of
+the Board of Andrews Group Incorporated ("Andrews Group"), Consolidated Cigar
+Holdings Inc. ("Consolidated Cigar"), Mafco Consolidated Group Inc. ("Mafco
+Consolidated"), Meridian Sports Incorporated ("Meridian") and Power Control
+Technologies Inc. ("PCT"); and is Chairman of the Executive Committees of the
+Boards of Revlon, Inc. ("Revlon") and Revlon Consumer Products Corporation
+("Revlon Products") and The Coleman Company, Inc. ("Coleman"). Mr. Perelman is
+a director of the following corporations which file reports pursuant to the
+Securities Exchange Act of 1934, as amended (the "Exchange Act"): Andrews
+Group, Coleman, Coleman Holdings Inc. ("Coleman Holdings"), Coleman Worldwide
+Corporation ("Coleman Worldwide"), Consolidated Cigar, Consolidated Cigar
+Corporation ("Cigar Corp."), California Federal Bank, A Federal Savings Bank
+("California Federal"), The Cosmetic Center, Inc., First Nationwide Holdings
+Inc., First Nationwide (Parent) Holdings Inc., Parent Holdings, Mafco
+Consolidated, Marvel III, Meridian, PCT, Pneumo Abex Corporation, Revlon,
+Revlon Products, Revlon Worldwide Corporation ("Revlon Worldwide") and Toy
+Biz.
+
+
+William C. Bevins
+
+         Mr. Bevins (49) has been a Director of the Company since 1989, Chief
+Executive Officer from 1991 to 1996 and President from 1994 to 1996. Mr.
+Bevins has been President and Chief Executive Officer of Andrews Group since
+1988 and Executive Vice President of MacAndrews Holdings since 1988. Mr.
+Bevins is a director of the following corporations which file reports pursuant
+to the Exchange Act: Andrews Group, Parent Holdings,
+
+
+
+                                      1
+<PAGE>
+
+
+
+
+
+
+Marvel III and Toy Biz. Mr. Bevins was a Director and Chief Financial &
+Administrative Officer of Turner Broadcasting System, Inc. for more than five
+years prior to 1988.
+
+
+Donald G. Drapkin
+
+         Mr. Drapkin (49) has been a Director of the Company since 1991. He has
+been Vice Chairman and a Director of MacAndrews & Forbes and various of its
+affiliates since 1987. Mr. Drapkin also is a Director of the following
+corporations which file reports pursuant to the Exchange Act: Andrews Group,
+Coleman, Coleman Holdings, Coleman Worldwide, Consolidated Cigar, Cigar Corp.,
+Parent Holdings, Marvel III, Revlon, Revlon Products, Revlon Worldwide, Toy
+Biz, Algos Pharmaceutical Corporation and VIMRx Pharmaceuticals Inc. Mr.
+Drapkin was a partner of the law firm of Skadden, Arps, Slate, Meagher & Flom
+for more than five years prior to March 1987.
+
+Michael Fuchs
+
+         Mr. Fuchs (50) has been a Director of the Company since July 1992.
+Mr. Fuchs was Chairman of the Board and Chief Executive Officer of Home Box
+Office from 1984 until May 1995, and Chairman of the Board of Home Box Office
+and Chairman of the Board and Chief Executive Officer of Warner Music Group
+from May 1995 until November 1995. Mr. Fuchs is a director of IMAX Corp. and
+Latin Communications Group Inc.
+
+Frank Gifford
+
+         Mr. Gifford (65) has been a Director of the Company since 1992. Mr.
+Gifford has been a commentator with ABC Sports since 1971.
+
+E. Gregory Hookstratten
+
+         Mr. Hookstratten (63) has been a Director of the Company since 1992.
+He has been engaged in private law practice, specializing in entertainment law,
+as a partner of Hookstratten & Hookstratten for more than five years.
+
+Morton L. Janklow
+
+         Mr. Janklow (65) has been a Director of the Company since 1992. He
+has been Of Counsel to Janklow, Newborn & Ashley and Senior Partner of Janklow
+& Nesbit Associates since 1989. Prior thereto, Mr. Janklow served as Chairman
+and Chief Executive Officer of Morton L. Janklow Associates, Inc. since 1977.
+
+Quincy Jones
+
+         Mr. Jones (63) has been a Director of the Company since December
+1993. Mr. Jones has been Chairman and Co-Chief Executive Officer of Quincy
+Jones* David Salzman Entertainment and Chairman and Chief Executive Officer of
+its predecessor, Quincy Jones Entertainment Company, both multi-media
+entertainment firms, since 1990. He also has been Chairman of Quincy Jones
+Productions, Inc. a television/film production company, and of Qwest Records,
+Inc. for more than five years.
+
+Stan Lee
+
+         Mr. Lee (73) has been a Director of the Company since 1991 and has
+been Chairman and Publisher of Marvel Comics since 1990. Mr. Lee is widely
+known as one of the "founding fathers" of the modern comic book industry and
+as the creator of some of Marvel's most popular and enduring characters,
+including SPIDER-MAN, HULK, FANTASTIC FOUR and X-MEN. Mr. Lee has been with
+Marvel for more than 50 years. Mr. Lee's management and operational experience
+spans virtually all areas of Marvel's publishing business, from writer to
+publisher, and its media businesses.
+
+
+
+                                      2
+<PAGE>
+
+
+
+Scott C. Marden
+
+         Mr. Marden (42) has been a Director and Executive Vice President of
+the Company, President and Chief Executive Officer of Marvel Interactive since
+February 1996, and President and Chief Executive Officer of Marvel
+Enterprises, a business unit comprised of the Company's trading card, sticker
+and on-line and interactive software businesses since January 1997. From 1993
+until he joined the Company, Mr. Marden was President and Chief Executive
+Officer of Philips Media, a division of Philips Electronics N.V. Mr. Marden
+was a Senior Managing Director of Bear, Stearns & Co. Inc. from 1991 to 1993,
+and a Managing Director of Schroder Wertheim & Co., Incorporated from 1990 to
+1991 and Bankers Trust Company from 1986 to 1990. Mr. Marden was President of
+CBS International Publishing, a division of CBS Inc., from 1983 to 1986.
+
+Scott M. Sassa
+
+         Mr. Sassa (38) has been Chairman of the Board and Chief Executive
+Officer and a Director of the Company since October 1996. In October 1996, Mr.
+Sassa also became President and Chief Operating Officer of Andrews Group.
+Prior to becoming a Director of the Company, Mr. Sassa served as President of
+Turner Entertainment Group and as a member of the Board of Directors of Turner
+Broadcasting System, Inc. and the TBS Executive Committee. Mr. Sassa was named
+Executive Vice President of Turner Network Television in 1992 ("TNT"). From
+1987 to 1988, Mr. Sassa served as Vice President/New Business for Ohlmeyer
+Communications Co. Prior to that time, Mr. Sassa served as Vice
+President/Network Management for Fox Broadcasting Co.
+
+David J. Schreff
+
+         Mr. Schreff (41) has been a Director, President and Chief Operating
+Officer of the Company since August 1996. Prior to becoming an Officer and a
+Director of the Company, Mr. Schreff served as President, Marketing and Media
+Group for NBA Properties. Prior to his six and a half years at the NBA, Mr.
+Schreff held executive positions for the previous eight years with Walt Disney
+Company (The Disney Channel) and Viacom International (Showtime Networks).
+
+Terry C. Stewart
+
+         Mr. Stewart (50) has been a Director of the Company since 1991 and an
+Executive Vice President since January 1996. Mr. Stewart joined the Company in
+1989 as Executive Vice President, Development and served as President and
+Chief Operating Officer from September 1990 to July 1994, President and Chief
+Operating Officer, Marvel Comics from July 1994 until March 1995, and Vice
+Chairman of the Company from March 1995 through December 1995. From 1984 to
+1989, Mr. Stewart was Vice President-Business Development at Combustion
+Engineering. Mr. Stewart also is a director of Toy Biz.
+
+Kenneth Ziffren
+
+         Mr. Ziffren (56) has been a Director of the Company since 1992. He
+has been a partner with the law firm of Ziffren, Brittenham, Branca & Fischer
+since 1979. Mr. Ziffren is a director of City National Corp.
+
+COMMITTEES OF THE BOARD OF DIRECTORS
+
+         The Board of Directors has an Executive Committee, an Audit Committee,
+a Management Compensation and Stock Option Committee (the "Compensation
+Committee") and a Nominating Committee.
+
+         The Executive Committee consists of Messrs. Perelman, Bevins, Drapkin
+and Sassa. The Executive Committee may exercise all of the powers and authority
+of the Board, except as otherwise provided under the General Corporation Law of
+the State of Delaware (the "DGCL"). The Audit Committee, consisting of Messrs.
+Gifford, Hookstratten and Ziffren, makes recommendations to the Board of
+Directors regarding the engagement of the Company's independent
+
+
+                                      3
+<PAGE>
+
+
+
+auditors, reviews the plan, scope and results of the audit, reviews with the
+auditors and management the Company's policies and procedures with respect to
+internal accounting and financial controls, changes in accounting policy and
+the scope of the non-audit services which may be performed by the Company's
+independent auditors. The Audit Committee also monitors policies to prohibit
+unethical, questionable or illegal activities by the Company's employees. The
+Compensation Committee, consisting of Messrs. Drapkin, Fuchs and Hookstratten,
+makes recommendations to the Board regarding compensation and incentive
+arrangements for officers and other key managerial employees of the Company.
+The Compensation Committee also considers and recommends awards of stock
+options to purchase shares of Common Stock pursuant to the Marvel
+Entertainment Group, Inc. Amended and Restated Stock Option Plan (the "Stock
+Option Plan"). The Nominating Committee, consisting of Messrs. Perelman,
+Bevins, Drapkin, Janklow and Lee, makes recommendations to the Board regarding
+the qualifications for directors and procedures for identifying possible
+nominees. The Nominating Committee also reviews the performance of current
+directors and evaluates the appropriate size and composition of the Board.
+
+         During 1996, the Board of Directors held seven meetings, and the
+Executive Committee acted seven times by unanimous written consent of all
+members thereof in accordance with the Company's By-laws and the DGCL.
+The Audit Committee held two meetings in 1996. During 1996, the Compensation
+Committee held one meeting and acted four times by unanimous written consent
+of all members thereof in accordance with the Company's By-laws and the DGCL.
+There were no meetings of the Nominating Committee in 1996. During 1996, all
+Directors attended 75% or more of the meetings of the Board of Directors and
+of the Committees of which they were members, other than Messrs.
+Fuchs and Jones.
+
+         During the Fall of 1996, in connection with the proposed investment in
+the Company by Andrews Group, the Board of Directors formed a Special Committee
+(the "Special Committee") consisting of Messrs. Ziffren, Hookstratten and
+Janklow (Chairman) to review such proposed investment. Such Special Committee
+met eight times.
+
+EXECUTIVE OFFICERS
+
+                  The following table sets forth certain information concerning
+each of the executive officers of the Company at April 30, 1997.
+
+         Name                               Position
+         ----                               --------
+
+Scott M. Sassa             Chairman of the Board and Chief Executive Officer
+
+David J. Schreff           President and Chief Operating Officer
+
+Bobby G. Jenkins           Executive Vice President and Chief Financial Officer
+
+Scott C. Marden            Executive Vice President, President, Chief  Executive
+                           Officer, Marvel Interactive and President and Chief
+                           Executive Officer of Marvel Enterprises
+
+Paul E. Shapiro            Executive Vice President, General Counsel and Chief
+                           Administrative Officer
+
+         The following sets forth the age, positions held with the Company and
+selected biographical information for the executive officers of the Company who
+are not directors. Biographical information with respect to Messrs. Perelman,
+Bevins and Marden is set forth above under the caption "Directors."
+
+Bobby G. Jenkins
+
+         Mr. Jenkins (35) has been Executive Vice President and Chief
+Financial Officer of the Company since December 1993. From 1992 until he
+joined the Company, Mr. Jenkins was Assistant Vice President-Finance of Turner
+Broadcasting System, Inc. and, for more than five years prior thereto, he was
+associated with Price Waterhouse LLP, where he last served as Senior Audit
+Manager. Mr. Jenkins also is a Director of Toy Biz.
+
+Paul E. Shapiro
+
+         Mr. Shapiro (55) has been Executive Vice President and General
+Counsel of the Company since January 1994. Prior thereto, he was a shareholder
+in the law firm of Greenberg, Traurig, Hoffman, Lipoff, Rosen & Quentel from
+1991 to 1993, and he currently is Of Counsel to such firm. Mr. Shapiro also is
+a director of Toll Brothers, Inc.
+
+                                      4
+<PAGE>
+
+
+ITEM 11.  EXECUTIVE COMPENSATION
+
+EXECUTIVE COMPENSATION
+
+         The following table sets forth information for the years indicated
+concerning the compensation awarded to, earned by or paid to the Chief
+Executive Officer of the Company and the four most highly paid executive
+officers, other than the Chief Executive Officer, who served as executive
+officers of the Company as of December 31, 1996, for services rendered in all
+capacities to the Company and its subsidiaries during such periods. In
+addition, the table also sets forth similar information for two additional
+individuals for whom disclosure would have been provided pursuant to paragraph
+(a)(3)(ii) of Item 402 of Regulation S-K but for the fact that these
+individuals were not serving as executive officers of the registrant at the end
+of 1996.
+
+<TABLE>
+<CAPTION>
+
+                           SUMMARY COMPENSATION TABLE
+
+                                                                                          Long Term
+                                                                                        Compensation
+                                                                                            Awards
+                                                                                        -------------
+                                                                                Other             Securities
+                                                                                Annual            Underlying       All
+Other                                                                           Compensa           Options/       Compensa-
+Name and  Principal Position        Year    Salary($)(a)      Bonus($)(b)       tion ($)(c)         SARs(#)       tion($)(d)
+- ----------------------------        ----    ------------      -----------       -----------       -----------     ----------
+<S>                                 <C>     <C>               <C>               <C>                <C>            <C>
+
+Scott M. Sassa (e)                  1996     $ 166,667        $        0        $      0            250,000        $  0
+  Chairman and Chief
+  Executive Officer
+
+Jeffrey L. Kaplan                   1996       551,929                 0               0                  0           0
+  Executive Vice President          1995       455,000                 0               0            100,000           0
+                                    1994       404,385                 0               0                  0           0
+
+Scott C. Marden                     1996       652,633           500,000(f)            0            250,000           0
+  President and Chief
+  Executive Officer of
+  Marvel Enterprises
+
+David J. Schreff                    1996       288,752           500,000(g)            0            250,000           0
+  President and Chief
+  Operating Officer
+
+Paul E. Shapiro                     1996       550,000                 0               0            250,000       3,000
+  Executive Vice President,         1995       400,000                 0               0            250,000           0
+  General Counsel and               1994       400,000                 0               0                  0           0
+  Chief Administrative
+  Officer (h)
+
+William C. Bevins                   1996       833,333                 0               0                  0           0
+  Former President and Chief        1995     1,000,000                 0               0                  0           0
+  Executive Officer(i)              1994       250,000                 0               0                  0           0
+
+Gerard S. Calabrese                 1996       512,868           750,000(j)            0                  0       3,000
+  Former Executive Vice             1995       440,288                 0               0            100,000       2,885
+  President (k)                     1994       367,365                 0               0                  0           0
+
+</TABLE>
+
+(a)      Includes salary paid or accrued for the years indicated and, in the
+         case of Mr. Calabrese, amount deferred for such years, pursuant to the
+         Marvel Entertainment Group, Inc. Savings and Investment Plan (the
+         "Marvel Savings Plan"), Marvel's tax qualified defined contribution
+         plan under Section 401(k) of the Internal Revenue Code of 1986, as
+         amended (the "Code").
+(b)      Bonus paid or accrued for the years indicated.
+(c)      The value of perquisites and other personal benefits is not included
+         because the aggregate amount of such compensation, if any, does not
+         exceed the lesser of $50,000 and 10% of the total amount of annual
+         salary and bonus for any named executive officer.
+(d)      Company matching contributions to the Marvel Savings Plan.
+(e)      Mr. Sassa became Chief Executive Officer and a director of the
+         Company on October 23, 1996. Mr. Sassa is also an officer and/or
+         director of Andrews Group and/or certain of its affiliates. Mr.
+         Sassa is compensated directly by Andrews Group and the Company
+         reimbursed Andrews Group $166,667 for 1996, representing the salary
+         Mr. Sassa earned for services rendered to the Company during such
+         period.
+
+
+                                      5
+<PAGE>
+
+
+
+(f)      Represents a guaranteed  bonus pursuant to the terms of Mr. Marden's
+         Employment Agreement with the Company. See "--Employment Agreements."
+(g)      Represents a signing bonus pursuant to the terms of Mr. Schreff's
+         Employment Agreement with the Company.  See "--Employment Agreements."
+(h)      Mr. Shapiro is also an officer and/or director of Andrews Group
+         and/or certain of its affiliates. Mr. Shapiro is compensated
+         directly by Andrews Group, and the Company reimbursed Andrews Group
+         $550,000 for 1996 and $400,000 for each of 1995 and 1994,
+         representing the salary Mr. Shapiro earned for services rendered to
+         the Company for such periods.
+(i)      Mr. Bevins is also an officer and/or director of Andrews Group
+         and/or certain of its affiliates. Mr. Bevins is compensated directly
+         by Andrews Group, and the Company reimbursed Andrews Group $833,333
+         for 1996, $1,000,000 for 1995 and $250,000 for 1994, representing
+         the salary Mr. Bevins earned for services rendered to the Company
+         for such periods. Mr. Bevins ceased to be an executive officer of
+         the Company on October 23, 1996. Mr. Bevins remains a director of
+         the Company.
+(j)      Represents an advance of the bonus payable to Mr. Calabrese pursuant
+         to Mr. Calabrese's the Employment Agreement with the Company.
+(k)      Mr. Calabrese ceased to be an executive officer of the Company during
+         1996.
+
+
+STOCK OPTION PLAN
+
+         During 1996, the following grants of stock options were made pursuant
+to the Stock Option Plan to the executive officers named in the Summary
+Compensation Table:
+
+<TABLE>
+<CAPTION>
+
+                           OPTIONS/SAR GRANTS IN 1996
+
+                                     % OF TOTAL
+                                      OPTIONS/
+                                        SAR
+                        OPTIONS/     GRANTED TO      EXERCISE                            GRANT DATE
+                         SARS        EMPLOYEES        PRICE          EXPIRATION           PRESENT
+NAME (A)                GRANTED (#)   IN 1996         ($/SH)             DATE            VALUE $ (b)
+- --------               -----------  -----------     ---------       --------------       -----------
+<S>                     <C>          <C>             <C>             <C>                <C>   
+Scott M. Sassa           250,000      14.33%         $ 5.000            10/23/06        $    855,000
+Scott. C. Marden         250,000      14.33%          12.625             1/31/06           2,130,000
+David J. Schreff         250,000      14.33%           8.625              9/4/06           1,490,000
+Paul E. Shapiro          250,000      14.33%       9.875 & 8.625     4/12/06 & 9/4/06      1,980,500
+
+</TABLE>
+
+(a)       None of the other executives officers named in the Summary
+          Compensation Table were granted stock options or SARS in 1996.
+
+(b)       The stock options were granted with an exercise price equal to the
+          fair market value of a share of Common Stock on the date of grant.
+          One third of the shares of Common Stock subject to the option
+          granted to Mr. Sassa on October 23, 1996 and Messrs. Schreff and
+          Shapiro on September 4, 1996 vests on each of the first, second and
+          third anniversaries of the date of grant, subject to earlier
+          expiration or termination of the option. The 100,000 shares of
+          Common Stock subject to the option granted to Mr. Shapiro on April
+          12, 1996 and all of the shares of Common Stock subject to the option
+          granted to Mr. Marden vested on the date of grant. The stock options
+          are not accompanied by tandem SARs.
+
+(c)       Present values were calculated using the Black-Scholes option
+          pricing model. The model as applied used the grant dates of April
+          12, 1996 and September 4, 1996, for Paul E. Shapiro, January 31,
+          1996 for Scott C. Marden, September 4, 1996 for David J. Schreff and
+          October 23, 1996 for Scott M. Sassa, and the exercise price per
+          share specified in the table above was equal to the fair market
+          value per share of Common Stock on the date of grant. The model also
+          assumes (i) risk-free rates of return of 6.22% for Mr. Marden, 6.55%
+          for Mr. Sassa, 6.92% for Mr. Schreff, and 6.51% to 6.55% for Mr.
+          Shapiro which were the rates for the 10-year United States Treasury
+          Zero Coupon Bond on the respective dates of grant, (ii) 
+
+                                      6
+<PAGE>
+          stock price volatility of 47.6%, 47.2%, 47.8% and 46.6%,
+          calculated using month-end closing prices of shares of Common Stock
+          for periods starting July 31, 1991 and ending on the respective
+          dates of grant (iii) no dividends and (iv) that the options normally
+          would be exercised on the final day of their 10-year term. No
+          discount from the theoretical value was taken to reflect the waiting
+          period, if any, prior to vesting the stock options, the restrictions
+          on the transfer of the stock options and the likelihood that the
+          stock options will be exercised in advance of the final day of their
+          term.
+
+         The following chart shows the number of stock options exercised
+during 1996 and the 1996 year-end value of the stock options held by the
+executive officers named in the Summary Compensation Table:
+         
+                    AGGREGATED OPTION/SAR EXERCISES IN 1996
+                      AND YEAR END 1996 OPTION/SAR VALUES
+
+<TABLE>
+<CAPTION>
+
+
+                                                                         NUMBER OF
+                                                                          SECURITIES          VALUE OF
+                                                                         UNDERLYING          UNEXERCISED
+                                                                         UNEXERCISED        IN-THE-MONEY
+                                                                       OPTIONS/SARS         OPTIONS/SARS
+                                      SHARES                           AT YEAR END (#)    AT YEAR END ($) (a)
+                                    ACQUIRED ON         VALUE            EXERCISABLE/       EXERCISABLE/
+         NAME                       EXERCISE (#)     REALIZED ($)       UNEXERCISABLE       UNEXERCISABLE
+         ----                       ------------     ------------       -------------       -------------
+
+         <S>                        <C>               <C>               <C>                 <C>   
+
+         Scott M. Sassa                     0        $0                     0/250,000          $  0/0
+         Jeffrey L. Kaplan                  0         0                333,333/66,667             0/0
+         Scott C. Marden                    0         0                     250,000/0             0/0
+         David J. Schreff                   0         0                     0/250,000             0/0
+         Paul E. Shapiro                    0         0               183,333/316,667             0/0
+         William C. Bevins                  0         0                           0/0             0/0
+         Gerard S. Calabrese (b)            0         0                233,333/66,667             0/0
+
+</TABLE>
+
+
+(a)      Amounts shown represent the market value of the underlying shares of
+         Common Stock at year-end calculated using the December 31, 1996, New
+         York Stock Exchange (the "NYSE") closing price per share of Common
+         Stock of $1.75 minus the exercise price of the stock option. The
+         actual value, if any, an executive may realize is dependent upon the
+         amount by which the market price of shares of Common Stock exceeds the
+         exercise price per share when the stock options are exercised. The
+         actual value realized may be greater than the value shown in the
+         table.
+(b)      Mr. Calabrese ceased being an executive officer during 1996.
+
+EMPLOYMENT AGREEMENTS
+
+         Andrews Group has an employment agreement with Mr. Sassa pursuant to
+which he is employed as an executive officer of Andrews Group and serves as an
+executive officer of the Company and certain other affiliates of Andrews Group.
+The Company is obligated to reimburse Andrews Group for the portion of the
+salary paid to Mr. Sassa by Andrews Group which relates to the services he
+renders to the Company. Under his employment agreement with Andrews Group, Mr.
+Sassa is not entitled to receive any salary directly from the Company but is
+entitled to receive bonuses and grants of options for shares of Common Stock
+pursuant to the Stock Option Plan.
+
+         The Company has an employment agreement with Mr. Schreff providing for
+his employment through December 31, 1999. The agreement provides for an annual
+salary of not less than $900,000 for the year commencing September 4, 1996,
+$950,000 for the year commencing September 4, 1997, and $1,000,000 for the year
+commencing September 4, 1998, a signing bonus of $500,000 and a performance
+based bonus. Mr. Schreff's employment agreement with the Company provides for
+specified grants of stock options pursuant to the Stock
+
+                                      7
+<PAGE>
+
+Option Plan, certain death and disability benefits, certain tax and estate 
+planning services and use of a company automobile (including payment of related
+expenses).
+
+         If during the term Mr. Schreff's employment terminates due to
+disability (as defined in the employment agreement) or death, the Company is
+required to pay Mr. Schreff (or, in the event of his death, his designated
+beneficiary or legal representative) continued payments in an amount equal to
+60% of his base salary (as in effect immediately prior to such termination),
+payable in the manner provided in the agreement, until the end of the term or,
+if the Company has not given notice of non-renewal of the term, for a period of
+twelve months after the last day of the month in which such termination
+occurred, whichever is longer, as well as, in case of disability, continuation
+of medical, dental and vision benefits during such period.
+
+         In the event of termination of Mr. Schreff's employment by the Company
+without Cause (as defined in the employment agreement) or by Mr. Schreff due to
+breach by the Company of the employment agreement, then the Company shall
+continue to pay Mr. Schreff base salary and bonuses and to provide Mr. Schreff
+with welfare plan benefits for the remainder of the term as are in effect
+immediately prior to such termination of employment, or if the Company has not
+then given notice of non-renewal, for a period of twelve months after the last
+day of the month in which such termination occurred, whichever is longer. Mr.
+Schreff has the duty to mitigate such severance payments and the severance
+payments will be reduced by any compensation earned by Mr. Schreff from a
+subsequent employer during the period of salary continuation.
+
+         At any time on or after December 31, 1998, each of the Company and Mr.
+Schreff may give the other party notice of non-renewal of the term and, in the
+event the Company gives such notice, the term will be automatically extended so
+that it ends twelve months after the last day of the month in which the Company
+gives such notice.
+
+         The Company has an employment agreement with Mr. Marden providing for
+his employment through February 18, 1999. The agreement provides for an annual
+salary of $750,000 through February 18, 1997, $800,000 through February 18,
+1998 and $850,000 through the remainder of the term of the employment agreement
+and a discretionary performance based bonus of not less than $500,000 for 1996
+and $150,000 for each of 1997 and 1998. Mr. Marden's employment agreement
+provides for specified grants of stock options pursuant to the Stock Option
+Plan, certain death and disability benefits, certain tax and estate planning
+services and use of a company automobile (including payment of related
+expenses). In the event that a change in control of Marvel has occurred and
+within 120 days thereafter either (x) the Company terminates the employment
+agreement with Mr. Marden other than as a result of Mr. Marden's death or
+disability or for Cause (as defined in the employment agreement) or (y) Mr.
+Marden terminates the employment agreement as a result of a breach by the
+Company, the Company will be obligated to pay Mr. Marden an amount equal to (i)
+750,000 less the number of options granted to Mr. Marden (whether or not
+vested) times (ii) the difference between the closing price for the Company's
+common stock on the date of termination and the option exercise price of the
+stock options granted to Mr. Marden upon the commencement of the term.
+
+         If during the term Mr. Marden's employment terminates due to
+disability (as defined in the employment agreement) or death, the Company is
+required to pay Mr. Marden (or, in the event of his death, his designated
+beneficiary or legal representative) continued payments in an amount equal to
+60% of his base salary (as in effect immediately prior to such termination),
+payable in the manner provided in the agreement, until the end of the term or,
+if the Company has not given notice of non-renewal of the term, for a period of
+twelve months after the last day of the month in which such termination
+occurred, whichever is longer, as well as, in case of disability, continuation
+of medical, dental and vision benefits during such period.
+
+         In the event of termination of Mr. Marden's employment by the Company
+without Cause or by Mr. Marden due to breach by the Company of the employment
+agreement, then the Company shall continue to pay Mr. Marden base salary and
+bonuses and to provide Mr. Marden with welfare plan benefits for the remainder
+of the term as in effect immediately prior to such termination of employment,
+or if the Company has not then given
+
+
+                                      8
+<PAGE>
+
+
+notice of non-renewal, for a period of twelve months after the last day of the
+month in which such termination occurred, whichever is longer. Mr. Marden has
+the duty to mitigate such severance payments and the severance payments will
+be reduced by any compensation earned by Mr. Marden from a subsequent employer
+during the period of salary continuation. The Company's employment agreement
+with Mr. Marden provides that Mr. Marden is to receive a 1.5% equity interest
+in the Company's electronic software subsidiary. Such 1.5% equity interest is
+to be subject to certain antidilution rights, piggyback registration rights,
+tag along sale rights and put/call rights. 
+
+         At any time on or after February 1, 1998, each of the Company and Mr.
+Marden may give the other party notice of non-renewal of the term and, in the
+event the Company gives such notice, the term will be automatically extended
+so that it ends twelve months after the last day of the month in which the
+Company gives such notice.
+
+         The Company has an employment agreement with Mr. Kaplan providing for
+his employment through July 31, 1998. The agreement provides for an annual
+salary of not less than $500,000 for the year commencing August 1, 1995,
+$600,000 for the year commencing August 1, 1996, and $750,000 for the year
+commencing August 1, 1997, participation in the Stock Option Plan, certain
+death and disability benefits, certain tax and estate planning services and use
+of a company automobile (including payment of related expenses). In addition,
+Mr. Kaplan is eligible to receive with respect to each year of the term a
+performance based bonus. To the extent any payments that would otherwise be
+made to Mr. Kaplan would be nondeductible to the Company due to Section 162(m)
+of the Code, any such payments will be deferred without interest until such
+time as they are no longer nondeductible pursuant to Section 162(m).
+
+         If during the term Mr. Kaplan's employment terminates due to
+disability (as defined in the employment agreement) or death, the Company is
+required to pay Mr. Kaplan (or, in the event of his death, his designated
+beneficiary or legal representative) continued payments in an amount equal to
+60% of his base salary (as in effect immediately prior to such termination),
+payable in the manner provided in the agreement, until the end of the term or,
+if the Company has not given notice of non-renewal of the term, for a period of
+twelve months after the last day of the month in which such termination
+occurred, whichever is longer, as well as, in case of disability, continuation
+of medical, dental and vision benefits during such period.
+
+         In the event of termination of Mr. Kaplan's employment by the Company
+without Cause (as defined in the agreement) or by Mr. Kaplan due to breach by
+the Company of the employment agreement, then the Company shall continue to pay
+Mr. Kaplan base salary and bonuses and to provide Mr. Kaplan with welfare plan
+benefits for the remainder of the term as are in effect immediately prior to
+such termination of employment, or if the Company has not then given notice of
+non-renewal, for a period of twelve months after the last day of the month in
+which such termination occurred, whichever is longer. Mr. Kaplan has the duty
+to mitigate such severance payments and the severance payments will be reduced
+by any compensation earned by Mr. Kaplan from a subsequent employer during the
+period of salary continuation.
+
+         At any time on or after July 31, 1997, each of the Company and Mr.
+Kaplan may give the other party notice of non-renewal of the term and, in the
+event the Company gives such notice, the term will be automatically extended so
+that it ends twelve months after the last day of the month in which the Company
+gives such notice.
+
+         Andrews Group has an agreement with Mr. Shapiro pursuant to which he
+is employed by Andrews Group and serves as an officer of Andrews Group and an
+executive officer of the Company. The Company is obligated to reimburse Andrews
+Group for the portion of the salary paid to Mr. Shapiro by Andrews Group which
+relates to services he renders to the Company. Mr. Shapiro is not entitled to
+receive any salary directly from the Company nor is he eligible to receive
+bonuses or other benefits from the Company other than grants of options for
+shares of Common Stock pursuant to the Stock Option Plan.
+
+COMPENSATION OF DIRECTORS
+
+         Directors who currently are not receiving compensation as officers or
+employees of the Company or any of its affiliates are paid an annual retainer
+fee of $25,000, payable in monthly installments, and a fee of $1,000 for each
+meeting of the Board of Directors or any committee thereof they attend. The
+members of the Special Committee (other than the Chairman) were paid $20,000,
+and the Chairman was paid $30,000.
+
+
+                                      9
+<PAGE>
+
+
+
+ITEM 12.  SECURITY OWNERSHIP OF CERTAIN BENEFICIAL OWNERS AND MANAGEMENT.
+
+         The following table sets forth as of April 30, 1997, the number of
+shares of Common Stock beneficially owned, and the percent so owned (based on
+101,809,657 shares of Common Stock outstanding on April 30, 1997), by (i) each
+person known to the Company to be the beneficial owner of more than 5% of the
+outstanding shares of Common Stock, (ii) each director of the Company who is a
+beneficial owner of any shares of Common Stock, (iii) the officers named in the
+Summary Compensation Table and (iv) all directors and executive officers of the
+Company as a group. The number of shares owned are those beneficially owned, as
+determined under the rules of the Securities and Exchange Commission (the
+"SEC"), and such information is not necessarily indicative of beneficial
+ownership for any other purpose. Under such rules, beneficial ownership
+includes any shares of Common Stock as to which a person has sole or shared
+voting power or investment power and any shares of Common Stock which the
+person has the right to acquire within 60 days through the exercise of any
+option, warrant or right, through conversion of any security or pursuant to the
+automatic termination of a power of attorney or revocation of a trust,
+discretionary account or similar arrangement.
+
+<TABLE>
+<CAPTION>
+
+                                                           AMOUNT AND NATURE OF
+NAME OF BENEFICIAL OWNER                                   BENEFICIAL OWNERSHIP       PERCENT OF CLASS
+- ------------------------                                   --------------------       ----------------
+<S>                                                           <C>                      <C>  
+Ronald O. Perelman (a)                                          31,696,225                 31.1%    
+ 35 East 62nd Street                                                                              
+ New York, New York 10021                                                                         
+Marvel Holdings Inc.                                            50,932,167                 50.03   
+c/o Icahn and Co.                                                                                 
+767 Fifth Avenue                                                                                  
+New York, NY 10153                                                                                
+                                                                                                  
+William C. Bevins                                                  160,000                   *      
+                                                                                                  
+Donald G. Drapkin (b)                                               40,000                   *      
+                                                                                                  
+E. Gregory Hookstratten (c)                                         50,000                   *      
+                                                                                                  
+Stan Lee (d)                                                       300,000                   *      
+                                                                                                  
+Scott C. Marden (e), (f)                                           252,000                   *      
+                                                                                                  
+Scott M. Sassa                                                           0                   *      
+                                                                                                  
+David J. Schreff                                                         0                   *      
+                                                                                                  
+Terry C. Stewart (g)                                               800,000                   *      
+                                                                                                  
+Kenneth Ziffren                                                     12,000                   *      
+                                                                                                  
+Gerard S. Calabrese (h)                                            233,333                   *      
+                                                                                                  
+Jeffrey L. Kaplan (i)                                              333,000                   *      
+                                                                                                  
+Paul E. Shapiro (j)(f)                                             269,666                   *      
+                                                                ----------                 -----
+All directors and executive officers as a group
+(18 persons)(f)(k)(l)                                           34,431,551                 33.8%  
+                                                                ==========                 ===== 
+</TABLE>
+                                                               
+* Less than 1%
+
+(a) All of such shares of Common Stock are beneficially owned indirectly
+through wholly owned subsidiaries of Mafco. The sole stockholder of Mafco is
+Ronald O. Perelman. On February 26, 1997, the Bankruptcy Court entered an order
+granting relief from the automatic stay in the chapter 11 cases of the Marvel
+Holding Companies to allow the Holding Companies' Trustee to vote and to
+foreclose upon the Pledged Stock. The Company has filed an appeal of such order
+and intends to expedite such appeal. On March 19, 1997, the Creditors Committee
+
+
+                                      10
+<PAGE>
+
+notified the Company that on March 25, 1997 it would cause the Holding
+Companies' Trustee to vote the approximately 78% of the outstanding common
+stock of the Company and pledged to secure the notes issued by the Marvel
+Holding Companies, as well as all of the outstanding common stock of Marvel
+Holdings pledged by Parent Holdings to secure the notes issued by Parent
+Holdings and the common stock of Parent Holdings pledged by Marvel III to
+secure the notes issued by Marvel III (collectively, the "Pledged Stock") to
+replace the Board of Directors of the Company and the Holding Companies. On
+March 24, 1997, the Court in the Debtor Companies' bankruptcy cases issued a
+restraining order (the "Restraining Order") preventing the Creditors Committee
+and the Holding Companies' Trustee from voting the Pledged Stock or otherwise
+replacing the Board of Directors of the Company and determined that the
+Creditors Committee and the Holding Companies' Trustee must comply with the
+procedural requirements of section 362 of the Bankruptcy Code to seek relief
+from the automatic stay to take such action. The Court, however, also ruled
+that the Creditors Committee and Holding Companies' Trustee could replace the
+Board of Directors of Marvel Holdings and Parent Holdings. The Creditors
+Committee filed an emergency appeal of the Restraining Order. A hearing on
+such appeal was heard on May 1, 1997 in the Federal District Court for the
+District of Delaware, and on May 14, 1997, the District Court overturned
+the Restraining Order, but stayed the effectiveness of its ruling for 10 
+days. The Company intends to pursue available options to maintain the status
+quo. If the Board of Directors of the Company were to be replaced, such 
+action would constitute a change of control of the Company.
+
+         (b) Represents shares of Common Stock owned by a trust created for
+the minor children of Donald G. Drapkin, with respect to which Mr. Drapkin
+disclaims beneficial ownership.
+
+         (c) Represents shares of Common Stock owned by the E. Gregory
+Hookstratten Profit Sharing Plan, under which Mr. Hookstratten is the sole
+beneficiary.
+
+         (d) Represents 280,000 shares of Common Stock as to which Stan Lee
+currently has the right to acquire beneficial ownership thereof upon the
+exercise of stock options and 20,000 shares of Common Stock owned.
+
+         (e) Represents 250,000 shares of Common Stock as to which Scott C.
+Marden currently has the right to acquire beneficial ownership thereof upon the
+exercise of stock options and 2,000 shares of Common Stock owned.
+
+         (f) Pursuant to employment agreements with the Company or certain
+other arrangements involving certain executive officers, certain executive
+officers were entitled, in early 1997, to be granted specified amounts of
+stock options, which stock options have not been granted as a result of the
+Company's chapter 11 proceedings. Such ungranted stock options totaled 250,000
+for each of Messrs. Marden, Sassa, Schreff and Shapiro.
+
+         (g) Represents shares of Common Stock as to which Terry C. Stewart
+currently has the right to acquire beneficial ownership thereof upon the
+exercise of stock options.
+
+         (h) Represents shares of Common Stock as to which Gerard S. Calabrese
+currently has the right to acquire beneficial ownership thereof upon the
+exercise of stock options. Mr. Calabrese ceased being an executive officer
+during 1996.
+
+         (i) Represents shares of Common Stock as to which Jeffrey L. Kaplan
+currently has the right to acquire beneficial ownership thereof upon the
+exercise of stock options.
+
+
+
+                                      11
+<PAGE>
+
+
+         (j) Represents 266,666 shares of Common Stock as to which Paul E.
+Shapiro currently has the right to acquire beneficial ownership thereof upon
+the exercise of stock options and 3,000 shares of Common Stock owned.
+
+         (k) Includes 2,446,665 shares of Common Stock as to which such persons
+currently have the right to acquire beneficial ownership thereof upon the
+exercise of stock options.
+
+         (l) None of Messrs. Fuchs, Gifford, Janklow or Jones, directors of
+the Company, beneficially owns any shares of Common Stock.
+
+
+ITEM 13.  CERTAIN RELATIONSHIPS AND RELATED TRANSACTIONS
+
+RELATIONSHIP WITH MACANDREWS & FORBES
+
+         The Company is an indirect approximately 31% owned subsidiary of
+MacAndrews & Forbes. MacAndrews & Forbes is wholly owned by Ronald O.
+Perelman.
+
+         MacAndrews & Forbes is a diversified holding company with interests in
+several industries. Through its 83% ownership of Revlon, MacAndrews & Forbes is
+engaged in the cosmetics and skin care, fragrance and personal care products
+business. MacAndrews & Forbes owns 83% of Coleman, which is engaged in the
+manufacture and marketing of recreational outdoor products, portable
+generators, power-washing equipment, spas and hot tubs, and 65% of Meridian
+Sports, a manufacturer and marketer of specialized boats and water sports
+equipment. MacAndrews & Forbes, through its 86% ownership of Mafco
+Consolidated, is engaged in the manufacture and distribution of cigars and pipe
+tobacco and through its 29% ownership of PCT is engaged in the processing of
+licorice and other flavors. MacAndrews & Forbes is also in the financial
+services business through California Federal. The principal executive offices
+of MacAndrews & Forbes are located at 35 East 62nd Street, New York, New York
+10021.
+
+         The Company reimburses MacAndrews & Forbes for the cost of certain
+services provided by third parties. The Services Agreement pursuant to which
+such services were provided has been terminated.
+
+         Tax Indemnification Arrangements. Prior to the acquisition of the
+Company by Parent Holdings in 1989, Marvel was included in the consolidated
+federal income tax returns of New World Entertainment, Ltd. ("New World"). From
+the time of Parent Holdings' acquisition of Marvel through the consummation of
+Marvel's initial public offering and for the period subsequent to May 19, 1993,
+Marvel was included in the consolidated federal income tax returns of Andrews
+Group or MacAndrews & Forbes or both and made tax sharing payments to Andrews
+Group or MacAndrews & Forbes in amounts equal to the taxes it would have paid
+on a separate company basis. For periods beginning with the consummation of
+Marvel's initial public offering and ending with May 19, 1993, Marvel has filed
+separate tax returns. That notwithstanding, Marvel remains obligated to pay to
+Andrews Group any income taxes Marvel would have had to pay if it had filed a
+separate tax return for the periods subsequent to Parent Holdings' acquisition
+of Marvel in 1989 and through July 22, 1991 (to the extent that it has not
+previously paid such amounts). In addition, if the tax liability attributable
+to Marvel for any previous period during which Marvel was included in a
+consolidated federal income tax return filed by Andrews Group or MacAndrews &
+Forbes is adjusted as a result of an action of the Internal Revenue Service or
+a court, then Marvel will pay to MacAndrews & Forbes the amount of any increase
+in such liability and MacAndrews & Forbes will pay to Marvel the amount of any
+decrease in such liability. Marvel continues to be subject under existing
+federal regulations to several liability for the consolidated federal income
+taxes for any taxable year in which it was a member of any consolidated group
+of which New World, Andrews Group or MacAndrews & Forbes was the common parent.
+Mafco has agreed, however, to indemnify Marvel for any federal income tax
+liability of New World, Andrews Group and MacAndrews & Forbes or any of their
+subsidiaries (other than Marvel or its subsidiaries).
+
+
+                                      12
+<PAGE>
+
+
+         Tax Sharing Agreement. Until April 24, 1997, Marvel was includable in
+Mafco's consolidated federal income tax return. Marvel had entered into a tax
+sharing agreement with Mafco pursuant to which it made tax sharing payments to
+Mafco in amounts equal to the taxes it would have paid if it were to file a
+separate consolidated tax return for itself and its subsidiaries. Marvel, Mafco
+and Marvel III entered into a Tax Sharing Agreement dated as of January 1, 1994
+(the "Tax Sharing Agreement") which amended and restated the then existing tax
+sharing agreement to provide that Marvel will make payments thereunder to
+Marvel III instead of Mafco for 1994 and subsequent years. As a result of
+losses during 1996, the Company has not made tax sharing payments for 1996 and
+as a result of such losses, Marvel has received refunds of previously made tax
+sharing payments from Mafco under the Tax Sharing Agreement of approximately
+$17.1 million, and, notwithstanding the termination of the Tax Sharing
+Agreement, an additional approximately $11 million in tax sharing payment
+refunds are payable to Marvel in September 1997.
+
+         Stock Purchase Agreement. The Plan of Reorganization, filed on
+December 27, 1996 (as amended, the "Plan"), contemplated that pursuant to the
+Stock Purchase Agreement Andrews Group, or an affiliate thereof, would make the
+Andrews Group Investment which contemplated the acquisition from Marvel of a
+number of shares of Common Stock (or its equivalent) that would represent 80.1%
+of the shares of reorganized Marvel after giving effect to such acquisition, in
+consideration for $365 million in cash or, at the option of Andrews Group,
+shares of Class A Common Stock of Toy Biz (the "Class A Common Stock") or a
+combination of the foregoing. The Plan contemplated that in connection with the
+Andrews Investment, the Company would acquire the Class A Common Stock not
+owned by Marvel, Andrews Group or their affiliates pursuant to a Merger
+Agreement between Andrews Group and Toy Biz and a Stock Purchase Agreement with
+the two other principal stockholders of Toy Biz. The Plan also contemplated a
+new $160 million credit facility for Toy Biz to be used for working capital
+purposes of the Company, including Toy Biz, and to fund the Company's strategic
+initiatives. On March 7, 1997, Andrews Group exercised its right to terminate
+the Stock Purchase Agreement with the Company. On the same date, Andrews Group
+informed Toy Biz and the two principal stockholders of Toy Biz that, as a
+result of the termination of the Andrews Investment, a condition to closing
+under the Merger Agreement with Toy Biz and the Stock Purchase Agreement would
+not be satisfied, that Andrews Group did not intend to waive the satisfaction
+of such condition and therefore the transaction contemplated by such agreements
+would not be consummated. The Plan has since been withdrawn.
+
+         Relationships with NWCG. During 1996, the Company entered into certain
+license agreements with New World Communications Group, Incorporated ("NWCG"),
+a former subsidiary of MacAndrews & Forbes which was sold in January, 1997, for
+use of certain of the Company's characters in the production of animated series
+for television. Pursuant to these agreements, NWCG paid the Company a license
+fee, and NWCG is eligible to participate in licensing and other revenues
+derived from the exhibition of certain of such animated series. During 1996,
+the Company and NWCG entered into an agreement whereby NWCG produced for the
+Company episodes 1-13 of THE INCREDIBLE HULK animated television show, at a
+cost of approximately $4 million.
+
+RELATIONSHIP WITH TOY BIZ
+
+         Marvel Services Agreement and Other Arrangements with Toy Biz.
+Pursuant to an agreement with Toy Biz (the "Marvel Services Agreement"), Marvel
+provides to Toy Biz certain management, consulting and administrative services
+("Marvel Employee Services") and certain services purchased from third-party
+providers, including legal and accounting services ("Third Party Services").
+Toy Biz pays its allocated share of the costs of such services. The Services
+Agreement has a term of one year and is automatically renewed for successive
+one year terms unless terminated upon 120 days written notice. During 1996, Toy
+Biz accrued approximately $262,000 for Marvel Employee Services. As of April
+30, 1997, these amounts have not been paid.
+
+         Stockholders Agreement and Class B Voting Trusts. In connection with
+the closing of Toy Biz's initial public offering of Class A Common Stock (the
+"Toy Biz IPO"), the Company, Isaac Perlmutter ("Mr. Perlmutter"), Zib, Inc.
+("Zib"), the Perlmutter Trust (Mr. Perlmutter, Zib and the Perlmutter Trust
+collectively, the "Perlmutter 
+
+
+                                      13
+<PAGE>
+
+Parties"), Avi Arad ("Mr. Arad") and Toy Biz entered into a stockholders
+agreement (the "Stockholders Agreement), which provides, among other things,
+that the Company and its permitted transferees, generally entities which are
+affiliates of the Company ("Permitted Transferees"), Mr. Perlmutter and Mr.
+Arad will vote their respective shares of Class A Common Stock to elect as
+directors of Toy Biz (i) eight persons designated by the Company, (ii) two
+persons designated by Mr. Perlmutter and (iii) one person designated by Mr.
+Arad. The Stockholders Agreement also permits certain pledges of Class B
+Common Stock of Toy Biz (the "Class B Common Stock") owned by the Company and
+its Permitted Transferees. The Company subsequently transferred its ownership
+interest in all of the Class B Common Stock held by it to Marvel Characters,
+Inc., a wholly owned subsidiary of the Company ("Marvel Characters"), a
+Permitted Transferee.
+
+         The Stockholders Agreement provides that, in the event Ronald O.
+Perelman no longer controls the Marvel, the Company is obligated to submit its
+shares of Class B Common Stock for conversion into Class A Common Stock, unless
+Mr. Perlmutter and Mr. Arad consent to such shares remaining Class B Common
+Stock. On March 24, 1997, the Court in the Debtor Companies' bankruptcy cases
+issued the Restraining Order. The Court, however, also ruled that the Creditors
+Committee and Holding Companies' Trustee could replace the Board of Directors
+of Marvel Holdings and Parent Holdings. On March 28, 1997, the Creditors
+Committee and the Holding Companies' Trustee filed the Entertainment Lift Stay
+Motion. On the same date, the Creditors Committee filed an emergency appeal of
+the Restraining Order. A hearing on such appeal was heard on May 1, 1997 in the
+Federal District Court for the District of Delaware, and on May 14, 1997 the 
+District Court overturned the Restraining Order, but stayed the effectiveness 
+of its ruling for 10 days. The Company intends to pursue available options
+to maintain the status quo. On April 24, 1997, the Holding Companies' Trustee
+voted the shares of common stock of Marvel Holdings pledged to secure the 
+Parent Holdings Notes to remove the directors of Marvel Holdings and replace 
+them with three designees of the Icahn Group. As a result, Mafco no longer 
+beneficially owns the approximately 50% of the Common Stock of Marvel owned by
+Marvel Holdings. However, in light of the  fact that Mafco, which is wholly 
+owned by Ronald O. Perelman, beneficially owns approximately 31% of the Common
+Stock of Marvel and that the Board of Directors of Marvel consists of designees
+of Mafco, the Company does not believe that the replacement of the directors 
+of Marvel Holdings with designees of the Icahn Group constitutes a change of
+control of the Company. If the Board of Directors of the Company were to be 
+replaced, such action would likely result in Ronald O. Perelman no longer
+controlling Marvel for purposes of the Stockholders Agreement.
+
+         The Stockholders Agreement terminates upon the mutual agreement of the
+parties thereto or upon the sale of all or substantially all of the assets of
+Toy Biz and also will terminate as to any share of Class B Common Stock when
+such share is converted into a share of Class A Common Stock or when there are
+no shares of Class B Common Stock outstanding, including as a result of
+conversion of all of the Class B Common Stock into Class A Common Stock.
+
+         Each of Messrs. Perlmutter and Arad is the sole trustee of a voting
+trust in which the Company had deposited one share (the "Deposited Stock") of
+Class B Common Stock (the "Class B Voting Trusts"). The Company is the sole
+beneficiary of each of the Class B Voting Trusts. Each of Messrs. Perlmutter
+and Arad has the right to vote the share of Deposited Stock held by his
+respective Class B Voting Trust in his absolute discretion until the
+termination of such trust. The Company subsequently transferred its ownership
+interest in the Deposited Stock to Marvel Characters.
+
+         The rights and obligations of Messrs. Perlmutter and Arad under the
+Stockholders Agreement cease, and the Class B Voting Trusts of which they are
+the trustees will terminate and the shares of Deposited Stock held by such
+trusts will be distributed to the Company, upon the occurrence of certain
+events, including a reduction in their holdings of Class A Common Stock below
+specified amounts of Class A Common Stock. In addition, the Class B Voting
+Trusts terminate if either Mr. Perlmutter or Mr. Arad attempts to transfer or
+dispose of his respective right to vote the Deposited Stock subject to a Class
+B Voting Trust or any interest therein.
+
+                                      14
+<PAGE>
+
+         On August 7, 1995, the Company transferred its entire ownership
+interest in the Class B Common Stock, including the Deposited Stock, to Marvel
+Characters. In connection with the transfer, Marvel Characters agreed to be
+bound by the Stockholders Agreement and the Class B Voting Trusts on the same
+terms and conditions as the Company.
+
+         Registration Rights Agreement. The Company is a party to a
+registration rights agreement (the "Registration Rights Agreement") with Toy
+Biz and Messrs. Perlmutter and Arad (collectively, the "Principal
+Stockholders"), pursuant to which each of the Principal Stockholders and
+certain permitted transferees of shares of Class A or Class B Common Stock
+formerly held by any of the Principal Stockholders (the "Holders") have the
+right, subject to certain conditions, to require Toy Biz to register under the
+Securities Act of 1933, as amended, all or any portion of the shares of Class A
+Common Stock held by them, or, in the case of the Company, issuable upon
+conversion of the Class B Common Stock held by it (each, a "Demand
+Registration"), on two occasions. In addition, the Holders have certain rights
+to participate in the Demand Registrations and other registrations by the
+Company of its Class A Common Stock (each, a "Piggyback Registration"). Toy Biz
+is obligated to pay any expenses incurred in connection with a Demand
+Registration or a Piggyback Registration, except for underwriting discounts and
+commissions attributable to the shares of Class A Common Stock sold by such
+Holders. As of April 30, 1997, the Company has not been reimbursed by Toy Biz
+for certain of its expenses in connection with the offering by Marvel of shares
+of Class A Common Stock in August 1996.
+
+         Marvel Studios. To enhance further the media exposure of the Marvel
+Characters, the Company and Toy Biz have agreed to form Marvel Studios,
+although documentation relating to such formation has not been finalized (and
+pending such formation, Marvel Studios is being operated as a division of the
+Company). The objective of Marvel Studios is to facilitate the release of live
+action and animated feature films and television programming, and other media
+based on the Marvel Characters in order to create greater consumer interest in
+the Marvel Characters and related merchandise. The Company believes that any
+feature film or television programming, theatrical productions or other media
+and any advertising and promotion associated with such media will create
+consumer interest in the Marvel Characters and revenue opportunities for the
+Company's businesses, including the licensing and toy business. The Company
+believes that Marvel Studios will facilitate the release of feature films,
+television programming and other media by giving the Company greater control
+over the development of such projects compared to the present practice of only
+licensing the use of the Marvel Characters in film or television projects to an
+unrelated third party.
+
+         Pursuant to an agreement with Toy Biz, Toy Biz has agreed to invest,
+from time to time, up to $50 million in preferred equity interests in Marvel
+Studios (the "Preferred Equity Interests"), which will represent 25% of the
+equity in Marvel Studios. Marvel has agreed to invest, from time to time, up to
+$50 million in common equity interests in Marvel Studios (the "Common Equity
+Interests") which will represent 75% of the equity in Marvel Studios. Each of
+Marvel and Toy Biz has also agreed to reimburse Marvel Studios for the portion
+of merchandise participations payable to third parties by Marvel Studios
+attributable to its respective operations. The governing body of Marvel Studios
+is expected to consist of three Marvel designees and two Toy Biz designees. In
+August 1996, Marvel sold 2.5 million shares of Class A Common Stock and Toy Biz
+sold 700,000 shares of Class A Common Stock to fund, in part, their respective
+obligations to Marvel Studios. As of April 30, 1997, all funding of Marvel
+Studios projects has been advanced by Marvel.
+
+         Marvel/Toy Biz Plan. The Company and Toy Biz signed a letter of intent
+dated April 25, 1997 (the "Letter of Intent") proposing a new plan (the
+"Marvel/Toy Biz Plan") of reorganization for the Debtor Companies. On May 7,
+1997, the Marvel/Toy Biz Plan was filed with the Bankruptcy Court.
+
+                  Newco Auction. The Marvel/Toy Biz Plan contemplates that
+there will be an auction (the "Newco Auction") of the enterprise resulting from
+the business combination of the Company (other than Fleer/SkyBox and Panini and
+their respective subsidiaries) and Toy Biz ("Newco"). Pursuant to the
+Marvel/Toy Biz Plan, under the Newco Auction process, the minimum acceptable
+bid for Newco would be one that yields net cash proceeds (after payment of
+administrative expenses, amounts owed under the $100 million debt-in-possession
+loan agreement (the "DIP Loan") and 
+
+
+                                      15
+<PAGE>
+
+
+certain costs and expenses of the Company's lenders under the existing credit
+agreements (the "Secured Lenders") and Toy Biz with, in the case of Toy Biz,
+such fees and expenses being capped at $3.5 million) to the Company's Secured
+Lenders in an amount equal to the aggregate amount owing such lenders less
+$180 million, and that yields to the stockholders of Toy Biz (other than
+Marvel) $285 million, or approximately $14 per share.
+
+                  Marvel Auction. As part of the auction process contemplated
+by the Marvel/Toy Biz Plan, as an alternative to bids for Newco, a bid may be
+accepted for the Company's publishing and licensing businesses and its
+approximately 26.6% interest in Toy Biz in an amount at least sufficient to
+yield net cash proceeds (after payment of administrative expenses, amounts owed
+under the DIP Loan and certain costs and expenses of the Company's Secured
+Lenders) to the Company's Secured Lenders equal to approximately $430 million
+and includes a means for payment of a breakup fee of $7 million to Toy Biz's
+stockholders (other than the Company) (see "--Breakup Fee").
+
+                  If a Transaction Based on a Qualifying Offer Closes. If an
+offer or offers satisfying the minimum conditions under the Newco Auction or
+Marvel Auction are received and a transaction based on such offer closes,
+pursuant to the Marvel/Toy Biz Plan the net cash proceeds are expected to be
+distributed in accordance with the preceding paragraph and the Secured Lenders
+will accept 100% of the common stock of Fleer and Panini.
+
+         Pursuant to the Marvel/Toy Biz Plan, if an offer or offers exceeding
+the minimum conditions are received and a transaction based on such offer
+closes, any excess proceeds shall be distributed to unsecured creditors, equity
+holders and securities litigation claimants of the Debtor Companies in order of
+priority; provided, that prior to any sale of Fleer and its subsidiaries and
+Panini and its subsidiaries, the Secured Lenders may elect to be distributed
+such excess proceeds, in which event the unsecured creditors, equity holders
+and securities litigation claimants of the Debtor Companies shall be
+distributed subordinated debt securities equal in value to such excess in order
+of priority.
+
+                  Marvel/Toy Biz Merger. If no offers satisfying the minimum
+conditions for the Newco Auction or Marvel Auction set forth above are
+received, or if no transaction based on an offer satisfying such minimum
+conditions closes, then pursuant to the Marvel/Toy Biz Plan, the Company's
+publishing and licensing businesses and Toy Biz would combine to form Newco.
+Pursuant to the Marvel/Toy Biz Plan, in such merger, the Company's Secured
+Lenders are expected to receive in satisfaction of their claims: (i) cash
+proceeds of a new $250 million term loan net of amounts required to repay
+borrowings under the DIP Loan, and a 5-year, $170 million note accruing
+interest at 11.5% per annum (payable at maturity) from Newco, (ii) 28% of the
+primary shares of Newco, and (iii) the economic interest in Fleer and Panini
+subject to certain limitations. Toy Biz stockholders will receive 72% of the
+primary shares of Newco. Pursuant to the Marvel/Toy Biz Plan, all other
+secured claims are expected to receive (i) payment in full in respect of their
+claims, (ii) return of their collateral, or (iii) reinstatement of their
+claims, as determined by Toy Biz, subject to the approval of the Secured
+Lenders. Pursuant to the Marvel/Toy Biz Plan, an amount of cash acceptable
+to Toy Biz and the Secured Lenders will be dedicated to the payment of general
+unsecured claims. Pursuant to the Marvel/Toy Biz Plan, allowed securities
+litigation claims are expected to be subordinated to all other claims and are
+expected to be pari passu with all equity interests in Marvel (other than
+warrants) pursuant to section 510(b) of the Bankruptcy Code.
+
+         In addition, pursuant to the Marvel/Toy Biz Plan, Marvel stockholders
+would receive two series of three-year warrants. The first series would entitle
+Marvel shareholders to acquire 7.5% of the common stock of Newco on a fully
+diluted basis with an exercise price based upon Marvel/Toy Biz having an
+enterprise value of $950 million. The second series would entitle Marvel
+shareholders to acquire an additional 5% of the common stock of Newco on a
+fully diluted basis with an exercise price based on Newco having an enterprise
+value of $1.1 billion.
+
+         Pursuant to the Marvel/Toy Biz Plan, Newco will obtain a loan facility
+(the "Loan Facility") in the amount of $250 million on a term-loan basis and
+$75 million on a revolving-credit basis, in each case having terms reasonably
+acceptable to the Secured Lenders. Pursuant to the Letter of Intent, if Newco
+is unable to obtain a term loan facility for such amount from a third-party
+lender as of the effective date of the Marvel/Toy Biz Plan, pursuant to the
+Marvel/Toy Biz Plan, the Secured Lenders will provide a senior secured term
+loan facility in the amount of $150 million, provided that the remainder of the
+Loan Facility is provided by a third party on terms reasonably acceptable to
+the Secured Lenders.
+
+
+                                      16
+<PAGE>
+
+
+                  Conditions Precedent to the Consummation of the Marvel/Toy
+Biz Plan. The conditions precedent to the consummation of the Marvel/Toy Biz
+Plan include, among other things, (i) there has been no material adverse
+change, as subsequently defined, in the financial condition of either Toy Biz
+or Marvel after the date of the execution of the Letter of Intent; (ii) the
+transactions contemplated by the Marvel/Toy Biz Plan, as they relate to Toy
+Biz, have been duly authorized by the stockholders of Toy Biz; (iii) the
+waiting period under the Hart-Scott-Rodino Antitrust Improvement Act has
+expired; and (iv) Toy Biz has received a suitable fairness opinion indicating
+that the exchange consideration to be received by Toy Biz Class A stockholders
+is fair from a financial point of view to such stockholders.
+
+         The conditions precedent to the consummation of the Marvel/Toy Biz
+Plan may only be waived only with the consent of Marvel, Toy Biz and the
+Secured Lenders.
+
+         The Marvel/Toy Biz Plan provides that confirmation date for such plan
+may not be later that August 15, 1997.
+
+                  Breakup Fee. Pursuant to the Marvel/Toy Biz Plan, the payment
+of the breakup fee is subject to the following conditions: (i) Toy Biz sends to
+Marvel and the Secured Lenders a copy of a firm financing commitment, subject
+only to the payment of a customary fee and otherwise in form and substance
+reasonably acceptable to the Secured Lenders with respect to the Loan Facility
+described above; (ii) Toy Biz is otherwise willing and diligently proceeding to
+close; and (iii) Messrs. Isaac Perlmutter and Avi Arad have entered into a
+voting agreement, in form and substance reasonably acceptable to Marvel and the
+Secured Lenders, on or before the date on which Toy Biz must complete its due
+diligence, pursuant to which they agree to vote their shares of Class A Common
+Stock in favor of the merger with Marvel and other transactions contemplated
+under the Letter of Intent, and not in favor of any competing offers.
+
+         There is no breakup fee in the context of a Newco Auction or the
+consummation of a competing plan (other than a sale pursuant to the Marvel
+Auction). The breakup fee provisions are subject to Bankruptcy Court approval.
+On May 9, 1997, the Bankruptcy Court approved, subject to certain conditions,
+the breakup fee.
+
+                  Sale of Fleer/SkyBox and Panini. Pursuant to the Marvel/Toy
+Biz Plan, Marvel's Fleer/SkyBox and Panini businesses will also be marketed and
+may be sold in a separate auction.
+
+                  Retention of Financial Advisor. The Company has retained
+Blackstone Group, LLP, to act as financial advisor to the Company, including to
+assist the Company in identifying potential bidders and conducting the Newco
+Auction, the Marvel Auction and the auction of the businesses of Fleer and
+Panini.
+
+         There can be no assurance that the transactions contemplated by the
+Marvel/Toy Biz Plan will be consummated.
+
+LOANS TO EXECUTIVE OFFICER
+
+         The Company extended a $250,000 unsecured loan to Jeffrey L. Kaplan,
+Executive Vice President, on each of February 15, 1995, and December 29, 1995.
+The principal of and accrued interest on such loans is payable on February 15,
+1999. The unpaid principal balance bears interest at a rate per annum equal to
+the interest rate paid by the Company, from time to time, on outstanding
+balances under the Company's Amended and Restated Credit Agreement or, if the
+Company is no longer a party to such credit facility, at a rate per annum equal
+to the prime rate at Chase. In 1997, such notes were assigned to Andrews Group
+for $500,000 plus accrued interest in an intercompany credit.
+
+
+                                      17
+<PAGE>
+
+
+CERTAIN BUSINESS RELATIONSHIPS
+
+         Kenneth Ziffren, a Director of the Company, is a partner of Ziffren,
+Brittenham, Branca & Fischer, a law firm which provided legal services to the
+Company in 1996, and is providing legal services to the Company in 1997.
+
+
+COMPLIANCE WITH SECTION 16(A) OF THE EXCHANGE ACT
+
+         The Company's executive officers, directors and 10% stockholders are
+required under the Exchange Act to file reports of ownership and changes in
+ownership with the SEC and the NYSE. Copies of these reports also must be
+furnished to the Company.
+
+         Based solely upon a review of copies of such reports furnished to the
+Company through the date hereof, or written representations that no reports
+were required, the Company believes that during 1996 all filing requirements
+applicable to its executive officers, directors and 10% holders were complied
+with.
+
+
+                                      18
+<PAGE>
+
+
+
+                                  SIGNATURES
+
+         Pursuant to the requirements of Section 13 or 15(d) of the Securities
+Exchange Act of 1934, the Registrant has duly caused this report to be signed
+on its behalf by the undersigned, thereunto duly authorized.
+
+                                          MARVEL ENTERTAINMENT GROUP, INC.
+                                            (Registrant)
+
+
+                                           By: /s/ Paul E. Shapiro
+                                              --------------------------------
+                                              Paul E. Shapiro
+                                              Executive Vice President
+
+
+                                      19
+
+
+
+</TEXT>
+</DOCUMENT>
+</SEC-DOCUMENT>
+-----END PRIVACY-ENHANCED MESSAGE-----

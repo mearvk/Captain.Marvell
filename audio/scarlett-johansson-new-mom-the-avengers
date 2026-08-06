@@ -1,0 +1,1141 @@
+
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head><script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=2N_sDSC0" charset="utf-8"></script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=o9P2E1FK" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://www.wmagazine.com:80/people/celebrities/2015/02/scarlett-johansson-new-mom-the-avengers","20150219065507","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1424328907");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" />
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+<!-- End Wayback Rewrite JS Include -->
+
+    <title> Scarlett Johansson on the Avengers, Parenting, Nudity | W Magazine</title>
+
+     
+
+
+   
+    <meta name="Author" content="W Magazine"/>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQUFVlRbGwAAVFZbDwc="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),u=c.length,f=i(a,o,r),d=0;u>d;d++)c[d].apply(f,n);return f}function a(t,e){u[t]=s(t).concat(e)}function s(t){return u[t]||[]}function c(){return n(e)}var u={};return{on:a,emit:e,create:c,listeners:s,_events:u}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(u){try{r("ierr",[u,(new Date).getTime(),!0])}catch(f){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(4),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(u){"stack"in u&&(t(5),t(3),"addEventListener"in window&&t(1),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(2),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:4,2:7,3:5,4:19,5:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:19,2:20,ee:"QJf3ax",gos:"7eSDFh"}],5:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:20,2:19,ee:"QJf3ax"}],6:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:20,2:19,ee:"QJf3ax"}],7:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),u=s(a),f=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new f(t);try{i.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",[r])}catch(o){}}return e},window.XMLHttpRequest.prototype=f.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:4,2:20,ee:"QJf3ax"}],8:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,u="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(u);if(f&&(r.rxSize=f),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,u=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var u=e(o);u&&(r.txSize=u)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",[e])}catch(r){}}};for(var f=0;c>f;f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+u(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+u(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:9,3:7,4:4,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],9:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=l.info=NREUM.info;if(t&&t.licenseKey&&t.applicationID&&u&&u.body){s(h,function(e,n){e in t||(t[e]=n)}),l.proto="https"===p.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=u.createElement("script");e.src=l.proto+t.agent,u.body.appendChild(e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,u=c.document,f="addEventListener",d="attachEvent",p=(""+location).split("?")[0],h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-515.min.js"},l=e.exports={offset:i(),origin:p,features:{}};u[f]?(u[f]("DOMContentLoaded",o,!1),c[f]("load",n,!1)):(u[d]("onreadystatechange",r),c[d]("onload",n)),a("mark",["firstbyte",i()])},{1:18,handle:"D5DuLP"}],18:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],19:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],20:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,u;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){f([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return u=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,u],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,u(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,u="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,u?s+o:o,i,s,t))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){f([o,e,n,r])}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){f([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function f(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:19,ee:"QJf3ax"}]},{},["G9z0Bl",3,8]);</script>
+    <meta name="google-site-verification" content="">   
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+    <link rel="canonical" href="https://web.archive.org/web/20150219065507/http://www.wmagazine.com/people/celebrities/2015/02/scarlett-johansson-new-mom-the-avengers"/>
+    <link rel="pingback" href=""/>
+    <link rel="apple-touch-icon" href="https://web.archive.org/web/20150219065507im_/http://www.wmagazine.com/wp-content/themes/wmagazine2.0/static/img/apple-touch-icon.png"/>
+    <link rel="shortcut Icon" href="https://web.archive.org/web/20150219065507im_/http://www.wmagazine.com/wp-content/themes/wmagazine2.0/favicon.ico"/>
+
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="W Magazine">
+
+<meta property="og:type" content="article"><meta property="og:title" content=" Scarlett Johansson on the Avengers, Parenting, Nudity"><meta property="og:description" content="Mother, chanteuse, computer operating system, bombshell alien…  no matter the role, Scarlett Johansson is her own woman.">    <meta property="og:url" content="https://web.archive.org/web/20150219065507/http://www.wmagazine.com/people/celebrities/2015/02/scarlett-johansson-new-mom-the-avengers">
+
+<meta property="og:image" content="https://web.archive.org/web/20150219065507im_/http://www.wmagazine.com/wp-content/uploads/2015/01/scarlett-johansson-cover-760x760.jpg"><meta name="twitter:image" content="https://web.archive.org/web/20150219065507im_/http://www.wmagazine.com/wp-content/uploads/2015/01/scarlett-johansson-cover-760x760.jpg">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content=" Scarlett Johansson on the Avengers, Parenting, Nudity"><meta name="twitter:description" content="Mother, chanteuse, computer operating system, bombshell alien…  no matter the role, Scarlett Johansson is her own woman.">    <meta name="twitter:site" content="wmag">
+    <meta name="twitter:creator" content="@wmag">
+    <meta name="twitter:url" content="https://web.archive.org/web/20150219065507im_/http://www.wmagazine.com/people/celebrities/2015/02/scarlett-johansson-new-mom-the-avengers">
+    <link rel="dns-prefetch" href="https://web.archive.org/web/20150219065507/http://result.wmagazine.com/"/><link rel="dns-prefetch" href="https://web.archive.org/web/20150219065507/http://event.wmagazine.com/"/><link rel="dns-prefetch" href="//web.archive.org/web/20150219065507/http://stats2.wmagazine.com/"/><link rel="dns-prefetch" href="//web.archive.org/web/20150219065507/http://sstats.wmagazine.com/"/>
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.7.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Naked alien, Black Widow,  and a new mom to boot,  the actress Scarlett Johansson continues  to defy expectations. Read her full interview here."/>
+<meta name="keywords" content=" Scarlett Johansson, The Avengers, Black Widow,"/>
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="W Magazine » Scarlett Johansson Is Nobody’s Baby Comments Feed" href="https://web.archive.org/web/20150219065507/http://www.wmagazine.com/people/celebrities/2015/02/scarlett-johansson-new-mom-the-avengers/feed/"/>
+<link rel="stylesheet" id="main-style-css" href="https://web.archive.org/web/20150219065507cs_/http://www.wmagazine.com/wp-content/themes/wmagazine2.0/static/css/screen.min.css?ver=20141202" type="text/css" media="all"/>
+<style type="text/css">.boxes .link-label h3 {
+max-height: 70px;
+}</style><script type="text/javascript" src="https://web.archive.org/web/20150219065507js_/http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js?ver=1.9.1"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var WP_VARS = {"THEME_URI":"https:\/\/web.archive.org\/web\/20150219065507\/http:\/\/www.wmagazine.com\/wp-content\/themes\/wmagazine2.0","ajaxurl":"https:\/\/web.archive.org\/web\/20150219065507\/http:\/\/www.wmagazine.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://web.archive.org/web/20150219065507js_/http://www.wmagazine.com/js/cn-fe-common/cn.js?ver=20141202"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20150219065507js_/http://www.wmagazine.com/js/cn-fe-common/popups/1.1.0/cn.popups-1.1.0.js?ver=20141202"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20150219065507js_/http://www.wmagazine.com/js/cn-fe-common/cn.mobile.js?ver=20141202"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var deviceviews = {"mobileMax":"600","tabletMax":"850"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://web.archive.org/web/20150219065507js_/http://www.wmagazine.com/wp-content/mu-plugins/cn-wordpress/lib/js/jquery.devices.js?ver=20141202"></script>
+<script type="text/javascript" src="//web.archive.org/web/20150219065507js_/http://assets.adobedtm.com/6372cf21ef88ee60bc2977a4898dcb5c7945a212/satelliteLib-ad7d8732ad212e821bbe1c54452b591612acabcc.js?ver=20141202"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20150219065507js_/http://result.wmagazine.com/js/eventTracker.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var s_account = "conde-wmagazine";
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://web.archive.org/web/20150219065507js_/http://www.wmagazine.com/wp-content/config/cn-fe-stats/s_code.js?ver=20141202"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var platformEnvironment = "production";
+var sitehost = "https:\/\/web.archive.org\/web\/20150219065507\/http:\/\/www.wmagazine.com";
+var omniture_init = [];
+CN.omniture = CN.omniture || {};CN.omniture.conf = {"s_account":"conde-wmagazine","server":"stats2.wmagazine.com","secureServer":"sstats.wmagazine.com","internalFilters":"javascript:,wmagazine.com,advancemags.com"};;
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://web.archive.org/web/20150219065507js_/http://www.wmagazine.com/wp-content/config/cn-fe-stats/omniture.js?ver=20141202"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20150219065507js_/http://www.wmagazine.com/wp-content/config/cn-fe-ads/cn.dart.js?ver=20141202"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20150219065507js_/http://www.wmagazine.com/wp-content/config/cn-fe-ads/cn.ad.yieldex.js?ver=20141202"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20150219065507js_/http://www.wmagazine.com/wp-content/config/cn-fe-ads/cn.ad.aam.js?ver=20141202"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20150219065507js_/http://www.wmagazine.com/wp-content/config/cn-fe-ads/cn.ad.proximic.js?ver=20141202"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20150219065507js_/http://www.wmagazine.com/js/cn-fe-ecom/cn.ecom.js?ver=20141202"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20150219065507js_/http://www.wmagazine.com/js/cn-fe-ecom/ecomfw.js?ver=20141202"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20150219065507js_/http://www.wmagazine.com/js/cn-fe-ecom/promotheus/promotheus.js?ver=20141202"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20150219065507js_/http://www.wmagazine.com/wp-content/themes/wmagazine2.0/static/js/head.js?ver=20141202"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20150219065507js_/http://www.wmagazine.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.wmagazine.com/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.wmagazine.com/wp-includes/wlwmanifest.xml"/> 
+<link rel="shortlink" href="https://web.archive.org/web/20150219065507/http://www.wmagazine.com/?p=7272151"/>
+<link rel="stylesheet" href="https://web.archive.org/web/20150219065507cs_/http://www.wmagazine.com/wp-content/plugins/wmagazine-solr-for-wordpress/template/autocomplete.css" type="text/css" media="screen"/>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        if ( typeof jQuery.suggest != 'undefined' ) {
+            $("#s").suggest("?method=autocomplete",{});
+            $("#qrybox").suggest("?method=autocomplete",{});
+        }
+
+    });
+</script>
+<!-- wp-parsely Plugin Version 1.5 -->
+<meta name="wp-parsely_version" id="wp-parsely_version" content="1.5"/>
+<meta name="parsely-page" id="parsely-page" content="{&quot;title&quot;:&quot;Scarlett Johansson Is Nobody\u2019s Baby&quot;,&quot;link&quot;:&quot;http:\/\/www.wmagazine.com\/people\/celebrities\/2015\/02\/scarlett-johansson-new-mom-the-avengers\/&quot;,&quot;image_url&quot;:&quot;http:\/\/www.wmagazine.com\/wp-content\/uploads\/2015\/01\/scarlett-johansson-cover-160x160.jpg&quot;,&quot;type&quot;:&quot;post&quot;,&quot;post_id&quot;:&quot;7272151&quot;,&quot;pub_date&quot;:&quot;2015-02-09T14:08:12Z&quot;,&quot;section&quot;:&quot;Celebrities&quot;,&quot;author&quot;:&quot;Lynn Hirschberg&quot;,&quot;tags&quot;:[&quot;black widow&quot;,&quot;scarlett johansson&quot;,&quot;the avengers&quot;]}"/>
+            <!-- COMSCORE -->
+	        <script type="text/javascript">
+	        //<!--
+	        	var _comscore = _comscore || [];
+	  			_comscore.push({ c1: "2", c2: "6035094", c4: "https://web.archive.org/web/20150219065507/http://www.wmagazine.com/people/celebrities/2015/02/scarlett-johansson-new-mom-the-avengers"});
+	  			(function() {var s = document.createElement("script"), el =document.getElementsByTagName("script")[0]; s.async = true;
+	    		s.src = (document.location.protocol == "https:" ?"https://web.archive.org/web/20150219065507/https://sb" : "http://b") +".scorecardresearch.com/beacon.js";
+				el.parentNode.insertBefore(s, el);})();
+	  			function slideChangeTrackingFn() {
+	  		         jQuery.ajax({
+	  		         type : 'GET',
+	  		         url : '/pv.xml',
+	  		         success : function(data) {
+	  		                 try {
+	  		                         COMSCORE.beacon({c1:"2", c2: "6035094"});
+	  		                         CN.debug.info("Comscore Non-Conventional(slideshow) Page view triggered.");
+	  		                     } catch(e) {
+	  		                         CN.debug.error('COMSCORE beacon call for slideshow page view failed' + e.message);
+	  		                     }
+	  		                 },
+	  		                 error : function(xhr, textStatus) {
+	  		                         CN.debug.error('page view xml load failed for slideshow, probably 404: ' + textStatus);
+	  		                     }
+	  		                 });
+	  		   }
+	  		//-->
+			</script>
+	            <script type="text/javascript" class="site_init">
+            //<!--
+                CN.site.init({
+                    code:             'WMG',
+                    title:            'W Magazine',
+                    name:             'wmagazine',
+                    alias:            'Wmagazine.com',
+                    domain:           'Wmagazine.com',
+                    tld:              'wmagazine.com',
+                    baseUrl:          'https://web.archive.org/web/20150219065507/http://www.wmagazine.com',
+                    mobilecompatible: 'true',
+                    httpStatusCode:    200,
+            eventServer: 'https://web.archive.org/web/20150219065507/http://event.wmagazine.com',
+eventTrackingUrl: 'https://web.archive.org/web/20150219065507/http://result.wmagazine.com',
+eventTrackingEnv: 'PROD',
+userServiceUrl: 'https://web.archive.org/web/20150219065507/https://user-service.condenastdigital.com',
+userServiceKey: 'TE7pnBDUEVco2vXPPNQVZNFlipc=',
+ecomUrl: 'https://web.archive.org/web/20150219065507/https://subscribe.wmagazine.com/api/circ/xml/Transaction',
+socialRes: 'https://web.archive.org/web/20150219065507/http://www.wmagazine.com/services/livefyre/userToken',
+                    env: 'PROD'  // Put something consistent last so we don't have a trailing comma (appease IE)
+                });
+
+                CN.isMobile = jQuery.devices.mobile();
+                CN.isTablet = jQuery.devices.tablet();
+                CN.checkDeviceView = jQuery.devices.checkDeviceView;
+            //-->
+            </script>
+                            <!-- AD INIT: CN.dart.init -->
+                <script type="text/javascript">
+                //<!--
+
+                    CN.dartKwsArray = [ "lynn_hirschberg","celebrities","black_widow","scarlett_johansson","the_avengers","people","2015","02","scarlett_johansson_new_mom_the_avengers" ];
+
+                
+                    CN.dart.init({
+                        site: CN.isMobile ? 'wmagazine.mobile.dart' : 'wmagazine.dart',
+                        zone: 'people',
+                        kws: CN.dartKwsArray,
+                        contentType: 'Article',
+                        charmap : {' ' : '+', '-' : '_'}
+                    });
+                            //-->
+                </script>
+                        <script type="text/javascript">
+        	if ( ! CN.isMobile ) {
+	            CN.popups = CN.popups || {};
+	            CN.popups.init();
+	            CN.popups.setCookieLife(72);
+	            CN.popups.setExiting(true, {
+	                path: '/exit-pop/',
+	                width: 360,
+	                height: 295,
+	            }).excludeExitPath( '/wp-admin', '/wp-login.php' ).excludeExitDomain("wmagazine.com","www.wmagazine.com","origin.www.wmagazine.com","secure.wmagazine.com","condenast.com");
+        	}
+
+    		if ( ! CN.isMobile ) {
+        	            	// Set exiting popup options
+	            	CN.popups.setArriving(false).setATGLayer(true);
+	        		}
+        </script>
+        </head>
+
+<body class=" lynn_hirschberg people celebrities 2015 02 scarlett-johansson-new-mom-the-avengers">
+
+            <!--Global Mbox-->
+            <div class="mboxDefault"></div>
+            <script type="text/javascript">
+            //<!--
+                // metaKeyWords is used by the pageads call for CM
+                metaKeyWords='default';
+                if ( ( typeof mboxCreate != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                    // create the mbox
+                    mboxCreate( "wmg_ed_global",
+                        "entity.brand=wmagazine",
+                        "entity.id=7272151",
+                        "entity.name=Scarlett Johansson Is Nobody’s Baby",
+                        "entity.categoryId=celebrities",
+                        "entity.contentType=article",
+                        "entity.siteSection=people",
+                        "entity.message=",
+                        "entity.pageUrl=http://www.wmagazine.com/people/celebrities/2015/02/scarlett-johansson-new-mom-the-avengers/",
+                        "entity.thumbnailUrl=http://www.wmagazine.com/wp-content/uploads/2015/01/scarlett-johansson-cover-160x160.jpg",
+                        "entity.inventory=1",
+                        "entity.value=1",
+                        "mboxPageValue=1"
+                        );
+                }
+            //-->
+            </script>
+            <!--end global mbox code-->
+            <time datetime="2015-02-09T09:08:12+00:00"></time>            <!-- CM: page-ads.js -->
+            <script type="text/javascript">
+            //<!--
+                var _ghearst_vars = (function() {
+                    var commonParams = 'ad_category_prefix=people'
+                                        + '&amp;browser_path=%2Fpeople%2Fcelebrities%2F2015%2F02%2Fscarlett-johansson-new-mom-the-avengers'
+                                        + '&amp;cat_prefixes=%2Cpeople%2Ccelebrities%2C2015%2C02%2Cscarlett-johansson-new-mom-the-avengers'
+                                        + '&amp;site_prefix=wmagazine'
+                                        + '&amp;subdomain=www'
+                                        + '&amp;url_name=scarlett-johansson-new-mom-the-avengers';
+
+            
+                    var deviceParams = (function() {
+                                                if ( ( navigator.userAgent.match(/iPad/i) !== null ) && ( CN.cookie.get('ipadTakeover') !== 'true' ) ) {
+                                return 'AMS_WMG_GLOBAL_NAVBAR_ROLLOVER%2CAMS_WMG_GLOBAL_NAVBAR%2CAMS_WMG_CONTENTPAGE_RIGHTRAIL_A%2CAMS_WMG_CONTENTPAGE_RIGHTRAIL_B%2CAMS_WMG_GLOBAL_FOOTER%2CAMS_WMG_POPUP_FLOATINGAD%2CAMS_WMG_GLOBAL_HEADER_LOGO%2CAMS_WMG_GLOBAL_IPAD_TAKEOVER';
+                            } else {
+                                return 'AMS_WMG_GLOBAL_NAVBAR_ROLLOVER%2CAMS_WMG_GLOBAL_NAVBAR%2CAMS_WMG_CONTENTPAGE_RIGHTRAIL_A%2CAMS_WMG_CONTENTPAGE_RIGHTRAIL_B%2CAMS_WMG_GLOBAL_FOOTER%2CAMS_WMG_POPUP_FLOATINGAD%2CAMS_WMG_GLOBAL_HEADER_LOGO';
+                            }
+                                                })();
+
+            
+                    return {
+                        'ams_ads_script_src' : 'https://web.archive.org/web/20150219065507/https://subscribe.wmagazine.com/ams/page-ads.js?'
+                                                + commonParams + ''
+                                                + '&amp;keywords=' + metaKeyWords + ''
+                                                + '&amp;position_list=' + deviceParams + ''
+                    };
+                })();
+
+                if (!window.$h) {window.$h = {}}
+                (function(){
+                    if (!$h.util) {
+                        $h.util = {
+                            buildScriptTag: function(src){
+                                if (!!src){ document.write('<scr' + 'ipt src="'+src+'" type="text/javascript"></scr' + 'ipt>');}
+                            }
+                        }
+                    }
+                    $h.util.buildScriptTag(_ghearst_vars.ams_ads_script_src)
+                })();
+            //-->
+            </script>
+            
+	<div class="wrapper">
+		<div class="horizontal-banner">
+		<div class="ad-served wm-dart-ad" id="top-banner"><div class="advertisement"><div id="top728x90_frame" class="displayAd displayAd728x90Js" data-cb-ad-id="top728x90_frame"></div><div id="top320x50_frame" class="displayAd displayAd320x50Js" data-cb-ad-id="top728x90_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( CN.dart ) {
+ CN.dart.call( "top", { sz: ( CN.isMobile ? "320x50" : "728x90" ), kws: [ "top" ], collapse: true } );
+}
+}</script></div></div>    	</div>
+    <header class="header" id="header">
+        <div class="header-wrap">
+        	<div class="cmu-sub">
+				<div id="AMS_WMG_GLOBAL_HEADER_LOGO" class="ecom-placement"><a href="https://web.archive.org/web/20150219065507/https://w1.buysub.com/loc/WMG/ATGFailsafe" target="_blank" title="Subscribe to W magazine">Subscribe &gt;</a>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( typeof pageAds.AMS_WMG_GLOBAL_HEADER_LOGO != 'undefined' ) {
+  jQuery( "#AMS_WMG_GLOBAL_HEADER_LOGO" ).html( pageAds.AMS_WMG_GLOBAL_HEADER_LOGO.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_WMG_GLOBAL_HEADER_LOGO" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_WMG_GLOBAL_HEADER_LOGO not in pageAds."); }
+                    })();
+                                }
+            //-->
+            </script>
+            </div>	   		</div>
+            
+            				<a id="logo" href="/web/20150219065507/http://www.wmagazine.com/">W Magazine</a>
+			
+			 
+
+<nav>
+    <ul class="primary" id="primary">
+                            <li class="category-list" data-category="fashion">
+                <a href="/web/20150219065507/http://www.wmagazine.com/fashion/">Fashion</a>
+                <div class="submenu">
+                    <ul>
+                        <li class="sub-category-list" data-category="fashion"><a href="/web/20150219065507/http://www.wmagazine.com/fashion/">View all</a></li>
+                                                <li class="sub-category-list" data-category="accessories"><a href="/web/20150219065507/http://www.wmagazine.com/fashion/accessories/">Accessories</a></li>
+                                                <li class="sub-category-list" data-category="news-gossip-roundup"><a href="/web/20150219065507/http://www.wmagazine.com/fashion/news-gossip-roundup/">Chic in Review</a></li>
+                                                <li class="sub-category-list" data-category="runway-collections"><a href="/web/20150219065507/http://www.wmagazine.com/fashion/runway-collections/">Collections</a></li>
+                                                <li class="sub-category-list" data-category="features"><a href="/web/20150219065507/http://www.wmagazine.com/fashion/features/">Features</a></li>
+                                                <li class="sub-category-list" data-category="giovanna-battaglia-journal"><a href="/web/20150219065507/http://www.wmagazine.com/fashion/giovanna-battaglia-journal/">Gio's Journal</a></li>
+                                                <li class="sub-category-list" data-category="fashion-week-reviews"><a href="/web/20150219065507/http://www.wmagazine.com/fashion/fashion-week-reviews/">One Look, One Line</a></li>
+                                                <li class="sub-category-list" data-category="most-wanted"><a href="/web/20150219065507/http://www.wmagazine.com/fashion/most-wanted/">Perfect 10</a></li>
+                                                <li class="sub-category-list" data-category="street-style"><a href="/web/20150219065507/http://www.wmagazine.com/fashion/street-style/">Street Style</a></li>
+                                            </ul>
+                    <div class="more-stories"></div>
+                </div>
+            </li>
+                    <li class="category-list" data-category="beauty">
+                <a href="/web/20150219065507/http://www.wmagazine.com/beauty/">Beauty</a>
+                <div class="submenu">
+                    <ul>
+                        <li class="sub-category-list" data-category="beauty"><a href="/web/20150219065507/http://www.wmagazine.com/beauty/">View all</a></li>
+                                                <li class="sub-category-list" data-category="beauty-insiders"><a href="/web/20150219065507/http://www.wmagazine.com/beauty/beauty-insiders/">Insiders</a></li>
+                                                <li class="sub-category-list" data-category="editor-picks"><a href="/web/20150219065507/http://www.wmagazine.com/beauty/editor-picks/">Jane's Addiction</a></li>
+                                                <li class="sub-category-list" data-category="perfect-10"><a href="/web/20150219065507/http://www.wmagazine.com/beauty/perfect-10/">Perfect 10</a></li>
+                                            </ul>
+                    <div class="more-stories"></div>
+                </div>
+            </li>
+                    <li class="category-list" data-category="people">
+                <a href="/web/20150219065507/http://www.wmagazine.com/people/">People</a>
+                <div class="submenu">
+                    <ul>
+                        <li class="sub-category-list" data-category="people"><a href="/web/20150219065507/http://www.wmagazine.com/people/">View all</a></li>
+                                                <li class="sub-category-list" data-category="best-dressed"><a href="/web/20150219065507/http://www.wmagazine.com/people/best-dressed/">Best Dressed</a></li>
+                                                <li class="sub-category-list" data-category="celebrities"><a href="/web/20150219065507/http://www.wmagazine.com/people/celebrities/">Celebrities</a></li>
+                                                <li class="sub-category-list" data-category="insiders"><a href="/web/20150219065507/http://www.wmagazine.com/people/insiders/">Insiders</a></li>
+                                                <li class="sub-category-list" data-category="on-the-verge"><a href="/web/20150219065507/http://www.wmagazine.com/people/on-the-verge/">On the Verge</a></li>
+                                            </ul>
+                    <div class="more-stories"></div>
+                </div>
+            </li>
+                    <li class="category-list" data-category="parties">
+                <a href="/web/20150219065507/http://www.wmagazine.com/parties/">Parties</a>
+                <div class="submenu">
+                    <ul>
+                        <li class="sub-category-list" data-category="parties"><a href="/web/20150219065507/http://www.wmagazine.com/parties/">View all</a></li>
+                                                <li class="sub-category-list" data-category="after-hours-parties"><a href="/web/20150219065507/http://www.wmagazine.com/parties/after-hours-parties/">After Hours</a></li>
+                                            </ul>
+                    <div class="more-stories"></div>
+                </div>
+            </li>
+                    <li class="category-list" data-category="culture">
+                <a href="/web/20150219065507/http://www.wmagazine.com/culture/">Culture</a>
+                <div class="submenu">
+                    <ul>
+                        <li class="sub-category-list" data-category="culture"><a href="/web/20150219065507/http://www.wmagazine.com/culture/">View all</a></li>
+                                                <li class="sub-category-list" data-category="art-and-design"><a href="/web/20150219065507/http://www.wmagazine.com/culture/art-and-design/">Art &amp; Design</a></li>
+                                                <li class="sub-category-list" data-category="eye-candy"><a href="/web/20150219065507/http://www.wmagazine.com/culture/eye-candy/">Eye Candy</a></li>
+                                                <li class="sub-category-list" data-category="film-and-tv"><a href="/web/20150219065507/http://www.wmagazine.com/culture/film-and-tv/">Film &amp; TV</a></li>
+                                                <li class="sub-category-list" data-category="interiors"><a href="/web/20150219065507/http://www.wmagazine.com/culture/interiors/">Interiors</a></li>
+                                                <li class="sub-category-list" data-category="on-set-film-photos"><a href="/web/20150219065507/http://www.wmagazine.com/culture/on-set-film-photos/">On Set</a></li>
+                                                <li class="sub-category-list" data-category="jessica-craig-martin-photos"><a href="/web/20150219065507/http://www.wmagazine.com/culture/jessica-craig-martin-photos/">Social Studies by Jessica Craig-Martin</a></li>
+                                                <li class="sub-category-list" data-category="not-a-fashion-photo"><a href="/web/20150219065507/http://www.wmagazine.com/culture/not-a-fashion-photo/">This Is Not a Fashion Photo</a></li>
+                                                <li class="sub-category-list" data-category="travel"><a href="/web/20150219065507/http://www.wmagazine.com/culture/travel/">Travel</a></li>
+                                            </ul>
+                    <div class="more-stories"></div>
+                </div>
+            </li>
+            </ul>
+    <ul class="secondary">
+        <li class="network"><a href="/web/20150219065507/http://www.wmagazine.com/social/">Social</a></li>
+        <li class="moodboard"><a href="/web/20150219065507/http://www.wmagazine.com/mood-board/">Mood Board</a></li>
+        <li class="video"><a href="/web/20150219065507/http://www.wmagazine.com/video">Video</a></li>
+        <li class="search"><a href="/web/20150219065507/http://www.wmagazine.com/search/">Search</a></li>
+                <li class="promotions"><a href="https://web.archive.org/web/20150219065507/http://promotions.wmagazine.com/" target="_blank">Promotions</a></li>
+    </ul>
+    <div class="search-bar">
+        <form action="/web/20150219065507/http://www.wmagazine.com/search/" method="get">
+            <input type="text" name="query" placeholder="Search W Magazine" autocomplete="off">
+            <ul class="livesearch"></ul>
+            <button type="submit">Search</button>
+            <a class="close" href="#"></a>
+        </form>
+    </div>                        
+    <div class="subscription-dropdown-wrap" id="subscription-dropdown">
+        <div class="subscription-dropdown-button">
+            <div id="AMS_WMG_GLOBAL_NAVBAR" class="ecom-placement"><a title="Subscribe to W Magazine" target="_blank" href="https://web.archive.org/web/20150219065507/https://w1.buysub.com/loc/WMG/ATGFailsafe">Subscribe</a>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( typeof pageAds.AMS_WMG_GLOBAL_NAVBAR != 'undefined' ) {
+  jQuery( "#AMS_WMG_GLOBAL_NAVBAR" ).html( pageAds.AMS_WMG_GLOBAL_NAVBAR.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_WMG_GLOBAL_NAVBAR" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_WMG_GLOBAL_NAVBAR not in pageAds."); }
+                    })();
+                                }
+            //-->
+            </script>
+            </div>        </div>
+        <div class="cmu-dropdown">
+            <div>
+                <div id="AMS_WMG_GLOBAL_NAVBAR_ROLLOVER" class="ecom-placement"><img src="/web/20150219065507im_/http://www.wmagazine.com/wp-content/config/ecom_failsafe/WMG_Rollover_400x290_A.gif" usemap="#GLOBAL_NAVBAR_ROLLOVER_MAP" width="400" height="290" alt="Subscribe to W Magazine"/><map id="GLOBAL_NAVBAR_ROLLOVER_MAP" name="GLOBAL_NAVBAR_ROLLOVER_MAP"><area shape="rect" coords="0,249,75,286" href="https://web.archive.org/web/20150219065507/https://w1.buysub.com/loc/WMG/ATGFailsafeGift" alt="Give a Gift" target="_blank"/><area shape="rect" coords="76,249,203,286" href="https://web.archive.org/web/20150219065507/https://w1.buysub.com/loc/WMG/ATGFailsafeInt" alt="International Orders" target="_blank"/><area shape="rect" coords="0,0,399,249" href="https://web.archive.org/web/20150219065507/https://w1.buysub.com/loc/WMG/ATGFailsafe" alt="Subscribe to W Magazine" target="_blank"/><area shape="rect" coords="203,249,399,290" href="https://web.archive.org/web/20150219065507/https://w1.buysub.com/loc/WMG/ATGFailsafe" alt="Order Now" target="_blank"/></map>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( typeof pageAds.AMS_WMG_GLOBAL_NAVBAR_ROLLOVER != 'undefined' ) {
+  jQuery( "#AMS_WMG_GLOBAL_NAVBAR_ROLLOVER" ).html( pageAds.AMS_WMG_GLOBAL_NAVBAR_ROLLOVER.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+} else { CN.debug.info( "AMS_WMG_GLOBAL_NAVBAR_ROLLOVER not in pageAds."); }
+                    })();
+                                }
+            //-->
+            </script>
+            </div>            </div>
+            <a href="/web/20150219065507/http://www.wmagazine.com/" class="close"></a>
+        </div>
+    </div>
+</nav>            
+        </div>
+    </header>
+
+<div class="container article-container" data-save-position="true" id="article-container">
+	<div class="article-wrap">
+	    <h3 class="category-heading"><a href="https://web.archive.org/web/20150219065507/http://www.wmagazine.com/people/" title="View all posts in People">People</a>   &raquo;   <a href="https://web.archive.org/web/20150219065507/http://www.wmagazine.com/people/celebrities/" title="View all posts in Celebrities" rel="category tag">Celebrities</a>   »   Scarlett Johansson Is Nobody’s Baby</h3>
+	    <article class="article" id="article" data-save-position="true">
+	        	
+        	
+	        	        <div class="article-content">
+
+	        			
+    		<figure class="loading"><div class="image-wrap inview"><a href="https://web.archive.org/web/20150219065507/http://www.wmagazine.com/people/celebrities/2015/02/scarlett-johansson-nobodys-baby/photos/slide/1"><img src="https://web.archive.org/web/20150219065507im_/http://www.wmagazine.com/wp-content/uploads/2015/01/scarlett-johansson-cover-760x987.jpg" alt="Scarlett Johansson Is Nobody’s Baby"></a><a class="view-slideshow" href="https://web.archive.org/web/20150219065507/http://www.wmagazine.com/people/celebrities/2015/02/scarlett-johansson-nobodys-baby/photos/slide/1"><span>See Photos</span></a></div><figcaption>Scarlett Johansson wears Michael Kors cardigan; La Perla bra; David Yurman rings.</figcaption></figure>
+        	            <div id="article-text-wrap" class="text-wrap">
+                
+                        
+
+<ul class="share " data-addthis="true">
+  <li class="s-tweet">
+    <span>tweet</span>
+    <div><div class="social_bookmarking_module"><ul><li class="sb_button sb_twitter sb_small"><a href="https://web.archive.org/web/20150219065507/http://twitter.com/share" class="twitter-share-button" data-count="horizontal"></a></li></ul></div></div>
+  </li>
+  <li class="s-facebook">
+      <span>share on facebook</span>
+      <div><div class="social_bookmarking_module"><ul><li class="sb_button sb_facebook sb_share"><a class="share-facebook" onclick="window.open(this.href, 'sharer', 'width=626,height=436'); return false;" href="https://web.archive.org/web/20150219065507/http://www.facebook.com/sharer/sharer.php?t=Scarlett+Johansson+Is+Nobody%E2%80%99s+Baby&amp;u=http://www.wmagazine.com/people/celebrities/2015/02/scarlett-johansson-new-mom-the-avengers/"><em></em>Share</a></li></ul></div></div>
+  </li>
+  <li class="s-pin">
+    <span>pin it</span>
+    <div><div class="social_bookmarking_module"><ul><li class="sb_button sb_pinterest sb_small"><a href="//web.archive.org/web/20150219065507/http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.wmagazine.com%2Fpeople%2Fcelebrities%2F2015%2F02%2Fscarlett-johansson-new-mom-the-avengers%2F&amp;description=Scarlett+Johansson+Is+Nobody%E2%80%99s+Baby&amp;media=http%3A%2F%2Fwww.wmagazine.com%2Fwp-content%2Fuploads%2F2015%2F01%2Fscarlett-johansson-cover.jpg" data-pin-do="buttonPin" data-pin-config="beside"><img src="//web.archive.org/web/20150219065507im_/http://assets.pinterest.com/images/pidgets/pin_it_button.png" alt="Pin This"/></a></li></ul></div></div>
+  </li>
+  <li class="s-gplus">
+    <span>share on google+</span>
+    <div><div class="social_bookmarking_module"><ul><li class="sb_button sb_google sb_small"><g:plusone size="medium" count="true" callback="plusClick"></g:plusone></li></ul></div></div>
+  </li>
+</ul>
+
+                <h1>
+                	<strong>Scarlett Johansson Is Nobody’s Baby</strong>
+                </h1>
+                <h2>Mother, chanteuse, computer operating system, bombshell alien…  no matter the role, Scarlett Johansson is her own woman.</h2>
+                <ul class="meta">
+                    <li>
+	                    <time datetime="2015-02-09">February 9, 2015 9:08 AM</time>  |  by  <a href="/web/20150219065507/http://www.wmagazine.com/author/lynnhirschberg">Lynn Hirschberg</a>                    </li>
+                    <li>Photography by <a href="/web/20150219065507/http://www.wmagazine.com/contributor/mertalasandmarcuspiggott">Mert Alas</a></li>                </ul>
+
+                <p class="p1">“When she came out of me, I was so surprised,” <a href="https://web.archive.org/web/20150219065507/http://www.wmagazine.com/people/celebrities/2011/06/scarlett-johansson-movie-greats-ss/photos">Scarlett Johansson</a> told me on a cold day in December. We were at the photo shoot for this story, and Johansson, who had given birth to her daughter, Rose, just three months earlier, was wearing tight jeans and an equally snug white sweater. Her short, almost platinum hair, which would soon be covered by a <a href="https://web.archive.org/web/20150219065507/http://www.wmagazine.com/tags/debbie-harry">Debbie Harry</a> circa-Blondie shag wig, was slicked back. “I had a very strong picture in my mind of what my baby would look like,” Johansson continued. “And, of course, she is completely different. Perfect, but not what I’d imagined. Now, of course, I can’t picture her any other way.” Johansson smiled. As always—and I have been interviewing her regularly since her breakthrough role in 2003’s <i>Lost in Translation</i>—she was at once forthcoming and guarded. Johansson, who just turned 30, has been acting professionally since she was 7 and is entirely comfortable in the spotlight. (“Everyone has seen my breasts!” she said when an assistant offered her a private changing room. “I can change my top right here.”) And then, when it truly matters, she can be remarkably discreet. It was months before the public caught wind of her marriage to the French journalist Romain Dauriac.</p>
+<p class="p2">Johansson has always taken unexpected creative chances: In 2010, at the height of her movie stardom, she defied critics by acting in Arthur Miller’s <i>A View From the Bridge </i>on Broadway and, to the astonishment of many, winning a Tony for her performance. With the verve of a ’60s chanteuse, Johansson has recorded albums, and they are far from vanity projects. And just when she seemed a bit too art house, she took the role of Black Widow, the female superhero in <i>The Avengers.</i> The much-awaited sequel to that movie, <i>Avengers: Age of Ultron</i> (<a href="https://web.archive.org/web/20150219065507/https://www.youtube.com/watch?v=tmeOjFno6Do">the trailer</a> garnered 34.3 million hits in its first 24 hours online), is due in theaters on May 1.</p>
+<p class="p2">The past year was, in particular, a big one for Johansson: In addition to becoming a mom, she starred in two of the only interesting female-centric films of 2014. In the global blockbuster <i>Lucy,</i> she plays a woman who ingests a drug that gives her superior mental and physical abilities (telekinesis, ass-kicking), and in <i>Under the Skin,</i> she is a seductive, murderous alien. “I was completely naked in that movie,” Johansson said matter-of-factly. “She was a totally different species, so her nudity was kind of practical. I also had black hair. That was my idea—I didn’t think I should be a blonde sort of bombshell. Naked, but not too sexy.”</p>
+<blockquote>
+<p class="p2">See Scarlett Johansson&#8217;s style evolution <a href="https://web.archive.org/web/20150219065507/http://www.wmagazine.com/people/celebrities/2015/02/scarlett-johansson-style-red-carpet/photos/">here</a>.</p>
+</blockquote>
+<p class="p2">As a child in New York, Johansson was fascinated with every aspect of show business. “I had a big imagination,” she said. “I particularly loved Judy Garland, and, to me, she did it all. For as long as I can remember, I wanted to be an actor. And I wanted to do everything. When you’re a kid, they send you on a lot of commercial auditions, and I was terrible at selling things. I never got those parts. I remember crying in the subway, and my mom said, ‘Look—let’s forget it. Do something else.’ And I replied, ‘No. You can’t take this away from me. I want to be an actor!’ Waiting for the B train, I had my come-to-Jesus moment.”</p>
+<p class="p2">So Johansson (and her mother, who became her manager) decided she would audition only for films. In addition to a precocious mix of sexy and cute, even as a girl, Johansson had a trump card: her deep, slightly hoarse, smoky speaking voice. “When I was young, I would talk and everyone thought I had a cold. But when I went out for films, they loved my voice. It was a different world.” In 2013, <a href="https://web.archive.org/web/20150219065507/http://www.wmagazine.com/fashion/2009/08/spike-jonze/">Spike Jonze</a> capitalized on Johansson’s voice brilliantly in <a href="https://web.archive.org/web/20150219065507/http://www.wmagazine.com/culture/on-set-film-photos/2013/12/her-spike-jonze/photos/"><i>Her</i></a>—as <a href="https://web.archive.org/web/20150219065507/http://www.wmagazine.com/people/celebrities/2014/01/joaquin-phoenix-bradley-cooper/photos/">Joaquin Phoenix</a>’s love interest<i>,</i> a disembodied computer operating system<i>.</i> Jonze told me that Johansson arrived every day to play the part wearing red lipstick and a cocktail dress, even though she would never appear on camera. “That’s ridiculous,” Johansson said, bursting into her throaty laugh. “Maybe I wore a little lipstick, but I think he was just relieved that I wasn’t in pajamas. Joaquin and Spike were both coming to work in pajamas at that point.”</p>
+<blockquote>
+<p class="p2">See more photos of Scarlett Johansson on <a href="https://web.archive.org/web/20150219065507/http://www.wmagazine.com/mood-board/filter?q=^Celebrity|Scarlett%20Johansson|"><em>W&#8217;s</em> Mood Board</a>.</p>
+</blockquote>
+<p class="p2">Strangely, before Jonze, no director or animator had taken such advantage of Johansson’s voice. “I actually visited Pixar, hoping that they would use me for a cartoon,” Johansson said. “They didn’t. I was ripe for the picking! What happened?” She paused. “Now they <i>have</i> to give me a cartoon! I just called them out.” In a non-neurotic way that is rare for an actress (or anybody for that matter), she has no fear or anxiety about venturing into new territory; she is hugely proactive.</p>
+<p class="p2"><span class="s1">“People were surprised that I wanted to play a comic book heroine,” Johansson said. “But I loved <i>Iron Man, </i>and I met with Marvel to see what was possible. I had done my research, and the Black Widow character resonated with me. She is dark and has faced death so many times that she has a deep perspective on the value of life. In the sequel, you learn more about the sadness in her past.” Johansson might have well been talking about a classic heroine of epic complexity. “I think of her that way. Black Widow is a superhero, but she’s also human. She’s small, but she’s strong. It’s hard not to admire her.” Johansson laughed, perhaps realizing it was herself she could be describing. “She packs a big punch,” Johansson said as she left to check on her daughter, who was sleeping nearby. “We all try to fight the forces of evil. Like Black Widow, you have to keep trying. The challenge is always there.” </span></p>
+<p>&nbsp;</p>
+<div class="youtube-video"><iframe src="//web.archive.org/web/20150219065507if_/http://www.youtube.com/embed/NutBl48Cyac" width="560" height="315" frameborder="0"></iframe></div>
+
+                <ul class="meta meta_footer">
+                    <li> <p>Hair by Didier Malige; makeup by Aaron de Mey at Art Partner; manicure by Naomi Yasuda for Dior at Streeters. Set design  by Gerard Santos at the Magnet Agency. Produced by Across Media Productions. Digital technicians: Niccolo Paccilli, Jeronimo de Moraes. Photography assistants: Matt Easton, Sinclair Jaspard Mandy, Mark Luckasavage. Fashion assistants: Ryann Foulke,  Dena Giannini. </p>
+</li>
+                </ul>
+                <div class="tags">
+                    <span>See More</span>
+                    <a href="/web/20150219065507/http://www.wmagazine.com/tag/black-widow">Black Widow</a><a href="/web/20150219065507/http://www.wmagazine.com/tag/scarlett-johansson">Scarlett Johansson</a><a href="/web/20150219065507/http://www.wmagazine.com/tag/the-avengers">the avengers</a>                </div>
+
+            </div>
+	        </div>
+	    		        
+ 
+
+<section class="related-section">
+	<h3>Related Stories</h3>
+	<div class="related-scroll">
+    	<div class="related-articles"></div>
+    </div>
+</section>
+	        <section class="zerg-related-stories ad"><h6 class="zerg-retated-title">Around The Web</h6><div id="zergnet-widget-25810"></div><script language="javascript" type="text/javascript">(function() {var zergnet = document.createElement('script');zergnet.type = 'text/javascript'; zergnet.async= true;zergnet.src = 'https://web.archive.org/web/20150219065507/http://www.zergnet.com/zerg.js?id=25810';var znscr = document.getElementsByTagName('script')[0];znscr.parentNode.insertBefore(zergnet,znscr);})();</script></section>
+	        	        
+
+
+<nav class="article-nav">
+    <ul>
+        <li class="prev">
+
+                  <a href="https://web.archive.org/web/20150219065507/http://www.wmagazine.com/people/2015/02/lily-aldridge-candice-swanepoel-valentines-day/">
+            <img width="70" height="70" src="https://web.archive.org/web/20150219065507im_/http://www.wmagazine.com/wp-content/uploads/2015/02/candice-swanepoel-lily-aldridge-victorias-secret-160x160.jpg" class="attachment-70x70 wp-post-image" alt="Candice Swanepoel and Lily Aldridge"/>
+            <i></i>
+            <span class="arrow">Previous</span>
+            <br>
+            <p class="slice30">Just the Two of Us</p>
+          </a>
+        
+        </li><li class="next">
+
+                  <a href="https://web.archive.org/web/20150219065507/http://www.wmagazine.com/people/best-dressed/2015/02/lily-james-mary-katrantzou-cinderella/">
+            <img width="70" height="70" src="https://web.archive.org/web/20150219065507im_/http://www.wmagazine.com/wp-content/uploads/2015/02/lily-james-cinderella-160x160.jpg" class="attachment-70x70 wp-post-image" alt="Lily James in Mary Katrantzou"/>            <i></i>
+            <span class="arrow">Next</span>
+            <br>
+            <p class="slice30">Lily James Goes Sheer for <em>Cinderella</em></p>
+          </a>
+        
+        </li>
+    </ul>
+</nav>
+
+	    </article><!--
+
+		--><!--
+	    --><aside class="sidebar" id="sidebar" data-save-position="true">
+<div class="ad-served wm-dart-ad" id="article_aside"><div class="advertisement"><div id="article_aside300x250_frame" class="displayAd displayAd300x250Js" data-cb-ad-id="article_aside300x250_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( ! CN.isMobile && CN.dart ) {
+ CN.dart.call( "article_aside", { sz: "300x250", kws: [ "top" ], collapse: true } );
+} 
+}</script></div></div><div class="ad-served wm-dart-ad" id="article_aside"><div class="advertisement"><div id="article_aside320x51_frame" class="displayAd displayAd320x51Js" data-cb-ad-id="article_aside300x250_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( CN.isMobile && CN.dart ) {
+ CN.dart.call( "article_aside", { sz: ( "320x51" ), kws: [ "bottom" ], collapse: true } );
+} 
+}</script></div></div>	<div class="cmu-wrap">
+		<div id="AMS_WMG_CONTENTPAGE_RIGHTRAIL_A" class="ecom-placement"><a href="https://web.archive.org/web/20150219065507/https://w1.buysub.com/loc/WMG/ATGFailsafe" target="_blank"><img src="/web/20150219065507im_/http://www.wmagazine.com/wp-content/config/ecom_failsafe/WMG_CPRR_300x120_A.jpg" alt="Subscribe to W Magazine"/></a>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( typeof pageAds.AMS_WMG_CONTENTPAGE_RIGHTRAIL_A != 'undefined' ) {
+  jQuery( "#AMS_WMG_CONTENTPAGE_RIGHTRAIL_A" ).html( pageAds.AMS_WMG_CONTENTPAGE_RIGHTRAIL_A.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_WMG_CONTENTPAGE_RIGHTRAIL_A" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_WMG_CONTENTPAGE_RIGHTRAIL_A not in pageAds."); }
+                    })();
+                                }
+            //-->
+            </script>
+            </div>	</div>
+	<div class="more-stories">
+		<ul>
+		    <li>
+		    </li>
+		</ul>
+	</div>
+	<div class="article-email-subscription">
+	  <div class="article-subscription-modal">
+	      <h3>STAY IN THE KNOW</h3><hr/>
+	      <span>Sign up to receive weekly</span>
+	      <span>updates from the <em>W</em> editors</span>
+	      <div class="user-services">
+<div class="newsletter-embedded">
+    <form action="https://web.archive.org/web/20150219065507/http://www.wmagazine.com/people/celebrities/2015/02/scarlett-johansson-new-mom-the-avengers/" method="post" name="email-subscribe-popup" id="email-subscription-article-form" novalidate="novalidate">
+    <input type="hidden" name="action" value="newsletter_subscribe"/>
+    <input type="hidden" name="formName" value="email-subscribe-popup"/>
+    <input type="hidden" name="url" value="http://www.wmagazine.com/people/celebrities/2015/02/scarlett-johansson-new-mom-the-avengers/"/><input type="hidden" name="source_code" value="email-subscribe-modal"/>    <fieldset class="row">
+        <label for="email"><em></em>Email</label>
+        <input id="email" title="Enter email to receive the W Newsletter " type="email" name="email" value=""/>
+        <input class="btn btn-prev primary med hoverable shaded" type="submit" name="submit" value="Submit"/>
+    </fieldset>
+    <div class="form_response"></div>                                <input type="hidden" id="newsletterId_297" name="newsletterId[]" value="297"/>
+                                </form>
+</div>
+</div>
+
+<script type="text/javascript">
+    function init_form( form_id ) {
+        jQuery( form_id + ' input')
+            .on( 'keypress', function(event) {
+                if ( event.which == 13) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    jQuery( form_id ).submit();
+                    return false;
+                }
+            });
+
+        var emailField = form_id + ' input[name="email"]';
+
+        if ( jQuery( emailField ).val() === '') {
+            jQuery( emailField ).val( jQuery( emailField ).attr('title') );
+        }
+        jQuery( emailField )
+            .on( 'focus', function( event ) {
+                if ( jQuery( emailField ).val() === jQuery( emailField ).attr('title') ) {
+                    jQuery( emailField ).val('').addClass('focused');
+                }
+            })
+            .on( 'blur', function( event ) {
+                if ( jQuery( emailField ).val() === '' ) {
+                    jQuery( emailField ).val( jQuery( emailField ).attr('title') ).removeClass('focused');
+                }
+            });
+
+        jQuery( form_id )
+            .on( 'submit', function( event ) {
+                jQuery( '.form_response' ).html( '' ).css({"display":"none"}).removeClass('loader');
+
+                if ( jQuery( form_id + ' input[name="email"]').val() === '' || jQuery( form_id + ' input[name="email"]').val() === jQuery( form_id + ' input[name="email"]').attr('title') ) {
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    jQuery( '.form_response' ).html( '<p>Please enter an email address to subscribe</p>' ).css({"display":"block"}).removeClass('loader');
+                    return false;
+                }
+
+                if ( jQuery( form_id + ' input[name="email"]').val() !== '' ) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    jQuery( '.form_response' ).html( '' ).css({"display":"block"}).addClass('loader');
+
+                    jQuery.post(
+                        WP_VARS.ajaxurl,
+                        jQuery( form_id ).find("input[type='hidden'], :input:not(:hidden)").serialize(),
+                        function( response ){
+                            jQuery( '.form_response' ).html( response ).css({"display":"block"}).removeClass('loader');
+                            if ( response == 'Thank you for subscribing.' ) {
+                                CN.stats.omniture.trackAction( 'newsletterSignup', jQuery( form_id ), { events: 'event11' } );
+                            }
+                        }
+                    );
+                }
+
+                return true;
+            });
+    }
+
+    jQuery(function() {
+        init_form( "#email-subscription-article-form" );
+    });
+
+</script>
+	  </div>
+	  <div class="article-subscription-thankyou">
+	    <h3><em>W</em> NEWSLETTER</h3>
+	    <h4>THANK YOU FOR SIGNING UP.</h4>
+	    <span>you'll hear from us soon</span>
+	  </div>
+	</div>
+</aside><!--
+
+	--></div>
+</div>
+<div class="horizontal-banner">
+	<div class="ad-served wm-dart-ad" id="home_bottom"><div class="advertisement"><div id="home_bottom728x90_frame" class="displayAd displayAd728x90Js" data-cb-ad-id="home_bottom728x90_frame"></div><div id="home_bottom300x50_frame" class="displayAd displayAd300x50Js" data-cb-ad-id="home_bottom728x90_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( CN.dart ) {
+ CN.dart.call( "home_bottom", { sz: ( CN.isMobile ? "300x50" : "728x90" ), kws: [ "bottom" ], collapse: true } );
+}
+}</script></div></div></div>
+<script type="text/javascript" data-pin-hover="true" src="//web.archive.org/web/20150219065507js_/http://assets.pinterest.com/js/pinit.js"></script>
+
+
+<div class="most-popular"><h5>Most popular</h5><ul><li><a href="https://web.archive.org/web/20150219065507/http://www.wmagazine.com/culture/on-set-film-photos/2015/02/fifty-shades-of-grey-movie-behind-the-scenes/photos/"><img src="https://web.archive.org/web/20150219065507im_/http://www.wmagazine.com/wp-content/uploads/2015/01/fifty-shades-of-grey-on-set-4-160x160.jpg" alt="Fifty Shades of Grey: Behind the Scenes" width="160" height="160"><div class="category-wrap"><span class="category">On Set</span></div><span class="title">Fifty Shades of Grey: Behind the Scenes</span></a></li><li><a href="https://web.archive.org/web/20150219065507/http://www.wmagazine.com/people/celebrities/2015/02/scarlett-johansson-nobodys-baby/photos/"><img src="https://web.archive.org/web/20150219065507im_/http://www.wmagazine.com/wp-content/uploads/2015/01/scarlett-johansson-mert-marcus-1-160x160.jpg" alt="Scarlett Johansson: Nobody’s Baby" width="160" height="160"><div class="category-wrap"><span class="category">Celebrities</span></div><span class="title">Scarlett Johansson: Nobody’s Baby</span></a></li><li><a href="https://web.archive.org/web/20150219065507/http://www.wmagazine.com/culture/2015/02/magdalena-wosinska-naked-photographer-book/photos/"><img src="https://web.archive.org/web/20150219065507im_/http://www.wmagazine.com/wp-content/uploads/2015/02/magdalena-experience-7-160x160.jpg" alt="Magdalena Wosinska Goes Buck Wild" width="160" height="160"><div class="category-wrap"><span class="category">Culture</span></div><span class="title">Magdalena Wosinska Goes Buck Wild</span></a></li><li><a href="https://web.archive.org/web/20150219065507/http://www.wmagazine.com/people/celebrities/2015/02/scarlett-johansson-new-mom-the-avengers/"><img src="https://web.archive.org/web/20150219065507im_/http://www.wmagazine.com/wp-content/uploads/2015/01/scarlett-johansson-cover-160x160.jpg" alt="Scarlett Johansson Is Nobody’s Baby" width="160" height="160"><div class="category-wrap"><span class="category">Celebrities</span></div><span class="title">Scarlett Johansson Is Nobody’s Baby</span></a></li><li><a href="https://web.archive.org/web/20150219065507/http://www.wmagazine.com/fashion/street-style/2015/02/new-york-fashion-week-fall-2015-style/photos/"><img src="https://web.archive.org/web/20150219065507im_/http://www.wmagazine.com/wp-content/uploads/2015/02/AKS8399-160x160.jpg" alt="On the Streets of New York Fashion Week Fall 2015" width="160" height="160"><div class="category-wrap"><span class="category">Street Style</span></div><span class="title">On the Streets of New York Fashion Week Fall 2015</span></a></li></ul></div> 
+<div>
+	<div id="AMS_WMG_GLOBAL_FOOTER" class="ecom-placement"><a href="https://web.archive.org/web/20150219065507/https://w1.buysub.com/loc/WMG/ATGFailsafe" target="_blank"><img src="/web/20150219065507im_/http://www.wmagazine.com/wp-content/config/ecom_failsafe/WMG_Footer_961x416.jpg" alt="Subscribe to W Magazine"/></a>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( typeof pageAds.AMS_WMG_GLOBAL_FOOTER != 'undefined' ) {
+  jQuery( "#AMS_WMG_GLOBAL_FOOTER" ).html( pageAds.AMS_WMG_GLOBAL_FOOTER.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_WMG_GLOBAL_FOOTER" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_WMG_GLOBAL_FOOTER not in pageAds."); }
+                    })();
+                                }
+            //-->
+            </script>
+            </div></div>     
+<footer class="footer limited">
+    <div class="footer-wrap">
+        <nav>
+            <ul>
+                <li><a href="/web/20150219065507/http://www.wmagazine.com/contact-us">contact us</a></li>
+                <li><a href="/web/20150219065507/http://www.wmagazine.com/sitemap">sitemap</a></li>
+                <li><a target="_blank" href="https://web.archive.org/web/20150219065507/https://w1.buysub.com/pubs/N3/WMG/login_3_methods.jsp?cds_page_id=3857&amp;cds_mag_code=WMG&amp;id=1368479340771&amp;lsid=31331609007011465&amp;vid=1">subscription services</a></li>
+                <li><a target="_blank" href="https://web.archive.org/web/20150219065507/http://www.condenast.com/careers">careers</a></li>
+                <li><a target="_blank" href="https://web.archive.org/web/20150219065507/http://www.condenaststore.com/">condé nast store</a></li>
+                <li><a target="_blank" href="https://web.archive.org/web/20150219065507/http://www.condenast.com/reprints-permissions">reprints &amp; permissions</a></li>
+                <li><a target="_blank" href="https://web.archive.org/web/20150219065507/http://www.condenast.com/brands/w/">w magazine media kit</a></li>
+                <li class="justify-text-hack"> &nbsp; &nbsp; &nbsp; </li>
+            </ul>
+        </nav>
+        <div class="footer-subscribe">
+            <div class="user-services">
+<div class="newsletter-embedded">
+    <form action="https://web.archive.org/web/20150219065507/http://www.wmagazine.com/people/celebrities/2015/02/scarlett-johansson-new-mom-the-avengers/" method="post" name="newsletter-form" id="newsletter-form" novalidate="novalidate">
+    <input type="hidden" name="action" value="newsletter_subscribe"/>
+    <input type="hidden" name="formName" value="newsletter-form"/>
+    <input type="hidden" name="url" value="http://www.wmagazine.com/people/celebrities/2015/02/scarlett-johansson-new-mom-the-avengers/"/><input type="hidden" name="source_code" value="footer-unit"/>    <fieldset class="row">
+        <label for="email"><em></em>Email</label>
+        <input id="email" title="Enter email to receive the W Newsletter " type="email" name="email" value=""/>
+        <input class="btn btn-prev primary med hoverable shaded" type="submit" name="submit" value="Submit"/>
+    </fieldset>
+    <div class="form_response"></div>                                <input type="hidden" id="newsletterId_297" name="newsletterId[]" value="297"/>
+                                </form>
+</div>
+</div>
+
+<script type="text/javascript">
+    function init_form( form_id ) {
+        jQuery( form_id + ' input')
+            .on( 'keypress', function(event) {
+                if ( event.which == 13) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    jQuery( form_id ).submit();
+                    return false;
+                }
+            });
+
+        var emailField = form_id + ' input[name="email"]';
+
+        if ( jQuery( emailField ).val() === '') {
+            jQuery( emailField ).val( jQuery( emailField ).attr('title') );
+        }
+        jQuery( emailField )
+            .on( 'focus', function( event ) {
+                if ( jQuery( emailField ).val() === jQuery( emailField ).attr('title') ) {
+                    jQuery( emailField ).val('').addClass('focused');
+                }
+            })
+            .on( 'blur', function( event ) {
+                if ( jQuery( emailField ).val() === '' ) {
+                    jQuery( emailField ).val( jQuery( emailField ).attr('title') ).removeClass('focused');
+                }
+            });
+
+        jQuery( form_id )
+            .on( 'submit', function( event ) {
+                jQuery( '.form_response' ).html( '' ).css({"display":"none"}).removeClass('loader');
+
+                if ( jQuery( form_id + ' input[name="email"]').val() === '' || jQuery( form_id + ' input[name="email"]').val() === jQuery( form_id + ' input[name="email"]').attr('title') ) {
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    jQuery( '.form_response' ).html( '<p>Please enter an email address to subscribe</p>' ).css({"display":"block"}).removeClass('loader');
+                    return false;
+                }
+
+                if ( jQuery( form_id + ' input[name="email"]').val() !== '' ) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    jQuery( '.form_response' ).html( '' ).css({"display":"block"}).addClass('loader');
+
+                    jQuery.post(
+                        WP_VARS.ajaxurl,
+                        jQuery( form_id ).find("input[type='hidden'], :input:not(:hidden)").serialize(),
+                        function( response ){
+                            jQuery( '.form_response' ).html( response ).css({"display":"block"}).removeClass('loader');
+                            if ( response == 'Thank you for subscribing.' ) {
+                                CN.stats.omniture.trackAction( 'newsletterSignup', jQuery( form_id ), { events: 'event11' } );
+                            }
+                        }
+                    );
+                }
+
+                return true;
+            });
+    }
+
+    jQuery(function() {
+        init_form( "#newsletter-form" );
+    });
+
+</script>
+        </div>
+        <div class="footer-options">
+            <ul class="share gold">
+                <li class="label">Connect</li>
+                                <li class="s-tweet"><a href="https://web.archive.org/web/20150219065507/https://twitter.com/wmag" title="Follow W on Twitter" target="_blank">Follow W on Twitter</a></li>
+                <li class="s-facebook"><a href="https://web.archive.org/web/20150219065507/https://www.facebook.com/wmagazine" title="Follow W on Facebook" target="_blank">Follow W on Facebook</a></li>
+                <li class="s-tumblr"><a href="https://web.archive.org/web/20150219065507/http://wmagazine.tumblr.com/" title="Follow W on Tumblr" target="_blank">Follow W on Tumblr</a></li>
+                <li class="s-insta"><a href="https://web.archive.org/web/20150219065507/http://instagram.com/wmag/" title="Follow W on Instagram" target="_blank">Follow W on Instagram</a></li>
+                <li class="s-gplus"><a href="https://web.archive.org/web/20150219065507/https://plus.google.com/+Wmagazine" title="Follow W on Google Plus" target="_blank">Follow W on Google Plus</a></li>
+            </ul>
+            <ul class="mobile-download">
+                <li class="label">IPAD APP</li>
+                <li class="ipad"><a target="_blank" href="https://web.archive.org/web/20150219065507/http://www.wmagazine.com/go/ipad" title="Download iPad app">Download iPad app</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <select name="sub_list" id="sub_list" data-dropdownmenu="true">
+                <option selected="selected" value="">Subscribe to a magazine</option>
+                <option value=""></option>
+                <option value="http://www.magazinestoresubscriptions.com?source=univdropdown">View All Titles</option>
+                <option value="">- - - - - - - - - - - - - -</option>
+                <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Allure?source=SITEFOOTER">Allure</option>
+                <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_ArchitecturalDigest?source=SITEFOOTER">Architectural Digest</option>
+                <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_BonAppetite?source=SITEFOOTER">Bon App&eacute;tit</option>
+                <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Brides?source=SITEFOOTER">Brides</option>
+                <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_CondeNastTraveler?source=SITEFOOTER">Cond&eacute; Nast Traveler</option>
+                <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Details?source=SITEFOOTER">Details</option>
+                <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Glamour?source=SITEFOOTER">Glamour</option>
+                <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_GolfDigest?source=SITEFOOTER">Golf Digest</option>
+                <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_GolfWorld?source=SITEFOOTER">Golf World</option>
+                <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_GQ?source=SITEFOOTER">GQ</option>
+                <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Lucky?source=SITEFOOTER">Lucky</option>
+                <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Self?source=SITEFOOTER">Self</option>
+                <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_TeenVogue?source=SITEFOOTER">Teen Vogue</option>
+                <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_NewYorker?source=SITEFOOTER">The New Yorker</option>
+                <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_VanityFair?source=SITEFOOTER">Vanity Fair</option>
+                <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Vogue?source=SITEFOOTER">Vogue</option>
+                <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_W?source=SITEFOOTER">W</option>
+                <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Wired?source=SITEFOOTER">Wired</option>
+            </select>
+            <select name="mag_list" id="mag_list" data-dropdownmenu="true">
+                <option selected="selected" value="">Visit our sister sites</option>
+                <option value="">- - - - - - - - - - - - - -</option>
+                <option value="http://www.allure.com">Allure</option><option value="http://www.architecturaldigest.com">Architectural Digest</option><option value="http://www.arstechnica.com">Ars Technica</option><option value="http://www.bonappetit.com">Bon App&eacute;tit</option><option value="http://www.brides.com">Brides.com</option><option value="http://www.concierge.com/cntraveler">Cond&eacute; Nast Traveler</option><option value="http://www.concierge.com">Concierge</option><option value="http://www.details.com">Details</option><option value="http://www.epicurious.com">Epicurious</option><option value="http://www.glamour.com">Glamour</option><option value="http://www.golfdigest.com">Golf Digest</option><option value="http://www.golfworld.com">Golf World</option><option value="http://www.gq.com">GQ</option><option value="http://www.hotelchatter.com">Hotel Chatter</option><option value="http://www.jaunted.com">Jaunted</option><option value="http://www.luckymag.com">Lucky</option><option value="http://www.nutritiondata.com">NutritionData</option><option value="http://www.reddit.com">Reddit</option><option value="http://www.self.com">Self</option><option value="http://www.style.com">Style</option><option value="http://www.teenvogue.com">Teen Vogue</option><option value="http://www.newyorker.com">The New Yorker</option><option value="http://thescene.com/">The Scene</option><option value="http://www.vanityfair.com">Vanity Fair</option><option value="http://www.vegaschatter.com">Vegas Chatter</option><option value="http://www.vogue.com">Vogue</option><option value="http://www.wmagazine.com">W</option><option value="http://www.wired.com">Wired</option>            </select>
+        </div>
+        <div class="footer-left">
+            <a id="condenast-logo" href="https://web.archive.org/web/20150219065507/http://www.condenast.com/" target="_blank">Condé Nast</a>
+            <p>&copy; 2014 Condé Nast. All rights reserved Use of this site constitutes acceptance of our <a href="https://web.archive.org/web/20150219065507/http://www.condenast.com/privacy-policy" target="_blank">User Agreement</a> (effective 1/2/2014) and <a href="https://web.archive.org/web/20150219065507/http://www.condenast.com/privacy-policy#privacypolicy" target="_blank">Privacy Policy</a> (effective 1/2/2014). <a href="https://web.archive.org/web/20150219065507/http://www.condenast.com/privacy-policy#privacypolicy-california" target="_blank">Your California Privacy Rights</a>  The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written permission of Condé Nast.</p>
+            <a class="site-credits" href="https://web.archive.org/web/20150219065507/http://www.swedenunlimited.com/" target="_blank">Site by Sweden Unlimited</a>
+        </div>
+    </div>
+</footer>
+
+<div class="overlay"></div>
+<div class="modal email-subscription" id="email-subscription-modal">
+    <div></div>
+    <div>
+        <a class="close" data-modal-action="close" href="javascript:void(0);"></a>
+        <h1>Don't miss a thing.</h1>
+        <h3>Sign up for the</h3>
+        <h3>latest from <em>W</em> editors</h3>
+        <div class="user-services">
+<div class="newsletter-embedded">
+    <form action="https://web.archive.org/web/20150219065507/http://www.wmagazine.com/people/celebrities/2015/02/scarlett-johansson-new-mom-the-avengers/" method="post" name="email-subscribe-popup" id="email-subscription-modal-form" novalidate="novalidate">
+    <input type="hidden" name="action" value="newsletter_subscribe"/>
+    <input type="hidden" name="formName" value="email-subscribe-popup"/>
+    <input type="hidden" name="url" value="http://www.wmagazine.com/people/celebrities/2015/02/scarlett-johansson-new-mom-the-avengers/"/><input type="hidden" name="source_code" value="email-subscribe-modal"/>    <fieldset class="row">
+        <label for="email"><em></em>Email</label>
+        <input id="email" title="Enter email to receive the W Newsletter " type="email" name="email" value=""/>
+        <input class="btn btn-prev primary med hoverable shaded" type="submit" name="submit" value="Submit"/>
+    </fieldset>
+    <div class="form_response"></div>                                <input type="hidden" id="newsletterId_297" name="newsletterId[]" value="297"/>
+                                </form>
+</div>
+</div>
+
+<script type="text/javascript">
+    function init_form( form_id ) {
+        jQuery( form_id + ' input')
+            .on( 'keypress', function(event) {
+                if ( event.which == 13) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    jQuery( form_id ).submit();
+                    return false;
+                }
+            });
+
+        var emailField = form_id + ' input[name="email"]';
+
+        if ( jQuery( emailField ).val() === '') {
+            jQuery( emailField ).val( jQuery( emailField ).attr('title') );
+        }
+        jQuery( emailField )
+            .on( 'focus', function( event ) {
+                if ( jQuery( emailField ).val() === jQuery( emailField ).attr('title') ) {
+                    jQuery( emailField ).val('').addClass('focused');
+                }
+            })
+            .on( 'blur', function( event ) {
+                if ( jQuery( emailField ).val() === '' ) {
+                    jQuery( emailField ).val( jQuery( emailField ).attr('title') ).removeClass('focused');
+                }
+            });
+
+        jQuery( form_id )
+            .on( 'submit', function( event ) {
+                jQuery( '.form_response' ).html( '' ).css({"display":"none"}).removeClass('loader');
+
+                if ( jQuery( form_id + ' input[name="email"]').val() === '' || jQuery( form_id + ' input[name="email"]').val() === jQuery( form_id + ' input[name="email"]').attr('title') ) {
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    jQuery( '.form_response' ).html( '<p>Please enter an email address to subscribe</p>' ).css({"display":"block"}).removeClass('loader');
+                    return false;
+                }
+
+                if ( jQuery( form_id + ' input[name="email"]').val() !== '' ) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    jQuery( '.form_response' ).html( '' ).css({"display":"block"}).addClass('loader');
+
+                    jQuery.post(
+                        WP_VARS.ajaxurl,
+                        jQuery( form_id ).find("input[type='hidden'], :input:not(:hidden)").serialize(),
+                        function( response ){
+                            jQuery( '.form_response' ).html( response ).css({"display":"block"}).removeClass('loader');
+                            if ( response == 'Thank you for subscribing.' ) {
+                                CN.stats.omniture.trackAction( 'newsletterSignup', jQuery( form_id ), { events: 'event11' } );
+                            }
+                        }
+                    );
+                }
+
+                return true;
+            });
+    }
+
+    jQuery(function() {
+        init_form( "#email-subscription-modal-form" );
+    });
+
+</script>
+        <a target="_blank" href="https://web.archive.org/web/20150219065507/http://www.condenast.com/privacy-policy#privacypolicy">Privacy Policy</a>
+    </div>
+</div>
+	</div> 
+		<div>
+    	<div id="floatingAd"><div id="floatingAd_content"><div id="AMS_WMG_POPUP_FLOATINGAD" class="ecom-placement"><!-- no failsafe for AMS_WMG_POPUP_FLOATINGAD -->            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( typeof pageAds.AMS_WMG_POPUP_FLOATINGAD != 'undefined' ) {
+  jQuery( "#AMS_WMG_POPUP_FLOATINGAD" ).html( pageAds.AMS_WMG_POPUP_FLOATINGAD.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+} else { CN.debug.info( "AMS_WMG_POPUP_FLOATINGAD not in pageAds."); }
+                    })();
+                                }
+            //-->
+            </script>
+            </div><div id="floatingAd_header"><a href="#" class="close">Close</a></div></div>    </div>
+	
+    <script>window.jQuery || document.write('<script src="https://web.archive.org/web/20150219065507/http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"><\/script>')</script>
+    <script type="text/javascript">_satellite.pageBottom();</script>
+    
+                <script type="text/javascript">
+            //<!--
+                CN.config.set({
+                    title        : document.title,
+                                    facebook     : {pageid: "40621875003"},
+                                    isiFrame     : true
+                });
+            //-->
+            </script>
+            	        <!-- COMSCORE noscript -->
+	        <noscript>
+				<img src="https://web.archive.org/web/20150219065507im_/http://b.scorecardresearch.com/p?c1=2&amp;c2=6035094&amp;c4=http%3A%2F%2Fwww.wmagazine.com%2Fpeople%2Fcelebrities%2F2015%2F02%2Fscarlett-johansson-new-mom-the-avengers"/>
+			</noscript>
+	
+
+<!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+  <div id="parsely-cfg" data-parsely-site="wmag.com"></div>
+</div>
+<script>
+(function(s, p, d) {
+  var h=d.location.protocol, i=p+"-"+s,
+      e=d.getElementById(i), r=d.getElementById(p+"-root"),
+      u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+      :"static."+p+".com";
+  if (e) return;
+  e = d.createElement(s); e.id = i; e.async = true;
+  e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+})("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include: Standard -->
+
+<script type="text/javascript" src="https://web.archive.org/web/20150219065507js_/http://www.wmagazine.com/wp-includes/js/jquery/suggest.min.js?ver=1.1-20110113"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20150219065507js_/http://www.wmagazine.com/wp-content/themes/wmagazine2.0/static/js/main.min.js?ver=20141202"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20150219065507js_/http://js.revsci.net/gateway/gw.js?csid=F09828&amp;auto=t&amp;bpid=condenast&amp;ver=20141202"></script>
+            <script type="text/javascript" class="omniture_block">
+            //<!--
+                CN.stats.omniture.init();
+                CN.stats.omniture.setStatus( CN.site.httpStatusCode );
+
+            CN.stats.omniture.setMobileView( ( CN.isMobile ) ? "Mobile" : "Non-Mobile" );
+
+                if ( CN.cookie.get('amg_user_partner') != '' ) {
+                    CN.stats.omniture.setCustomProp( "52", CN.cookie.get('amg_user_partner') );
+                }
+
+                CN.stats.omniture.setContentType( "Article" );
+
+                if ( CN.stats.omniture.setReferrer !== undefined && document.referrer.match( CN.site.tld ) ) {
+                    var referrer = document.referrer;
+                    referrer=referrer.split("?")[0];
+                    CN.stats.omniture.setReferrer( referrer );
+                }
+
+                            if ( CN.stats.omniture.setKeywords !== undefined ) {
+                    CN.stats.omniture.setKeywords( "celebrities|black-widow|scarlett-johansson|the-avengers" );
+                }
+
+            CN.stats.omniture.setContentId( "7272151" );
+if ( CN.url.params('event') == 'loginsuccess' ) {
+ CN.stats.omniture.trackAction( 'login', document, { events: 'event21' } );
+}
+                // Run page tracking (also calls .init() again )
+                if ( CN.preventAutoTrack != true ) {
+                    CN.stats.omniture.doPageTracking();
+                }
+            //-->
+            </script>
+            <noscript>
+                <a href="https://web.archive.org/web/20150219065507/http://www.omniture.com/" title="Web Analytics">
+                    <img src="https://web.archive.org/web/20150219065507im_/http://condenast.112.2o7.net/b/ss/conde-wmagazine/1/H.15.1--NS/0" height="1" width="1" border="0" alt=""/>
+                </a>
+            </noscript>
+                    <script type="text/javascript">
+        //<!--
+
+                var async_body = document.getElementsByTagName('body')[0];
+        var facebookdiv = async_body.appendChild(document.createElement('div'));
+            facebookdiv.id = 'fb-root';
+            (function(d){
+                var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+                js = d.createElement('script'); js.id = id; js.async = true;
+                js.src = "//web.archive.org/web/20150219065507/http://connect.facebook.net/en_US/all.js";
+                d.getElementsByTagName('head')[0].appendChild(js);
+            }(document));
+            /* Facebook */
+            window.fbAsyncInit = function() {
+                FB.init({
+            appId: 230068530489385,                    channelURL : "https://web.archive.org/web/20150219065507/http://www.wmagazine.com/wp-content/mu-plugins/cn-wordpress/social/facebook.html", // Channel File
+                    status     : false, // check login status
+                    cookie     : true, // enable cookies to allow the server to access the session
+                    oauth      : true, // enable OAuth 2.0
+                    xfbml      : true  // parse XFBML
+                });
+            };
+                   		window.twttr = (function (d,s,id) {
+				  var t, js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+				  js.src="https://web.archive.org/web/20150219065507/http://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+				  return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+					}(document, "script", "twitter-wjs"));
+            (function(d){
+var f = d.getElementsByTagName('SCRIPT')[0];
+var google_plus_one = d.createElement('SCRIPT');
+google_plus_one.type = 'text/javascript';
+google_plus_one.async = true;
+google_plus_one.src = 'https://web.archive.org/web/20150219065507/https://apis.google.com/js/plusone.js';
+f.parentNode.insertBefore(google_plus_one, f);
+}(document));
+(function(d){
+var f = d.getElementsByTagName('SCRIPT')[0];
+var pinterest = d.createElement('SCRIPT');
+pinterest.type = 'text/javascript';
+pinterest.async = true;
+pinterest.src = '//web.archive.org/web/20150219065507/http://assets.pinterest.com/js/pinit.js';
+f.parentNode.insertBefore(pinterest, f);
+}(document));
+        //-->
+        </script>
+                <div id="eventListHolder" style="display:none;"></div>
+        <script type="text/javascript">
+        // <!--
+            (function(){
+                var ns= window.CN || window.CNP;
+                ns.site = ns.site || {};
+                ns.site.eventTrackingList = new EventList( "eventListHolder" );
+                ns.site.eventTrackingList.setBaseUrl( "https://web.archive.org/web/20150219065507/http://event.wmagazine.com/" );
+
+                ns.site.eventTrackingEvent = new EventObject( "WMG", "most_viewed" );
+
+                        ns.site.eventTrackingEvent.setContentId( "7272151" );
+                ns.site.eventTrackingEvent.setContentType( "post" );
+
+                        ns.site.eventTrackingEvent.setProperty( "imgurl", "https://web.archive.org/web/20150219065507/http://www.wmagazine.com/wp-content/uploads/2015/01/scarlett-johansson-cover.jpg" );
+        
+        
+                ns.site.eventTrackingEvent.setEnvironment( "PROD" );
+                ns.site.eventTrackingEvent.setFullUrl( "/people/celebrities/2015/02/scarlett-johansson-new-mom-the-avengers/" );
+                ns.site.eventTrackingEvent.setContentTitle( "Scarlett Johansson Is Nobody’s Baby" );
+
+                var fullContentURL = "/people/celebrities/2015/02/scarlett-johansson-new-mom-the-avengers/";
+                var isAbsoluteURL = fullContentURL.substring(0,8);
+                var allowedTracking = 0;
+
+                if ( ( isAbsoluteURL.indexOf( 'http' ) == -1 && isAbsoluteURL.indexOf( 'https' ) == -1) || allowedTracking == 1 ) {
+                    ns.site.eventTrackingList.addEvent( ns.site.eventTrackingEvent );
+                    ns.site.eventTrackingList.writeImageTags();
+
+                    CN.debug.info('ETF most_viewed Tracked');
+                }
+
+            }())
+
+            function generateId(url) {
+                var urlRegexp;
+                if (url.indexOf("https:") === 0) {
+                    urlRegexp = /https:\/\/[^\/]*\/([^?#]*).*/i;
+                } else {
+                    urlRegexp = /http:\/\/[^\/]*\/([^?#]*).*/i;
+                }
+                url.match(urlRegexp);
+                return RegExp.$1;
+            }
+        // -->
+        </script>
+                            <script type="text/javascript">
+            //<!--
+                if ( CN.url.params( 'nojoy' ) != 1 ) {
+                    _satellite.pageBottom();
+                }
+            //-->
+            </script>
+            <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"2907deeb56","applicationID":"3007986","transactionName":"YlIEZhNSXxEAABYNW1sYJ1EVWl4MThALClNZUg==","queueTime":0,"applicationTime":430,"ttGuid":"","agentToken":"","atts":"ThUHEFtITB8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-515.min.js"}</script></body>
+</html>
+
+<!--
+     FILE ARCHIVED ON 06:55:07 Feb 19, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:23:50 Aug 06, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.379
+  exclusion.robots: 0.054
+  exclusion.robots.policy: 0.046
+  esindex: 0.007
+  cdx.remote: 6.289
+  LoadShardBlock: 84.285 (3)
+  PetaboxLoader3.datanode: 69.104 (4)
+  PetaboxLoader3.resolve: 77.758 (3)
+  load_resource: 140.809
+-->
